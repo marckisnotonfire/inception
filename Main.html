@@ -9,16 +9,70 @@
     <!-- Linking font -->
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Monteserrats&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrats&display=swap"
     />
 
     <title>Inception</title>
   </head>
 
   <body>
-    <div id="TitoloInizioBox">
-      <p id="TitoloInizioTesto">INCEPTION</p>
-      <p id="sottotitolo">Explore the dreams!</p>
+    <div id="VerticalScroll">
+      <div class="Schermata" id="Schermata1">
+        <p id="TitoloInizioTesto">INCEPTION</p>
+        <p id="sottotitolo">Explore the dreams!</p>
+      </div>
+
+      <div class="Schermata" id="Schermata2">
+        <div id="scritte2box">
+          <p class="titoloschermata" id="ciochetroverai">Ciò che troverai</p>
+          <p id="contentciochetroverai">
+            Benvenuto nel sito dedicato alla visualizzazione grafica del film
+            "Inception", diretto da Christopher Nolan nel 2010. <br />
+            <br />
+            Ti immergerai in un'analisi approfondita del complesso rapporto tra
+            tempo, spazio e personaggi che si intrecciano nei vari livelli di
+            sogno presenti nel film. <br />
+            <br />
+            Attraverso una rappresentazione visiva unica, ti condurremo in un
+            viaggio per comprendere in modo più profondo le interconnessioni
+            spazio-temporali che definiscono questa storia, offrendo una
+            prospettiva chiara e coinvolgente sulle intricanti relazioni
+            all'interno della trama.
+          </p>
+        </div>
+      </div>
+
+      <div class="Schermata" id="Schermata3">
+        <div id="scritte3box">
+          <p class="titoloschermata" id="comefunziona">Come funziona</p>
+          <p id="contentcomefunziona">
+            Il grafico presenta sull’asse orizzontale il minutaggio del film,
+            mentre sull’asse verticale sono disposti i vari livelli del sogno.
+            <br />
+            <br />
+            Ogni livello nel film è composto da diversi luoghi in cui i
+            personaggi si spostano, rappresentati da strisce orizzontali
+            disposte nel livello e nei minuti di film in cui compaiono. <br />
+            <br />
+            In maniera simile, i personaggi, ciascuno identificato da una
+            striscia di un certo colore, sono disposti verticalmente rispetto al
+            livello in cui si trovano e orizzontalmente rispetto al luogo in cui
+            agiscono in corrispondenza dei minuti del film.
+            <br />
+            <br />
+            Infine, la diversa dilatazione del tempo nei vari livelli viene
+            rappresentata sullo sfondo da linee verticali con frequenza più o
+            meno ampia rispetto alla dilatazione temporale del livello in cui ci
+            si trova scorrendo la visualizzazione.
+          </p>
+        </div>
+      </div>
     </div>
+
+    <div id="megaSVG">
+      <!-- <svg id="grafico"></svg> -->
+    </div>
+
+    <script src="Javascript.js"></script>
   </body>
 </html>

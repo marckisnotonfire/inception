@@ -3,7 +3,14 @@
     --bg: #202f4e;
   }
 
-  /*html {font-family: "Roboto", sans-serif;line-height: 1;font-size: 16px;box-sizing: border-box;margin: 0;padding: 0;height: 100%;scroll-behavior: smooth;}
+/* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+
+html {font-family: "Montserrat", sans-serif;line-height: 1.2;font-size: 16px;box-sizing: border-box;margin: 0;padding: 0;height: 100%;
+    scroll-behavior: smooth;}
 
 /* Reset default styles */
 body, h1, p {
@@ -17,10 +24,8 @@ body {
     font-size: 16px;
     color: #fff;
     margin: 0;
-    display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
 }
 
 h1 {
@@ -37,8 +42,17 @@ p {
 body{ background-color: var(--bg);}
 
 /* Style title first page */
-#TitoloInizioBox {
-    width: 100vw; height: 100vh; position: relative; text-align: center; 
+#Schermata1 {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    
+    
 }
 #TitoloInizioTesto{
     font-size: 13vh;
@@ -49,3 +63,51 @@ body{ background-color: var(--bg);}
     font-size: 3vh;
     position: absolute; top: 65%; left: 50%; transform: translate(-50%, -50%);
 }
+
+#Schermata2 {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#scritte2box {
+    width: 40vw;
+}
+
+.titoloschermata {
+    font-size: 4vh;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+#Schermata3 {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#scritte3box {
+    width: 40vw;
+}
+
+/* ######### HERE COMES THE FUN PART ########### */
+#megaSVG {
+    width: 10000px;
+    height: 100vh;
+    background-image: linear-gradient(to right, blueviolet, rgb(43, 110, 226)); /* l'ho messo solo per vedere se scorre*/
+    position: relative;
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling for the plot container */
+    overflow-y: hidden;
+}
+
+
