@@ -11,4 +11,6 @@ verticalScroll.addEventListener('scroll', () => {
     megaSVG.scrollLeft = horizontalScrollPosition;
 });
 
+questa è una prova
+
   
