@@ -9,8 +9,5 @@ verticalScroll.addEventListener('scroll', () => {
 
     // Set the horizontal scroll position on the #megaSVG element
     megaSVG.scrollLeft = horizontalScrollPosition;
-});
-
-questa è una prova
-
+})
   
