@@ -1,0 +1,142 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+/* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+#scroller::-webkit-scrollbar {display: none;}body::-webkit-scrollbar {display: none;}
+
+
+
+/* HEADER */
+:root { --menu-bg: #162033; --menu-color: #fff; }
+
+.header{ background-color: var(--menu-bg); position: fixed; top:0;  left:0; z-index: 9999; width: 100%;}
+.header__content{max-width: 1200px;width: 100%;margin: 0 auto; display: flex;justify-content: space-between;}
+
+.header__logo{display: flex; align-items: center;}
+
+.header__menu{padding: 0;margin: 0;}
+.header__menu li{display: inline-block;}
+.header__menu li a{color:var(--menu-color);display: block;padding: 16px;font-size: 15px;}
+
+
+
+
+
+
+
+
+#scroller {
+  width: 100%;
+  height: 100vh;
+  margin-top: 6vh;
+  z-index: 999;
+  top: 0px;
+  left: 0px;
+  background-color: grey;
+  overflow-x: hidden;
+  margin-top: 50px;
+}
+
+
+#container {
+  background-color: lightgray;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100vh;
+  left: 200px;
+}
+
+
+.module {
+  height: 100%;
+  display: flex;
+}
+
+.zero {
+  width: 500px;
+  background-color: lightcyan;
+}
+
+.one {
+  width: 200px;
+  background-color: green;
+}
+
+.two {
+  width: 800px;
+  background-color: yellow;
+}
+
+.three {
+  width: 400px;
+  background-color: purple;
+}
+
+.four {
+  width: 1300px;
+  background-color: purple;
+}
+
+.five {
+  width: 600px;
+  background-color: blue;
+}
+
+.six {
+  width: 2100px;
+  background-color: red;
+}
+
+.seven {
+  width: 600px;
+  background-color: cyan;
+}
+
+.eight {
+  width: 400px;
+  background-color: red;
+}
+
+.nine {
+  width: 2100px;
+  background-color: mediumseagreen;
+}
+
+.ten {
+  width: 1300px;
+  background-color: salmon;
+}
+
+.eleven {
+  width: 1700px;
+  background-color: sandybrown;
+}
+
+.twelve {
+  width: 1099px;
+  background-color: burlywood;
+}
+
+.thirteen {
+  width: 600px;
+  background-color: slateblue;
+}
+
+.fourteen {
+  width: 200px;
+  background-color: teal;
+}
+
+.fifthteen {
+  width: 300px;
+  background-color: forestgreen;
+}
+
+.sixteen {
+  width: 500px;
+  background-color: yellowgreen;
+}
