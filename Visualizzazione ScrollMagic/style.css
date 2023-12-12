@@ -61,7 +61,7 @@ html, body {
   bottom: 0;
   left: 0;
   background-color: grey;
-  overflow-x: hidden;
+  overflow-x: scroll;
   position: absolute;
 }
 
