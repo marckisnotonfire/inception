@@ -18,6 +18,7 @@ gsap.to(container, {
 })
 
 
+//NUMERI IN SEQUENZA
 
 const arrayRange = (start, stop, step) =>
   Array.from(
