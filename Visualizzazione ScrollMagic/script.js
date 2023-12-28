@@ -1,22 +1,22 @@
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger);
 
 let container = document.getElementById("sfondo");
 
 gsap.to(container, {
-  x: () => -(container.scrollWidth - document.documentElement.clientWidth) + "px",
+  x: () =>
+    -(container.scrollWidth - document.documentElement.clientWidth) + "px",
   ease: "none",
   scrollTrigger: {
     trigger: container,
-    scroller: '#scroller',
+    scroller: "#scroller",
     invalidateOnRefresh: true,
     pin: true,
     markers: true,
     scrub: 1,
-    top: 'top top',
-    end: () => "+=20000"/*  + container.offsetHeight */ 
-  }
-})
-
+    top: "top top",
+    end: () => "+=20000" /*  + container.offsetHeight */,
+  },
+});
 
 //NUMERI IN SEQUENZA
 
