@@ -124,7 +124,7 @@ body::-webkit-scrollbar {
 }
 
 .number {
-  margin-right: 56px; /* Imposta il margine destro a 10 pixel (o qualsiasi valore desiderato) */
+  margin-right: 85px; /* Imposta il margine destro a 10 pixel (o qualsiasi valore desiderato) */
 }
 
 #container {
@@ -240,7 +240,7 @@ body::-webkit-scrollbar {
   z-index: 16;
 }
 
-/* .sfondi {
+.sfondi {
   position: absolute;
   width: 2100px;
   height: 77vh;
@@ -272,7 +272,7 @@ body::-webkit-scrollbar {
   height: 15.4vh;
   width: 100%;
   background-color: var(--sfondo5);
-} */
+}
 
 .livelli {
   z-index: 99;
