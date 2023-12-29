@@ -2,7 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  height: 100vh;
+  height: 100%;
 }
 
 /* Hide scrollbar for Webkit browsers (Chrome, Safari) */
@@ -34,7 +34,14 @@ body::-webkit-scrollbar {
   width: 100%;
   height: 8vh;
   padding: 0 35px;
-  border-bottom: var(--menu-color) solid 2px;
+  border-bottom: solid 2px;
+  border-image: linear-gradient(
+      to right,
+      white 40%,
+      transparent 120%,
+      transparent 100%
+    )
+    1;
 }
 .header__content {
   width: 100%;
@@ -100,24 +107,26 @@ body::-webkit-scrollbar {
 /* VISUALIZZAZIONE */
 
 #scroller {
-  width: 100%;
+  width: 100vw;
   height: 92vh;
   z-index: 999;
   bottom: 0;
   left: 0;
-  background-color: grey;
+  background-color: rgb(138, 138, 138);
   overflow-x: scroll;
-  position: absolute;
+  position: fixed;
 }
 
 .numbers {
+  position: fixed;
   height: 12vh;
-  background-color: violet;
-  width: 14699px;
-  padding-left: 500px;
+  background-color: var(--menu-bg);
+  width: 15562px;
+  padding-left: 494px;
+  z-index: 9;
 }
 #numbers_content {
-  padding-top: 50px;
+  padding-top: 40px;
   color: var(--menu-color);
   font-size: 24px;
   font-weight: lighter;
@@ -127,16 +136,18 @@ body::-webkit-scrollbar {
 .number {
   display: flex;
   justify-content: left;
-  width: 144px;
+  width: 98px;
   /* margin: 0 40px 0 40px; */
 }
 
 #container {
+  position: fixed;
   background-color: lightgray;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   height: 80vh;
+  top: 12vh;
 }
 
 .module {
@@ -280,7 +291,7 @@ body::-webkit-scrollbar {
 }
 
 .livelli {
-  z-index: 99;
+  z-index: 9;
   position: fixed;
   /* height: 80vh; */
   display: flex;
@@ -290,7 +301,65 @@ body::-webkit-scrollbar {
   /* overflow: hidden; */
 }
 
-.livello {
-  /* flex: 1 0 16vh; */
+.contenitore {
+  display: flex;
+  flex-direction: row;
+}
+
+.line {
   height: 16vh;
+}
+
+.group1 {
+  width: 1px;
+  background-color: white; /* Colore della linea */
+  margin-right: 1599px; /* Distanza tra le linee del primo gruppo */
+}
+
+.group2 {
+  width: 1px;
+  background-color: white; /* Colore della linea del secondo gruppo */
+  margin-right: 799px; /* Distanza tra le linee del secondo gruppo */
+}
+
+.group3 {
+  width: 1px;
+  background-color: white; /* Colore della linea del secondo gruppo */
+  margin-right: 399px; /* Distanza tra le linee del secondo gruppo */
+}
+
+.group4 {
+  width: 1px;
+  background-color: white; /* Colore della linea del secondo gruppo */
+  margin-right: 199px; /* Distanza tra le linee del secondo gruppo */
+}
+
+.group5 {
+  width: 2px;
+  background-color: white; /* Colore della linea del secondo gruppo */
+  margin-right: 98px; /* Distanza tra le linee del secondo gruppo */
+}
+
+.group6 {
+  width: 1px;
+  background-color: white; /* Colore della linea del secondo gruppo */
+  margin-right: 49px; /* Distanza tra le linee del secondo gruppo */
+}
+
+.group7 {
+  width: 1px;
+  background-color: white; /* Colore della linea del secondo gruppo */
+  margin-right: 24px; /* Distanza tra le linee del secondo gruppo */
+}
+
+.group8 {
+  width: 1px;
+  background-color: white; /* Colore della linea del secondo gruppo */
+  margin-right: 11.5px; /* Distanza tra le linee del secondo gruppo */
+}
+
+.group9 {
+  width: 1px;
+  background-color: white; /* Colore della linea del secondo gruppo */
+  margin-right: 5.25px; /* Distanza tra le linee del secondo gruppo */
 }
