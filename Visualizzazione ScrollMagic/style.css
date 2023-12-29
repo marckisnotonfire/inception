@@ -111,20 +111,24 @@ body::-webkit-scrollbar {
 }
 
 .numbers {
-  height: 15vh;
+  height: 12vh;
   background-color: violet;
   width: 14699px;
-  padding-left: 492px;
+  padding-left: 500px;
 }
 #numbers_content {
-  padding-top: 60px;
+  padding-top: 50px;
   color: var(--menu-color);
-  font-size: 30px;
+  font-size: 24px;
   font-weight: lighter;
+  display: flex;
 }
 
 .number {
-  margin-right: 85px; /* Imposta il margine destro a 10 pixel (o qualsiasi valore desiderato) */
+  display: flex;
+  justify-content: left;
+  width: 144px;
+  /* margin: 0 40px 0 40px; */
 }
 
 #container {
@@ -132,12 +136,13 @@ body::-webkit-scrollbar {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  height: 77vh;
+  height: 80vh;
 }
 
 .module {
-  height: 100vh;
+  height: 80vh;
   display: flex;
+  align-items: center;
 }
 
 .zero {
@@ -243,49 +248,49 @@ body::-webkit-scrollbar {
 .sfondi {
   position: absolute;
   width: 2100px;
-  height: 77vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
 }
 
 .sfondo1 {
-  height: 15.4vh;
+  height: 16vh;
   width: 100%;
   background-color: var(--sfondo1);
 }
 .sfondo2 {
-  height: 15.4vh;
+  height: 16vh;
   width: 100%;
   background-color: var(--sfondo2);
 }
 .sfondo3 {
-  height: 15.4vh;
+  height: 16vh;
   width: 100%;
   background-color: var(--sfondo3);
 }
 .sfondo4 {
-  height: 15.4vh;
+  height: 16vh;
   width: 100%;
   background-color: var(--sfondo4);
 }
 .sfondo5 {
-  height: 15.4vh;
+  height: 16vh;
   width: 100%;
   background-color: var(--sfondo5);
 }
 
 .livelli {
   z-index: 99;
-  position: absolute;
-  width: 100%;
-  height: 77vh;
+  position: fixed;
+  /* height: 80vh; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .livello {
-  height: 15.4vh;
+  /* flex: 1 0 16vh; */
+  height: 16vh;
 }
