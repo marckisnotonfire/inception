@@ -1,6 +1,8 @@
 gsap.registerPlugin(ScrollTrigger);
 
-let container = document.getElementById("sfondo");
+//------------------------------- VECCHIO SCROLL -----------------------------------------
+
+/* let container = document.getElementById("sfondo");
 
 gsap.to(container, {
   x: () =>
@@ -16,15 +18,55 @@ gsap.to(container, {
     start: "top top",
     end: () => "+=20000",
   },
+}); */
+
+//--------------------------------------------------------------------------------------
+//------------------------------- NEW SCROLL -----------------------------------------
+//--------------------------------------------------------------------------------------
+
+const slider = document.querySelector(".sfondo");
+const sections = gsap.utils.toArray(".slider section");
+
+let tl = gsap.timeline({
+  defaults: {
+    ease: "none",
+  },
+  scrollTrigger: {
+    trigger: slider,
+    start: "top top",
+    pin: true,
+    scrub: 2,
+    markers: true,
+    end: () => "+=" + slider.offsetWidth,
+  },
+});
+
+tl.to(slider, {
+  xPercent: -380,
 });
 
 // -------------------- ANIMAZIONI ---------------------------------
 
 gsap.to(".blocco4", {
-  scrollTrigger: ".blocco4",
-  y: 400,
-  duration: 10,
-  markers: true,
+  scrollTrigger: {
+    trigger: ".module one",
+    start: "bottom center",
+    toggleActions: "restart pause reverse none",
+    markers: true,
+  },
+  y: "16vh",
+  duration: 2,
+});
+
+gsap.to(".blocco5", {
+  scrollTrigger: {
+    trigger: ".module one",
+    start: "bottom center",
+    toggleActions: "restart pause reverse none",
+    markers: true,
+  },
+  y: "-16vh",
+  duration: 2,
 });
 
 //------------- NUMERI IN SEQUENZA -------------------------
