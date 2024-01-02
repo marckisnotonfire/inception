@@ -20,9 +20,13 @@ gsap.to(container, {
   },
 }); */
 
-//--------------------------------------------------------------------------------------
-//------------------------------- NEW SCROLL -----------------------------------------
-//--------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------
+// ------------------------------- NEW SCROLL -------------------------------
+// --------------------------------------------------------------------------
+// ------------------------------- NEW SCROLL -------------------------------
+// --------------------------------------------------------------------------
+// ------------------------------- NEW SCROLL -------------------------------
+// --------------------------------------------------------------------------
 
 const slider = document.querySelector(".sfondo");
 const sections = gsap.utils.toArray(".slider section");
@@ -45,32 +49,226 @@ tl.to(slider, {
   xPercent: -380,
 });
 
-// -------------------- ANIMAZIONI ---------------------------------
+// ---------------------------------------------------------------------
+// --------------- ANIMAZIONI --------------- ANIMAZIONI ---------------
+// ---------------------------------------------------------------------
+// --------------- ANIMAZIONI --------------- ANIMAZIONI ---------------
+// ---------------------------------------------------------------------
+// --------------- ANIMAZIONI --------------- ANIMAZIONI ---------------
+// ---------------------------------------------------------------------
 
-gsap.to(".blocco4", {
-  scrollTrigger: {
-    trigger: ".module one",
-    start: "bottom center",
-    toggleActions: "restart pause reverse none",
-    markers: true,
-  },
+/* gsap.to(".blocco4", {
   y: "16vh",
   duration: 2,
-});
-
-gsap.to(".blocco5", {
   scrollTrigger: {
-    trigger: ".module one",
-    start: "bottom center",
-    toggleActions: "restart pause reverse none",
+    trigger: ".blocco6",
+    start: "bottom bottom",
+    toggleActions: "play none none reset",
+    id: "1",
     markers: true,
   },
+}); */
+
+gsap.to(".blocco1", {
+  y: "32vh",
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".blocco1",
+    containerAnimation: tl,
+    start: "left 20%",
+    toggleActions: "restart none reverse none",
+    id: "1",
+    markers: true,
+  },
+});
+gsap.to(".blocco2", {
+  y: 0,
+  duration: 2,
+  scrollTrigger: {
+    trigger: ".blocco2",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none reverse none",
+    id: "2",
+    markers: true,
+  },
+});
+gsap.to(".blocco3", {
   y: "-16vh",
   duration: 2,
+  scrollTrigger: {
+    trigger: ".blocco3",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none reverse none",
+    id: "3",
+    markers: true,
+  },
+});
+gsap.to(".blocco4", {
+  y: "-32vh",
+  duration: 2,
+  scrollTrigger: {
+    trigger: ".blocco4",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none reverse none",
+    id: "4",
+    markers: true,
+  },
+});
+gsap.to(".blocco5", {
+  y: "-16vh",
+  duration: 2,
+  scrollTrigger: {
+    trigger: ".blocco5",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none reverse none",
+    id: "5",
+    markers: true,
+  },
+});
+gsap.to(".blocco6", {
+  y: "-32vh",
+  duration: 2,
+  scrollTrigger: {
+    trigger: ".blocco6",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none reverse none",
+    id: "6",
+    markers: true,
+  },
+});
+gsap.to(".blocco7", {
+  y: "-16vh",
+  duration: 2,
+  scrollTrigger: {
+    trigger: ".blocco7",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none reverse none",
+    id: "7",
+    markers: true,
+  },
+});
+gsap.to(".blocco8", {
+  y: "-32vh",
+  duration: 2,
+  scrollTrigger: {
+    trigger: ".blocco8",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none reverse none",
+    id: "8",
+    markers: true,
+  },
+});
+gsap.to(".blocco9", {
+  y: "-16vh",
+  duration: 2,
+  scrollTrigger: {
+    trigger: ".blocco9",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none reverse none",
+    id: "9",
+    markers: true,
+  },
+});
+gsap.to(".blocco10", {
+  y: 0,
+  duration: 2,
+  scrollTrigger: {
+    trigger: ".blocco10",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none reverse none",
+    id: "10",
+    markers: true,
+  },
+});
+gsap.to(".blocco11", {
+  y: "16vh",
+  duration: 2,
+  scrollTrigger: {
+    trigger: ".blocco11",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none reverse none",
+    id: "11",
+    markers: true,
+  },
+});
+gsap.to(".blocco12", {
+  y: "32vh",
+  duration: 2,
+  scrollTrigger: {
+    trigger: ".blocco12",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none reverse none",
+    id: "12",
+    markers: true,
+  },
+});
+gsap.to(".blocco13", {
+  y: "16vh",
+  duration: 2,
+  scrollTrigger: {
+    trigger: ".blocco13",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none reverse none",
+    id: "13",
+    markers: true,
+  },
+});
+gsap.to(".blocco14", {
+  y: 0,
+  duration: 2,
+  scrollTrigger: {
+    trigger: ".blocco14",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none reverse none",
+    id: "14",
+    markers: true,
+  },
+});
+gsap.to(".blocco15", {
+  y: "-16vh",
+  duration: 2,
+  scrollTrigger: {
+    trigger: ".blocco15",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none reverse none",
+    id: "15",
+    markers: true,
+  },
+});
+gsap.to(".blocco16", {
+  y: "-32vh",
+  duration: 2,
+  scrollTrigger: {
+    trigger: ".blocco16",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none reverse none",
+    id: "16",
+    markers: true,
+  },
 });
 
-//------------- NUMERI IN SEQUENZA -------------------------
-
+// -------------------------------------------------------------------------------------
+// --------------- NUMERI IN SEQUENZA --------------- NUMERI IN SEQUENZA ---------------
+// -------------------------------------------------------------------------------------
+// --------------- NUMERI IN SEQUENZA --------------- NUMERI IN SEQUENZA ---------------
+// -------------------------------------------------------------------------------------
+// --------------- NUMERI IN SEQUENZA --------------- NUMERI IN SEQUENZA ---------------
+// -------------------------------------------------------------------------------------
 const arrayRange = (start, stop, step) =>
   Array.from(
     { length: (stop - start) / step + 1 },
@@ -83,6 +281,14 @@ let range = arrayRange(0, 142, 1);
 let spacedRange = range.map(number => `<span class="number">${number}</span>`);
 
 document.getElementById("numbers_content").innerHTML = spacedRange.join("");
+
+// ---------------------------------------------------------------
+// --------------- LIVELLI --------------- LIVELLI ---------------
+// ---------------------------------------------------------------
+// --------------- LIVELLI --------------- LIVELLI ---------------
+// ---------------------------------------------------------------
+// --------------- LIVELLI --------------- LIVELLI ---------------
+// ---------------------------------------------------------------
 
 // --------------- CONTAINER 1 ----------------- CONTAINER 1 ----------------------
 

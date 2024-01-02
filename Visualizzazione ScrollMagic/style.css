@@ -3,7 +3,8 @@ body {
   padding: 0;
   margin: 0;
   height: 100%;
-  font-family: monospace;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
 }
 
 /* Hide scrollbar for Webkit browsers (Chrome, Safari) */
@@ -45,8 +46,7 @@ body::-webkit-scrollbar {
     1;
 }
 .header__content {
-  width: 100%;
-  margin: 0 auto;
+  width: 92%;
   display: flex;
   justify-content: space-between;
   height: 8vh;
@@ -93,11 +93,11 @@ body::-webkit-scrollbar {
   background-color: var(--menu-bg);
   position: fixed;
   z-index: 9999;
-  margin-top: 8vh;
+  margin-top: 5vh;
 }
 
 .leggenda_content {
-  padding: 71px 20px;
+  padding: 72px 20px;
 }
 .leggenda_content p {
   color: var(--menu-color);
@@ -132,12 +132,12 @@ section {
   height: 12vh;
   background-color: var(--menu-bg);
   width: 15562px;
-  padding-left: 494px;
+  padding-left: 479px;
   z-index: 9;
   top: 8vh;
 }
 #numbers_content {
-  padding-top: 40px;
+  padding-top: 6vh;
   color: var(--menu-color);
   font-size: 24px;
   font-weight: lighter;
@@ -146,8 +146,9 @@ section {
 
 .number {
   display: flex;
-  justify-content: left;
-  width: 98px;
+  justify-content: center;
+  width: 44px;
+  margin-right: 55.8px;
   /* margin: 0 40px 0 40px; */
 }
 
@@ -173,98 +174,131 @@ section {
   background-color: var(--menu-bg);
 }
 
-.one {
+.one,
+.blocco1 {
   width: 200px;
   z-index: 1;
+  /*   background-color: darkcyan;
+ */
 }
 
-.two {
+.two,
+.blocco2 {
   width: 800px;
-  background-color: yellow;
+  /*   background-color: brown;
+ */
   z-index: 2;
 }
 
-.three {
+.three,
+.blocco3 {
   width: 400px;
-  background-color: purple;
+  /*   background-color: purple;
+ */
   z-index: 3;
 }
 
-.four {
+.four,
+.blocco4 {
   width: 1300px;
-  background-color: purple;
+  /*   background-color: purple;
+ */
   z-index: 4;
 }
 
-.five {
+.five,
+.blocco5 {
   width: 600px;
-  background-color: blue;
+  /*   background-color: blue;
+ */
   z-index: 5;
 }
 
-.six {
+.six,
+.blocco6 {
   width: 2100px;
-  background-color: red;
+  /*   background-color: red;
+ */
   z-index: 6;
 }
 
-.seven {
+.seven,
+.blocco7 {
   width: 600px;
-  background-color: cyan;
+  /*   background-color: cyan;
+ */
   z-index: 7;
 }
 
-.eight {
+.eight,
+.blocco8 {
   width: 400px;
-  background-color: red;
+  /*   background-color: red;
+ */
   z-index: 8;
 }
 
-.nine {
+.nine,
+.blocco9 {
   width: 2100px;
-  background-color: mediumseagreen;
+  /*   background-color: mediumseagreen;
+ */
   z-index: 9;
 }
 
-.ten {
+.ten,
+.blocco10 {
   width: 1300px;
-  background-color: salmon;
+  /*   background-color: salmon;
+ */
   z-index: 10;
 }
 
-.eleven {
+.eleven,
+.blocco11 {
   width: 1700px;
-  background-color: sandybrown;
+  /*   background-color: sandybrown;
+ */
   z-index: 11;
 }
 
-.twelve {
+.twelve,
+.blocco12 {
   width: 1099px;
-  background-color: burlywood;
+  /*   background-color: burlywood;
+ */
   z-index: 12;
 }
 
-.thirteen {
+.thirteen,
+.blocco13 {
   width: 600px;
-  background-color: slateblue;
+  /*   background-color: slateblue;
+ */
   z-index: 13;
 }
 
-.fourteen {
+.fourteen,
+.blocco14 {
   width: 200px;
-  background-color: teal;
+  /*   background-color: teal;
+ */
   z-index: 14;
 }
 
-.fifthteen {
+.fifthteen,
+.blocco15 {
   width: 300px;
-  background-color: forestgreen;
+  /*   background-color: forestgreen;
+ */
   z-index: 15;
 }
 
-.sixteen {
+.sixteen,
+.blocco16 {
   width: 500px;
-  background-color: burlywood;
+  /*   background-color: burlywood;
+ */
   z-index: 16;
 }
 
@@ -319,31 +353,35 @@ section {
 }
 
 .line {
-  height: 16vh;
+  height: 16vh; /* Altezza singola linea di un singolo livello */
 }
 
 .group1 {
   width: 1px;
   background-color: white; /* Colore della linea */
   margin-right: 1599px; /* Distanza tra le linee del primo gruppo */
+  opacity: 0.8;
 }
 
 .group2 {
   width: 1px;
   background-color: white; /* Colore della linea del secondo gruppo */
   margin-right: 799px; /* Distanza tra le linee del secondo gruppo */
+  opacity: 0.8;
 }
 
 .group3 {
   width: 1px;
   background-color: white; /* Colore della linea del secondo gruppo */
   margin-right: 399px; /* Distanza tra le linee del secondo gruppo */
+  opacity: 0.8;
 }
 
 .group4 {
   width: 1px;
   background-color: white; /* Colore della linea del secondo gruppo */
   margin-right: 199px; /* Distanza tra le linee del secondo gruppo */
+  opacity: 0.8;
 }
 
 .group5 {
