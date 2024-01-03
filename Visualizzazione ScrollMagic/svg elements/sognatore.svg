@@ -1,17 +1,3 @@
-<svg width="69" height="16" viewBox="0 0 69 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_432_182915)">
-<line x1="-19.4532" y1="19.9198" x2="3.17422" y2="-2.70757" stroke="white" stroke-opacity="0.6" stroke-width="2"/>
-<line x1="-7.82429" y1="19.9198" x2="14.8031" y2="-2.70757" stroke="white" stroke-opacity="0.6" stroke-width="2"/>
-<line x1="3.80266" y1="19.9198" x2="26.4301" y2="-2.70757" stroke="white" stroke-opacity="0.6" stroke-width="2"/>
-<line x1="15.4296" y1="19.9198" x2="38.057" y2="-2.70757" stroke="white" stroke-opacity="0.6" stroke-width="2"/>
-<line x1="27.0566" y1="19.9198" x2="49.684" y2="-2.70757" stroke="white" stroke-opacity="0.6" stroke-width="2"/>
-<line x1="38.6855" y1="19.9198" x2="61.3129" y2="-2.70757" stroke="white" stroke-opacity="0.6" stroke-width="2"/>
-<line x1="50.3124" y1="19.9198" x2="72.9398" y2="-2.70757" stroke="white" stroke-opacity="0.6" stroke-width="2"/>
-<line x1="61.9394" y1="19.9198" x2="84.5668" y2="-2.70757" stroke="white" stroke-opacity="0.6" stroke-width="2"/>
-</g>
-<defs>
-<clipPath id="clip0_432_182915">
-<rect width="69" height="15.2" fill="white"/>
-</clipPath>
-</defs>
+<svg width="69" height="17" viewBox="0 0 69 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="1" y="1" width="67" height="15" stroke="white" stroke-width="2"/>
 </svg>
