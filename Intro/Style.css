@@ -1,0 +1,67 @@
+/* Color Variables */
+:root {
+    --bg: rgba(22, 32, 51, 1);
+  }
+
+/* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+
+html {font-family: "Gotham", sans-serif;line-height: 1.2;font-size: 16px;box-sizing: border-box;margin: 0;padding: 0;height: 100%;
+    scroll-behavior: smooth;}
+
+/* Reset default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: "Gotham",sans-serif;
+    font-size: 16px;
+    color: #fff;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* Page background color */
+body{ background-color: var(--bg);}
+
+/* Style title first page */
+#Schermata1 {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+#TitoloInizioTesto{
+    font-size: 13vh;
+    font-weight: bolder;
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    letter-spacing: -5px;
+}
+#sottotitolo{
+    font-size: 3vh;
+    position: absolute; top: 60%; left: 50%; transform: translate(-50%, -50%);
+}
+
