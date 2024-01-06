@@ -64,3 +64,44 @@ section {
   width: 60%;
   text-align: center;
 }
+
+/* livelli background */
+.livelli {
+  height: 80vh;
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.livello {
+  position: relative;
+  height: 16vh;
+  background-color: #415886;
+}
+
+.color1 {
+  background-color: var(--sfondo1);
+}
+.color2 {
+  background-color: var(--sfondo2);
+  margin-left: 100px;
+}
+.color3 {
+  background-color: var(--sfondo3);
+  margin-left: 200px;
+}
+.color4 {
+  background-color: var(--sfondo4);
+  margin-left: 300px;
+}
+.color5 {
+  background-color: var(--sfondo5);
+  margin-left: 400px;
+}
+
+.livello p {
+  font-size: 40px;
+  font-weight: 500;
+  margin-left: 50px;
+  color: #fff;
+}
