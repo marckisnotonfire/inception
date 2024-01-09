@@ -1,34 +1,90 @@
-html, body {
+html,
+body {
   padding: 0;
   margin: 0;
-  height: 100vh;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
 }
 
 /* Hide scrollbar for Webkit browsers (Chrome, Safari) */
-/* #scroller::-webkit-scrollbar {display: none;}body::-webkit-scrollbar {display: none;} */
-
-
+#scroller::-webkit-scrollbar {
+  display: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
 
 /* HEADER */
 
-:root { --menu-bg: #162033; --menu-color: #fff; }
+:root {
+  --menu-bg: #162033;
+  --menu-color: #fff;
+  --sfondo1: #415886;
+  --sfondo2: #3b4f77;
+  --sfondo3: #324469;
+  --sfondo4: #283858;
+  --sfondo5: #202f4e;
+}
 
-.header{ background-color: var(--menu-bg); position: fixed; top:0;  left:0; z-index: 999; width: 100%;height: 8vh;padding: 0 35px;border-bottom: var(--menu-color) solid 2px;}
-.header__content{width: 100%;margin: 0 auto; display: flex;justify-content: space-between;height: 8vh;align-items: center;}
+.header {
+  background-color: var(--menu-bg);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  width: 100%;
+  height: 8vh;
+  padding: 0 35px;
+  border-bottom: solid 2px;
+  border-image: linear-gradient(
+      to right,
+      white 40%,
+      transparent 120%,
+      transparent 100%
+    )
+    1;
+}
+.header__content {
+  width: 92%;
+  display: flex;
+  justify-content: space-between;
+  height: 8vh;
+  align-items: center;
+}
 
+.header__logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.header__logo img {
+  height: 30px;
+  margin-right: 40px;
+}
+.header__logo li {
+  display: inline-block;
+  color: var(--menu-color);
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+}
 
-.header__logo{display: flex; align-items: center;text-decoration: none;}
-.header__logo img{height: 30px;margin-right: 40px;}
-.header__logo li{display: inline-block;color:var(--menu-color);display: block;font-size: 20px;font-weight: bold;}
-
-.header__menu{padding: 0;margin: 0;display: flex;}
-.header__menu li{display: flex;}
-.header__menu li a{color:var(--menu-color);display: block;padding: 10px 40px 10px 10px;font-size: 15px;text-decoration: none;}
-
-
-
-
-
+.header__menu {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.header__menu li {
+  display: flex;
+}
+.header__menu li a {
+  color: var(--menu-color);
+  display: block;
+  padding: 10px 40px 10px 10px;
+  font-size: 15px;
+  text-decoration: none;
+}
 
 /* LEGGENDA */
 #leggenda {
@@ -36,147 +92,328 @@ html, body {
   height: 100vh;
   background-color: var(--menu-bg);
   position: fixed;
-  z-index: 99;
-  margin-top: 8vh;
+  z-index: 9999;
+  margin-top: 5vh;
 }
 
-.leggenda_content{
-  padding: 71px 20px;
+.leggenda_content {
+  padding: 72px 20px;
 }
-.leggenda_content p{
+.leggenda_content p {
   color: var(--menu-color);
   font-size: 12px;
   font-weight: bold;
 }
 
-
-
-
 /* VISUALIZZAZIONE */
 
 #scroller {
-  width: 100%;
-  height: 92vh;
-  z-index: 9;
+  overflow-x: hidden;
+  /* height: 92vh;
   bottom: 0;
   left: 0;
-  background-color: grey;
-  overflow-x: scroll;
-  position: absolute;
+  background-color: rgb(138, 138, 138);
+  position: fixed; */
+}
+
+.sfondo {
+  display: flex;
+  width: 300vw;
+}
+section {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 92vh;
 }
 
 .numbers {
-  height: 15vh;
-  background-color: violet;
-  width: 14699px;
-  padding-left: 500px;
+  position: fixed;
+  height: 12vh;
+  background-color: var(--menu-bg);
+  width: 15562px;
+  padding-left: 479px;
+  z-index: 9;
+  top: 8vh;
 }
 #numbers_content {
-  padding-top: 60px;
+  padding-top: 6vh;
   color: var(--menu-color);
-  font-size: 30px;
+  font-size: 24px;
   font-weight: lighter;
+  display: flex;
 }
 
 .number {
-  margin-right: 65px; /* Imposta il margine destro a 10 pixel (o qualsiasi valore desiderato) */
+  display: flex;
+  justify-content: center;
+  width: 44px;
+  margin-right: 55.8px;
+  /* margin: 0 40px 0 40px; */
 }
 
 #container {
+  position: fixed;
+  bottom: 0;
   background-color: lightgray;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  height: 77vh;
+  height: 80vh;
+  top: 20vh;
 }
 
-
 .module {
-  height: 100vh;
+  height: 80vh;
   display: flex;
+  align-items: center;
 }
 
 .zero {
   width: 500px;
-  background-color: lightcyan;
+  background-color: var(--menu-bg);
 }
 
-.one {
+.one,
+.blocco1 {
   width: 200px;
-  background-color: green;
+  z-index: 1;
+  /*   background-color: darkcyan;
+ */
 }
 
-.two {
+.two,
+.blocco2 {
   width: 800px;
-  background-color: yellow;
+  /*   background-color: brown;
+ */
+  z-index: 2;
 }
 
-.three {
+.three,
+.blocco3 {
   width: 400px;
-  background-color: purple;
+  /*   background-color: purple;
+ */
+  z-index: 3;
 }
 
-.four {
+.four,
+.blocco4 {
   width: 1300px;
-  background-color: purple;
+  /*   background-color: purple;
+ */
+  z-index: 4;
 }
 
-.five {
+.five,
+.blocco5 {
   width: 600px;
-  background-color: blue;
+  /*   background-color: blue;
+ */
+  z-index: 5;
 }
 
-.six {
+.six,
+.blocco6 {
   width: 2100px;
-  background-color: red;
+  /*   background-color: red;
+ */
+  z-index: 6;
 }
 
-.seven {
+.seven,
+.blocco7 {
   width: 600px;
-  background-color: cyan;
+  /*   background-color: cyan;
+ */
+  z-index: 7;
 }
 
-.eight {
+.eight,
+.blocco8 {
   width: 400px;
-  background-color: red;
+  /*   background-color: red;
+ */
+  z-index: 8;
 }
 
-.nine {
+.nine,
+.blocco9 {
   width: 2100px;
-  background-color: mediumseagreen;
+  /*   background-color: mediumseagreen;
+ */
+  z-index: 9;
 }
 
-.ten {
+.ten,
+.blocco10 {
   width: 1300px;
-  background-color: salmon;
+  /*   background-color: salmon;
+ */
+  z-index: 10;
 }
 
-.eleven {
+.eleven,
+.blocco11 {
   width: 1700px;
-  background-color: sandybrown;
+  /*   background-color: sandybrown;
+ */
+  z-index: 11;
 }
 
-.twelve {
+.twelve,
+.blocco12 {
   width: 1099px;
-  background-color: burlywood;
+  /*   background-color: burlywood;
+ */
+  z-index: 12;
 }
 
-.thirteen {
+.thirteen,
+.blocco13 {
   width: 600px;
-  background-color: slateblue;
+  /*   background-color: slateblue;
+ */
+  z-index: 13;
 }
 
-.fourteen {
+.fourteen,
+.blocco14 {
   width: 200px;
-  background-color: teal;
+  /*   background-color: teal;
+ */
+  z-index: 14;
 }
 
-.fifthteen {
+.fifthteen,
+.blocco15 {
   width: 300px;
-  background-color: forestgreen;
+  /*   background-color: forestgreen;
+ */
+  z-index: 15;
 }
 
-.sixteen {
+.sixteen,
+.blocco16 {
   width: 500px;
-  background-color: burlywood;
+  /*   background-color: burlywood;
+ */
+  z-index: 16;
+}
+
+.sfondi {
+  position: absolute;
+  width: 2100px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.sfondo1 {
+  height: 16vh;
+  width: 100%;
+  background-color: var(--sfondo1);
+}
+.sfondo2 {
+  height: 16vh;
+  width: 100%;
+  background-color: var(--sfondo2);
+}
+.sfondo3 {
+  height: 16vh;
+  width: 100%;
+  background-color: var(--sfondo3);
+}
+.sfondo4 {
+  height: 16vh;
+  width: 100%;
+  background-color: var(--sfondo4);
+}
+.sfondo5 {
+  height: 16vh;
+  width: 100%;
+  background-color: var(--sfondo5);
+}
+
+.livelli {
+  z-index: 9;
+  position: fixed;
+  /* height: 80vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  /* overflow: hidden; */
+}
+
+.contenitore {
+  display: flex;
+  flex-direction: row;
+}
+
+.line {
+  height: 16vh; /* Altezza singola linea di un singolo livello */
+}
+
+.group1 {
+  width: 1px;
+  background-color: white; /* Colore della linea */
+  margin-right: 1599px; /* Distanza tra le linee del primo gruppo */
+  opacity: 0.8;
+}
+
+.group2 {
+  width: 1px;
+  background-color: white; /* Colore della linea del secondo gruppo */
+  margin-right: 799px; /* Distanza tra le linee del secondo gruppo */
+  opacity: 0.8;
+}
+
+.group3 {
+  width: 1px;
+  background-color: white; /* Colore della linea del secondo gruppo */
+  margin-right: 399px; /* Distanza tra le linee del secondo gruppo */
+  opacity: 0.8;
+}
+
+.group4 {
+  width: 1px;
+  background-color: white; /* Colore della linea del secondo gruppo */
+  margin-right: 199px; /* Distanza tra le linee del secondo gruppo */
+  opacity: 0.8;
+}
+
+.group5 {
+  width: 2px;
+  background-color: white; /* Colore della linea del secondo gruppo */
+  margin-right: 98px; /* Distanza tra le linee del secondo gruppo */
+}
+
+.group6 {
+  width: 1px;
+  background-color: white; /* Colore della linea del secondo gruppo */
+  margin-right: 49px; /* Distanza tra le linee del secondo gruppo */
+  opacity: 0.8;
+}
+
+.group7 {
+  width: 1px;
+  background-color: white; /* Colore della linea del secondo gruppo */
+  margin-right: 24px; /* Distanza tra le linee del secondo gruppo */
+  opacity: 0.6;
+}
+
+.group8 {
+  width: 1px;
+  background-color: white; /* Colore della linea del secondo gruppo */
+  margin-right: 11.5px; /* Distanza tra le linee del secondo gruppo */
+  opacity: 0.4;
+}
+
+.group9 {
+  width: 1px;
+  background-color: white; /* Colore della linea del secondo gruppo */
+  margin-right: 5.25px; /* Distanza tra le linee del secondo gruppo */
+  opacity: 0.4;
 }
