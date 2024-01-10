@@ -82,7 +82,6 @@ section {
 .livello {
   position: relative;
   height: 16vh;
-  background-color: #415886;
 }
 
 .color1 {
@@ -111,12 +110,6 @@ section {
   margin-top: 20vh;
   display: flex;
   flex-direction: column;
-}
-
-.livello {
-  position: relative;
-  height: 16vh;
-  background-color: #415886;
 }
 
 .color1ns {
