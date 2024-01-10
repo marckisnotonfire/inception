@@ -24,5 +24,5 @@ let tl = gsap.timeline({
 });
 
 tl.to(slider, {
-  xPercent: -600,
+  xPercent: -83.5,
 });

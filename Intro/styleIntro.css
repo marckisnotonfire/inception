@@ -2,10 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  height: 100%;
   font-family: Gotham, Arial, Helvetica, sans-serif;
-  width: 100%;
- background-color: #162033;
+  background-color: #162033;
 }
 
 :root {
@@ -16,7 +14,6 @@ body {
   --sfondo3: #324469;
   --sfondo4: #283858;
   --sfondo5: #202f4e;
-
 }
 
 #scrollerIntro {
@@ -117,21 +114,16 @@ section {
 }
 .color2ns {
   background-color: var(--sfondo2);
-
 }
 .color3ns {
   background-color: var(--sfondo3);
-
 }
 .color4ns {
   background-color: var(--sfondo4);
-
 }
 .color5ns {
   background-color: var(--sfondo5);
-
 }
-
 
 .livello p {
   font-size: 40px;
