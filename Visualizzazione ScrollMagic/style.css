@@ -222,6 +222,98 @@ body::-webkit-scrollbar {
   background-color: var(--eames);
 }
 
+/* LIVELLO 2 */
+#cobb2 {
+  background-color: var(--cobb);
+}
+#arthur2 {
+  background-color: var(--arthur);
+}
+#arianna2 {
+  background-color: var(--arianna);
+}
+#mrsaito2 {
+  background-color: var(--mrsaito);
+}
+#fischer2 {
+  background-color: var(--fischer);
+}
+#yusuf2 {
+  background-color: var(--yusuf);
+}
+#eames2 {
+  background-color: var(--eames);
+}
+
+/* LIVELLO 3 */
+#cobb3 {
+  background-color: var(--cobb);
+}
+#arthur3 {
+  background-color: var(--arthur);
+}
+#arianna3 {
+  background-color: var(--arianna);
+}
+#mrsaito3 {
+  background-color: var(--mrsaito);
+}
+#fischer3 {
+  background-color: var(--fischer);
+}
+#yusuf3 {
+  /* non c'è */
+}
+#eames3 {
+  background-color: var(--eames);
+}
+
+/* LIVELLO 4 */
+#cobb4 {
+  background-color: var(--cobb);
+}
+#arthur4 {
+ /* non c'è */
+}
+#arianna4 {
+  background-color: var(--arianna);
+}
+#mrsaito4 {
+  background-color: var(--mrsaito);
+}
+#fischer4 {
+  background-color: var(--fischer);
+}
+#yusuf4 {
+  /* non c'è */
+}
+#eames4 {
+  background-color: var(--eames);
+}
+
+/* LIVELLO 5 - LIMBO */
+#cobb5 {
+  background-color: var(--cobb);
+}
+#arthur5 {
+ /* non c'è */
+}
+#arianna5 {
+  background-color: var(--arianna);
+}
+#mrsaito5 {
+  background-color: var(--mrsaito);
+}
+#fischer5 {
+  background-color: var(--fischer);
+}
+#yusuf5 {
+  /* non c'è */
+}
+#eames5 {
+  /* non c'è */
+}
+
 /* VISUALIZZAZIONE */
 
 #scroller {
