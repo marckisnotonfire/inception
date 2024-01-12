@@ -69,9 +69,137 @@ tl.to(slider, {
   },
 }); */
 
+// --------PROVA MARCO----------
+// ######## LIVELLO 1 ###########
+
+gsap.to("#leggenda_level_1 .leggenda_personaggio", {
+  display: "none",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: ".blocco1",
+    containerAnimation: tl,
+    start: "left 20%",
+    toggleActions: "restart none none reset",
+    id: "LEGENDA 1",
+   // markers: true,
+  },
+});
+
+//-----COBB-----
+gsap.to("#cobb1", {
+  display: "true",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: ".blocco4",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none none reset",
+    id: "COBB1",
+    //markers: true,
+  },
+});
+
+gsap.to("#cobb1", {
+  display: "none",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: ".blocco7",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none none reset",
+    id: "COBB1",
+    //markers: true,
+  },
+});
+
+gsap.to("#cobb1", {
+  display: "true",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: ".blocco8",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none none reset",
+    id: "COBB1",
+    //markers: true,
+  },
+});
+
+gsap.to("#cobb1", {
+  display: "none",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: ".blocco9",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none none reset",
+    id: "COBB1",
+    //markers: true,
+  },
+});
+
+gsap.to("#cobb1", {
+  display: "true",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: ".blocco16",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none none reset",
+    id: "COBB1",
+    //markers: true,
+  },
+});
+
+//blocco per far sparire il personaggio al 142?
+
+//-----ARTHUR-----
+gsap.to("#arthur1", {
+  display: "true",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: ".blocco4",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none none reset",
+    id: "COBB1",
+    //markers: true,
+  },
+});
+
+gsap.to("#arthur1", {
+  display: "none",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: ".blocco7",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none none reset",
+    id: "COBB1",
+    //markers: true,
+  },
+});
+
+gsap.to("#arthur1", {
+  display: "true",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: ".blocco8",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none none reset",
+    id: "COBB1",
+    //markers: true,
+  },
+});
+
+
+
+// -------- FINE PROVA MARCO----------
+
 gsap.to(".blocco1", {
   y: "32vh",
-  duration: 1,
+  duration: 0.5,
   scrollTrigger: {
     trigger: ".blocco1",
     containerAnimation: tl,
@@ -79,11 +207,12 @@ gsap.to(".blocco1", {
     toggleActions: "restart none reverse none",
     id: "1",
     markers: true,
+    fastscrollend: true,
   },
 });
 gsap.to(".blocco2", {
   y: 0,
-  duration: 2,
+  duration: 0.5,
   scrollTrigger: {
     trigger: ".blocco2",
     containerAnimation: tl,
@@ -91,11 +220,12 @@ gsap.to(".blocco2", {
     toggleActions: "restart none reverse none",
     id: "2",
     markers: true,
+    fastscrollend: true,
   },
 });
 gsap.to(".blocco3", {
   y: "-16vh",
-  duration: 2,
+  duration: 0.5,
   scrollTrigger: {
     trigger: ".blocco3",
     containerAnimation: tl,
@@ -103,11 +233,12 @@ gsap.to(".blocco3", {
     toggleActions: "restart none reverse none",
     id: "3",
     markers: true,
+    fastscrollend: true,
   },
 });
 gsap.to(".blocco4", {
   y: "-32vh",
-  duration: 2,
+  duration: 0.5,
   scrollTrigger: {
     trigger: ".blocco4",
     containerAnimation: tl,
@@ -115,11 +246,12 @@ gsap.to(".blocco4", {
     toggleActions: "restart none reverse none",
     id: "4",
     markers: true,
+    fastscrollend: true,
   },
 });
 gsap.to(".blocco5", {
   y: "-16vh",
-  duration: 2,
+  duration: 0.5,
   scrollTrigger: {
     trigger: ".blocco5",
     containerAnimation: tl,
@@ -127,11 +259,12 @@ gsap.to(".blocco5", {
     toggleActions: "restart none reverse none",
     id: "5",
     markers: true,
+    fastscrollend: true,
   },
 });
 gsap.to(".blocco6", {
   y: "-32vh",
-  duration: 2,
+  duration: 0.5,
   scrollTrigger: {
     trigger: ".blocco6",
     containerAnimation: tl,
@@ -139,11 +272,12 @@ gsap.to(".blocco6", {
     toggleActions: "restart none reverse none",
     id: "6",
     markers: true,
+    fastscrollend: true,
   },
 });
 gsap.to(".blocco7", {
   y: "-16vh",
-  duration: 2,
+  duration: 0.5,
   scrollTrigger: {
     trigger: ".blocco7",
     containerAnimation: tl,
@@ -151,11 +285,12 @@ gsap.to(".blocco7", {
     toggleActions: "restart none reverse none",
     id: "7",
     markers: true,
+    fastscrollend: true,
   },
 });
 gsap.to(".blocco8", {
   y: "-32vh",
-  duration: 2,
+  duration: 0.5,
   scrollTrigger: {
     trigger: ".blocco8",
     containerAnimation: tl,
@@ -163,11 +298,12 @@ gsap.to(".blocco8", {
     toggleActions: "restart none reverse none",
     id: "8",
     markers: true,
+    fastscrollend: true,
   },
 });
 gsap.to(".blocco9", {
   y: "-16vh",
-  duration: 2,
+  duration: 0.5,
   scrollTrigger: {
     trigger: ".blocco9",
     containerAnimation: tl,
@@ -175,11 +311,12 @@ gsap.to(".blocco9", {
     toggleActions: "restart none reverse none",
     id: "9",
     markers: true,
+    fastscrollend: true,
   },
 });
 gsap.to(".blocco10", {
   y: 0,
-  duration: 2,
+  duration: 0.5,
   scrollTrigger: {
     trigger: ".blocco10",
     containerAnimation: tl,
@@ -187,11 +324,12 @@ gsap.to(".blocco10", {
     toggleActions: "restart none reverse none",
     id: "10",
     markers: true,
+    fastscrollend: true,
   },
 });
 gsap.to(".blocco11", {
   y: "16vh",
-  duration: 2,
+  duration: 0.5,
   scrollTrigger: {
     trigger: ".blocco11",
     containerAnimation: tl,
@@ -199,11 +337,12 @@ gsap.to(".blocco11", {
     toggleActions: "restart none reverse none",
     id: "11",
     markers: true,
+    fastscrollend: true,
   },
 });
 gsap.to(".blocco12", {
   y: "32vh",
-  duration: 2,
+  duration: 0.5,
   scrollTrigger: {
     trigger: ".blocco12",
     containerAnimation: tl,
@@ -211,11 +350,12 @@ gsap.to(".blocco12", {
     toggleActions: "restart none reverse none",
     id: "12",
     markers: true,
+    fastscrollend: true,
   },
 });
 gsap.to(".blocco13", {
   y: "16vh",
-  duration: 2,
+  duration: 0.5,
   scrollTrigger: {
     trigger: ".blocco13",
     containerAnimation: tl,
@@ -223,11 +363,12 @@ gsap.to(".blocco13", {
     toggleActions: "restart none reverse none",
     id: "13",
     markers: true,
+    fastscrollend: true,
   },
 });
 gsap.to(".blocco14", {
   y: 0,
-  duration: 2,
+  duration: 0.5,
   scrollTrigger: {
     trigger: ".blocco14",
     containerAnimation: tl,
@@ -235,11 +376,12 @@ gsap.to(".blocco14", {
     toggleActions: "restart none reverse none",
     id: "14",
     markers: true,
+    fastscrollend: true,
   },
 });
 gsap.to(".blocco15", {
   y: "-16vh",
-  duration: 2,
+  duration: 0.5,
   scrollTrigger: {
     trigger: ".blocco15",
     containerAnimation: tl,
@@ -247,11 +389,12 @@ gsap.to(".blocco15", {
     toggleActions: "restart none reverse none",
     id: "15",
     markers: true,
+    fastscrollend: true,
   },
 });
 gsap.to(".blocco16", {
   y: "-32vh",
-  duration: 2,
+  duration: 0.5,
   scrollTrigger: {
     trigger: ".blocco16",
     containerAnimation: tl,
@@ -259,6 +402,7 @@ gsap.to(".blocco16", {
     toggleActions: "restart none reverse none",
     id: "16",
     markers: true,
+    fastscrollend: true,
   },
 });
 
