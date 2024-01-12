@@ -165,12 +165,13 @@ body::-webkit-scrollbar {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
 }
+
 .leggenda_luogo p {
-  text-align: center;
+  text-align:left;
   font-weight: bold;
   margin: 0;
+  padding: 0 15% 0 15%;
 }
 .leggenda_spazio_luogo_personaggi {
   height: 5%;
@@ -187,11 +188,12 @@ body::-webkit-scrollbar {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
 }
 .leggenda_personaggio p {
-  text-align: center;
+  text-align: left;
+  font-size: 11px;
   margin: 0;
+  padding: 0 15% 0 15%;
 }
 
 /* .leggenda_spazio_finale {
