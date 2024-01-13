@@ -14,6 +14,8 @@ body {
   --sfondo3: #324469;
   --sfondo4: #283858;
   --sfondo5: #202f4e;
+  --legendwidth: 120px; /* aggiunta variabile per la larghezza della legenda 
+                        dato che è un valore fixed nell'ID leggenda*/
 }
 
 #scrollerIntro {
@@ -135,6 +137,38 @@ span {
   color: #fff;
 }
 
+/* -------------- SEZIONE 5 ----------------- */
+/* -------------- SEZIONE 5 ----------------- */
+/* -------------- SEZIONE 5 ----------------- */
+
+.content5 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.livelli5 {
+  height: 80vh;
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.livello {
+  overflow: hidden;
+  text-align: left;
+}
+
+.livello img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+}
+
 /* ---------------- HEADER ------------------ */
 /* ---------------- HEADER ------------------ */
 /* ---------------- HEADER ------------------ */
@@ -202,19 +236,218 @@ span {
 /* ---------- LEGGENDA ------------ */
 
 #leggenda {
-  width: 120px;
-  height: 95vh;
+  width: var(
+    --legendwidth
+  ); /*Nel :root sopra è dichiarata questa variabile, in caso modificare lì*/
+  height: 100vh;
   background-color: var(--menu-bg);
   position: fixed;
   z-index: 9999;
   margin-top: 5vh;
 }
 
-.leggenda_content {
-  padding: 72px 20px;
+/* ##### VARIABILI COLORI PERSONAGGI ###### */
+:root {
+  --luogo: #0289ec;
+  --cobb: #cc00ff;
+  --arthur: #f500bd;
+  --arianna: #e20087;
+  --mrsaito: #d0014b;
+  --fischer: #e63432;
+  --yusuf: #f0511e;
+  --eames: #ff7902;
 }
-.leggenda_content p {
+/* ######################################## */
+
+/* Contenitore leggenda*/
+.leggenda_title {
+  padding: 72px 20px 0px;
+}
+.leggenda_title p {
   color: var(--menu-color);
   font-size: 12px;
+  text-align: center;
+}
+.leggenda_content {
+  color: var(--menu-color);
+  font-size: 12px;
+  text-align: center;
+  position: fixed;
+  top: 20vh;
+  width: var(--legendwidth);
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+.leggenda_content p {
+  hyphens: none;
+}
+
+.leggenda_levels {
+  height: 16vh;
+  width: var(--legendwidth);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Contenuto livelli */
+/* generale */
+
+.leggenda_luogo {
+  width: 70%;
+  margin: 0 15% 0 15%;
+  height: 13%;
+  background-color: var(--luogo);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.leggenda_luogo p {
+  text-align: left;
   font-weight: bold;
+  margin: 0;
+  padding: 0 15% 0 15%;
+}
+.leggenda_spazio_luogo_personaggi {
+  height: 5%;
+}
+
+.leggenda_spazio_personaggi {
+  height: 1%;
+}
+
+.leggenda_personaggio {
+  width: 70%;
+  margin: 0 15% 0 15%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.leggenda_personaggio p {
+  text-align: left;
+  font-size: 11px;
+  margin: 0;
+  padding: 0 15% 0 15%;
+}
+
+/* .leggenda_spazio_finale {
+  height: 6%; 
+}
+*/
+
+/* LIVELLO 1 */
+#cobb1 {
+  background-color: var(--cobb);
+}
+#arthur1 {
+  background-color: var(--arthur);
+}
+#arianna1 {
+  background-color: var(--arianna);
+}
+#mrsaito1 {
+  background-color: var(--mrsaito);
+}
+#fischer1 {
+  background-color: var(--fischer);
+}
+#yusuf1 {
+  background-color: var(--yusuf);
+}
+#eames1 {
+  background-color: var(--eames);
+}
+
+/* LIVELLO 2 */
+#cobb2 {
+  background-color: var(--cobb);
+}
+#arthur2 {
+  background-color: var(--arthur);
+}
+#arianna2 {
+  background-color: var(--arianna);
+}
+#mrsaito2 {
+  background-color: var(--mrsaito);
+}
+#fischer2 {
+  background-color: var(--fischer);
+}
+#yusuf2 {
+  background-color: var(--yusuf);
+}
+#eames2 {
+  background-color: var(--eames);
+}
+
+/* LIVELLO 3 */
+#cobb3 {
+  background-color: var(--cobb);
+}
+#arthur3 {
+  background-color: var(--arthur);
+}
+#arianna3 {
+  background-color: var(--arianna);
+}
+#mrsaito3 {
+  background-color: var(--mrsaito);
+}
+#fischer3 {
+  background-color: var(--fischer);
+}
+#yusuf3 {
+  /* non c'è */
+}
+#eames3 {
+  background-color: var(--eames);
+}
+
+/* LIVELLO 4 */
+#cobb4 {
+  background-color: var(--cobb);
+}
+#arthur4 {
+  /* non c'è */
+}
+#arianna4 {
+  background-color: var(--arianna);
+}
+#mrsaito4 {
+  background-color: var(--mrsaito);
+}
+#fischer4 {
+  background-color: var(--fischer);
+}
+#yusuf4 {
+  /* non c'è */
+}
+#eames4 {
+  background-color: var(--eames);
+}
+
+/* LIVELLO 5 - LIMBO */
+#cobb5 {
+  background-color: var(--cobb);
+}
+#arthur5 {
+  /* non c'è */
+}
+#arianna5 {
+  background-color: var(--arianna);
+}
+#mrsaito5 {
+  background-color: var(--mrsaito);
+}
+#fischer5 {
+  background-color: var(--fischer);
+}
+#yusuf5 {
+  /* non c'è */
+}
+#eames5 {
+  /* non c'è */
 }
