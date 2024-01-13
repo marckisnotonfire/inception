@@ -53,7 +53,7 @@
           <div class="inner">
             <div class="content">
               <div class="titolo">
-                <p>INCEPTION</p> 
+                <h1>INCEPTION</h1> 
               </div>
             </div>
           </div>
@@ -63,10 +63,10 @@
           <div class="inner">
             <div class="content">
               <div class="paragrafo">
-                <p>
+                <h6>
                   Benvenuto nel sito dedicato alla visualizzazione grafica del
                   film "Inception", diretto da Christopher Nolan nel 2010.
-                </p>
+                </h6>
               </div>
             </div>
           </div>
@@ -76,12 +76,12 @@
           <div class="inner">
             <div class="content">
               <div class="paragrafo">
-                <p>
+                <h6>
                   Ti immergerai in un'analisi approfondita delle connessioni
                   spazio-temporali che legano i protagonisti del film, dalla
                   profondità del sogno in cui si trovano alla relativa
                   dilatazione del tempo.
-                </p>
+                </h6>
               </div>
             </div>
           </div>
@@ -92,19 +92,19 @@
             <div class="content">
               <div class="livelli">
                 <div class="livello color1">
-                  <p>Mondo reale</p>
+                  <h2>Mondo reale</h2>
                 </div>
                 <div class="livello color2">
-                  <p>1° Livello</p>
+                  <h2>1° Livello</h2>
                 </div>
                 <div class="livello color3">
-                  <p>2° Livello</p>
+                  <h2>2° Livello</h2>
                 </div>
                 <div class="livello color4">
-                  <p>3° Livello</p>
+                  <h2>3° Livello</h2>
                 </div>
                 <div class="livello color5">
-                  <p>Limbo</p>
+                  <h2>Limbo</h2>
                 </div>
               </div>
             </div>
@@ -114,7 +114,26 @@
         <section>
           <div class="inner">
             <div class="content5">
-              <div class="livelli5">
+              <img src="altriElementi/Arrow.png" class="arrowUp">
+              <img src="altriElementi/Arrow.png" class="arrowDown">
+                <h4 class="arrowUpText">Minuti <br> dilatati</h4>
+                <h4 class="arrowDownText">Minuti <br> contratti</h4>
+              <!-- questa sezione è stata divisa in 3 colonne, 
+                la prima colonna senza livelli, la seconda con il 
+                livello normale in mezzo e la terza con il livello 
+                normale sopra -->
+              <div class="livelli5-1">
+                <div class="livello color1ns"></div>
+                <div class="livello color2ns"></div>
+                <div class="livello color3ns minutiScreen">
+                  <h4>Minuti <br> screentime</h4>
+                  <p>Variano livello rispetto <br> alla scena di riferimento <br>
+                    visualizzata nel film</p>
+                </div>
+                <div class="livello color4ns"></div>
+                <div class="livello color5ns"></div>
+              </div>
+              <div class="livelli5-2">
                 <div class="livello color1ns">
                   <img src="livelli/2sopra.png" alt="">
                 </div>
@@ -131,12 +150,22 @@
                   <img src="livelli/2sotto.png" alt="">
                 </div>
               </div>
-              <div class="livelli5 due">
-                <div class="livello color1ns"></div>
-                <div class="livello color2ns"></div>
-                <div class="livello color3ns"></div>
-                <div class="livello color4ns"></div>
-                <div class="livello color5ns"></div>
+              <div class="livelli5-3">
+                <div class="livello color1ns">
+                  <img src="livelli/1sopra.png" alt="">
+                </div>
+                <div class="livello color2ns">
+                  <img src="livelli/Normal.png" alt="">
+                </div>
+                <div class="livello color3ns">
+                  <img src="livelli/1sotto.png" alt="">
+                </div>
+                <div class="livello color4ns">
+                  <img src="livelli/2sotto.png" alt="">
+                </div>
+                <div class="livello color5ns">
+                  <img src="livelli/3sotto.png" alt="">
+                </div>
               </div>
             </div>
           </div>
@@ -145,6 +174,36 @@
         <section>
           <div class="inner">
             <div class="content">
+
+
+              <!-- HEADER - Per usarlo copia il css style.css -->
+
+<header class="header">
+    <div class="header__content">
+      <a class="header__logo">
+        <img src="./svg elements/logo.svg"></img>
+        <li>INCEPTION</li>
+      </a>
+      <ul class="header__menu">
+        <li>
+          <img src="./svg elements/M.svg">
+          <a href="#">: Mal</a>
+        </li>
+        <li>
+          <img src="./svg elements/sognatore.svg">
+          <a href="#">: Sognatore</a>
+        </li>
+        <li>
+          <img src="./svg elements/luoghi.svg">
+          <a href="#">: Luoghi</a>
+        </li>
+        <li>
+          <img src="./svg elements/personaggi.svg">
+          <a href="#">: Personaggi</a>
+        </li>
+      </ul>
+    </div>
+  </header>
 
               
 <!-- ------------- LEGENDA --------------- -->
@@ -408,46 +467,42 @@
   </div>
 </div>
 
+<!-- --------- NUMERI ------------- -->
+<!-- --------- NUMERI ------------- -->
+<!-- --------- NUMERI ------------- -->
+
+<div class="numbers">
+  <div id="numbers_content"></div>
+</div>
+
+<a href="./Visualizzazione ScrollMagic/index.html" class="inizia">
+  <h1>INIZIA</h1>
+<img src="svg elements/arrowRight.svg" alt="">
+</a>
+
               <div class="livellinospace">
-                <div class="livello color1ns"></div>
-                <div class="livello color2ns"></div>
-                <div class="livello color3ns"></div>
-                <div class="livello color4ns"></div>
-                <div class="livello color5ns"></div>
+                <div class="livello color1ns minutaggio">
+                  <img src="livelli/2sopra.png" alt="">
+                  <h4>Minutaggio <br> del film</h4>
+                </div>
+                <div class="livello color2ns">
+                  <img src="livelli/1sopra.png" alt="">
+                </div>
+                <div class="livello color3ns">
+                  <img src="livelli/Normal.png" alt="">
+                  
+                </div>
+                <div class="livello color4ns">
+                  <img src="livelli/1sotto.png" alt="">
+                </div>
+                <div class="livello color5ns">
+                  <img src="livelli/2sotto.png" alt="">
+                </div>
               </div>
         </section>
       
       </div>
     </div>
-
-    <!-- HEADER - Per usarlo copia il css style.css -->
-
-    <!-- <header class="header">
-    <div class="header__content">
-      <a class="header__logo">
-        <img src="./svg elements/logo.svg"></img>
-        <li>INCEPTION</li>
-      </a>
-      <ul class="header__menu">
-        <li>
-          <img src="./svg elements/M.svg">
-          <a href="#">: Mal</a>
-        </li>
-        <li>
-          <img src="./svg elements/sognatore.svg">
-          <a href="#">: Sognatore</a>
-        </li>
-        <li>
-          <img src="./svg elements/luoghi.svg">
-          <a href="#">: Luoghi</a>
-        </li>
-        <li>
-          <img src="./svg elements/personaggi.svg">
-          <a href="#">: Personaggi</a>
-        </li>
-      </ul>
-    </div>
-  </header> -->
 
     <!-- LEGENDA -->
 
