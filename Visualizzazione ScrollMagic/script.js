@@ -46,7 +46,7 @@ let tl = gsap.timeline({
 });
 
 tl.to(slider, {
-  xPercent: -380,
+  xPercent: -480,
 });
 
 // ---------------------------------------------------------------------
@@ -73,7 +73,7 @@ tl.to(slider, {
 // ######## LIVELLO 1 ###########
 
 gsap.to("#leggenda_level_1 .leggenda_personaggio", {
-  display: "none",
+  visibility: "hidden",
   duration: 0.1,
   scrollTrigger: {
     trigger: ".blocco1",
@@ -87,7 +87,7 @@ gsap.to("#leggenda_level_1 .leggenda_personaggio", {
 
 //-----COBB-----
 gsap.to("#cobb1", {
-  display: "true",
+  visibility: "visible",
   duration: 0.1,
   scrollTrigger: {
     trigger: ".blocco4",
@@ -100,7 +100,7 @@ gsap.to("#cobb1", {
 });
 
 gsap.to("#cobb1", {
-  display: "none",
+  visibility: "hidden",
   duration: 0.1,
   scrollTrigger: {
     trigger: ".blocco7",
@@ -113,7 +113,7 @@ gsap.to("#cobb1", {
 });
 
 gsap.to("#cobb1", {
-  display: "true",
+  visibility: "visible",
   duration: 0.1,
   scrollTrigger: {
     trigger: ".blocco8",
@@ -126,7 +126,7 @@ gsap.to("#cobb1", {
 });
 
 gsap.to("#cobb1", {
-  display: "none",
+  visibility: "hidden",
   duration: 0.1,
   scrollTrigger: {
     trigger: ".blocco9",
@@ -139,7 +139,7 @@ gsap.to("#cobb1", {
 });
 
 gsap.to("#cobb1", {
-  display: "true",
+  dvisibility: "visible",
   duration: 0.1,
   scrollTrigger: {
     trigger: ".blocco16",
@@ -155,7 +155,7 @@ gsap.to("#cobb1", {
 
 //-----ARTHUR-----
 gsap.to("#arthur1", {
-  display: "true",
+  visibility: "visible",
   duration: 0.1,
   scrollTrigger: {
     trigger: ".blocco4",
@@ -168,7 +168,7 @@ gsap.to("#arthur1", {
 });
 
 gsap.to("#arthur1", {
-  display: "none",
+  visibility: "hidden",
   duration: 0.1,
   scrollTrigger: {
     trigger: ".blocco7",
@@ -181,7 +181,7 @@ gsap.to("#arthur1", {
 });
 
 gsap.to("#arthur1", {
-  display: "true",
+  visibility: "visible",
   duration: 0.1,
   scrollTrigger: {
     trigger: ".blocco8",
@@ -204,7 +204,7 @@ gsap.to(".blocco1", {
     trigger: ".blocco1",
     containerAnimation: tl,
     start: "left 20%",
-    toggleActions: "restart none reverse none",
+    toggleActions: "restart none none reset",
     id: "1",
     markers: true,
     fastscrollend: true,
@@ -217,7 +217,7 @@ gsap.to(".blocco2", {
     trigger: ".blocco2",
     containerAnimation: tl,
     start: "left center",
-    toggleActions: "restart none reverse none",
+    toggleActions: "restart none none reset",
     id: "2",
     markers: true,
     fastscrollend: true,
@@ -230,7 +230,7 @@ gsap.to(".blocco3", {
     trigger: ".blocco3",
     containerAnimation: tl,
     start: "left center",
-    toggleActions: "restart none reverse none",
+    toggleActions: "restart none none reset",
     id: "3",
     markers: true,
     fastscrollend: true,
@@ -243,7 +243,7 @@ gsap.to(".blocco4", {
     trigger: ".blocco4",
     containerAnimation: tl,
     start: "left center",
-    toggleActions: "restart none reverse none",
+    toggleActions: "restart none none reset",
     id: "4",
     markers: true,
     fastscrollend: true,
@@ -256,7 +256,7 @@ gsap.to(".blocco5", {
     trigger: ".blocco5",
     containerAnimation: tl,
     start: "left center",
-    toggleActions: "restart none reverse none",
+    toggleActions: "restart none none reset",
     id: "5",
     markers: true,
     fastscrollend: true,
@@ -269,7 +269,7 @@ gsap.to(".blocco6", {
     trigger: ".blocco6",
     containerAnimation: tl,
     start: "left center",
-    toggleActions: "restart none reverse none",
+    toggleActions: "restart none none reset",
     id: "6",
     markers: true,
     fastscrollend: true,
@@ -282,8 +282,7 @@ gsap.to(".blocco7", {
     trigger: ".blocco7",
     containerAnimation: tl,
     start: "left center",
-    toggleActions: "restart none reverse none",
-    id: "7",
+    toggleActions: "restart none none reset",
     markers: true,
     fastscrollend: true,
   },
@@ -295,7 +294,7 @@ gsap.to(".blocco8", {
     trigger: ".blocco8",
     containerAnimation: tl,
     start: "left center",
-    toggleActions: "restart none reverse none",
+    toggleActions: "restart none none reset",
     id: "8",
     markers: true,
     fastscrollend: true,
@@ -308,7 +307,7 @@ gsap.to(".blocco9", {
     trigger: ".blocco9",
     containerAnimation: tl,
     start: "left center",
-    toggleActions: "restart none reverse none",
+    toggleActions: "restart none none reset",
     id: "9",
     markers: true,
     fastscrollend: true,
@@ -321,7 +320,7 @@ gsap.to(".blocco10", {
     trigger: ".blocco10",
     containerAnimation: tl,
     start: "left center",
-    toggleActions: "restart none reverse none",
+    toggleActions: "restart none none reset",
     id: "10",
     markers: true,
     fastscrollend: true,
@@ -334,7 +333,7 @@ gsap.to(".blocco11", {
     trigger: ".blocco11",
     containerAnimation: tl,
     start: "left center",
-    toggleActions: "restart none reverse none",
+    toggleActions: "restart none none reset",
     id: "11",
     markers: true,
     fastscrollend: true,
@@ -347,8 +346,7 @@ gsap.to(".blocco12", {
     trigger: ".blocco12",
     containerAnimation: tl,
     start: "left center",
-    toggleActions: "restart none reverse none",
-    id: "12",
+    toggleActions: "restart none none reset",
     markers: true,
     fastscrollend: true,
   },
@@ -360,7 +358,7 @@ gsap.to(".blocco13", {
     trigger: ".blocco13",
     containerAnimation: tl,
     start: "left center",
-    toggleActions: "restart none reverse none",
+    toggleActions: "restart none none reset",
     id: "13",
     markers: true,
     fastscrollend: true,
@@ -373,7 +371,7 @@ gsap.to(".blocco14", {
     trigger: ".blocco14",
     containerAnimation: tl,
     start: "left center",
-    toggleActions: "restart none reverse none",
+    toggleActions: "restart none none reset",
     id: "14",
     markers: true,
     fastscrollend: true,
@@ -386,7 +384,7 @@ gsap.to(".blocco15", {
     trigger: ".blocco15",
     containerAnimation: tl,
     start: "left center",
-    toggleActions: "restart none reverse none",
+    toggleActions: "restart none none reset",
     id: "15",
     markers: true,
     fastscrollend: true,
@@ -399,7 +397,7 @@ gsap.to(".blocco16", {
     trigger: ".blocco16",
     containerAnimation: tl,
     start: "left center",
-    toggleActions: "restart none reverse none",
+    toggleActions: "restart none none reset",
     id: "16",
     markers: true,
     fastscrollend: true,
@@ -507,7 +505,9 @@ document.addEventListener("DOMContentLoaded", function () {
   for (var j = 0; j < numLinesGroup5; j++) {
     var line = document.createElement("div");
     line.className = "line group5";
+    line.id = "line_cont1_" + (j);
     lineContainerGroup5.appendChild(line);
+
   }
 
   // Ciclo per generare le linee del sesto gruppo
@@ -612,6 +612,7 @@ document.addEventListener("DOMContentLoaded", function () {
   for (var j = 0; j < numLinesGroup5; j++) {
     var line = document.createElement("div");
     line.className = "line group5";
+    line.id = "line_cont2_" + (2 + j);
     lineContainerGroup5.appendChild(line);
   }
 
@@ -717,6 +718,7 @@ document.addEventListener("DOMContentLoaded", function () {
   for (var j = 0; j < numLinesGroup5; j++) {
     var line = document.createElement("div");
     line.className = "line group5";
+    line.id = "line_cont3_" + (10 + j);
     lineContainerGroup5.appendChild(line);
   }
 
@@ -822,6 +824,7 @@ document.addEventListener("DOMContentLoaded", function () {
   for (var j = 0; j < numLinesGroup5; j++) {
     var line = document.createElement("div");
     line.className = "line group5";
+    line.id = "line_cont4_" + (14 + j);
     lineContainerGroup5.appendChild(line);
   }
 
@@ -927,6 +930,7 @@ document.addEventListener("DOMContentLoaded", function () {
   for (var j = 0; j < numLinesGroup5; j++) {
     var line = document.createElement("div");
     line.className = "line group5";
+    line.id = "line_cont5_" + (27 + j);
     lineContainerGroup5.appendChild(line);
   }
 
@@ -1032,6 +1036,7 @@ document.addEventListener("DOMContentLoaded", function () {
   for (var j = 0; j < numLinesGroup5; j++) {
     var line = document.createElement("div");
     line.className = "line group5";
+    line.id = "line_cont6_" + (33 + j);
     lineContainerGroup5.appendChild(line);
   }
 
@@ -1137,6 +1142,7 @@ document.addEventListener("DOMContentLoaded", function () {
   for (var j = 0; j < numLinesGroup5; j++) {
     var line = document.createElement("div");
     line.className = "line group5";
+    line.id = "line_cont7_" + (54 + j);
     lineContainerGroup5.appendChild(line);
   }
 
@@ -1242,6 +1248,7 @@ document.addEventListener("DOMContentLoaded", function () {
   for (var j = 0; j < numLinesGroup5; j++) {
     var line = document.createElement("div");
     line.className = "line group5";
+    line.id = "line_cont8_" + (60 + j);
     lineContainerGroup5.appendChild(line);
   }
 
@@ -1347,6 +1354,7 @@ document.addEventListener("DOMContentLoaded", function () {
   for (var j = 0; j < numLinesGroup5; j++) {
     var line = document.createElement("div");
     line.className = "line group5";
+    line.id = "line_cont9_" + (64 + j);
     lineContainerGroup5.appendChild(line);
   }
 
@@ -1452,6 +1460,7 @@ document.addEventListener("DOMContentLoaded", function () {
   for (var j = 0; j < numLinesGroup5; j++) {
     var line = document.createElement("div");
     line.className = "line group5";
+    line.id = "line_cont10_" + (85 + j);
     lineContainerGroup5.appendChild(line);
   }
 
@@ -1557,6 +1566,7 @@ document.addEventListener("DOMContentLoaded", function () {
   for (var j = 0; j < numLinesGroup5; j++) {
     var line = document.createElement("div");
     line.className = "line group5";
+    line.id = "line_cont11_" + (98 + j);
     lineContainerGroup5.appendChild(line);
   }
 
@@ -1662,6 +1672,7 @@ document.addEventListener("DOMContentLoaded", function () {
   for (var j = 0; j < numLinesGroup5; j++) {
     var line = document.createElement("div");
     line.className = "line group5";
+    line.id = "line_cont12_" + (115 + j);
     lineContainerGroup5.appendChild(line);
   }
 
@@ -1767,6 +1778,7 @@ document.addEventListener("DOMContentLoaded", function () {
   for (var j = 0; j < numLinesGroup5; j++) {
     var line = document.createElement("div");
     line.className = "line group5";
+    line.id = "line_cont13_" + (126 + j);
     lineContainerGroup5.appendChild(line);
   }
 
@@ -1872,6 +1884,7 @@ document.addEventListener("DOMContentLoaded", function () {
   for (var j = 0; j < numLinesGroup5; j++) {
     var line = document.createElement("div");
     line.className = "line group5";
+    line.id = "line_cont14_" + (132 + j);
     lineContainerGroup5.appendChild(line);
   }
 
@@ -1977,6 +1990,7 @@ document.addEventListener("DOMContentLoaded", function () {
   for (var j = 0; j < numLinesGroup5; j++) {
     var line = document.createElement("div");
     line.className = "line group5";
+    line.id = "line_cont15_" + (134 + j);
     lineContainerGroup5.appendChild(line);
   }
 
@@ -2082,6 +2096,7 @@ document.addEventListener("DOMContentLoaded", function () {
   for (var j = 0; j < numLinesGroup5; j++) {
     var line = document.createElement("div");
     line.className = "line group5";
+    line.id = "line_cont16_" + (137 + j);
     lineContainerGroup5.appendChild(line);
   }
 
