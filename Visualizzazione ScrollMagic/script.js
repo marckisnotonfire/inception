@@ -41,12 +41,12 @@ let tl = gsap.timeline({
     pin: true,
     scrub: 2,
     markers: true,
-    end: () => "+=" + slider.offsetWidth,
+    end: () => "+=4300" /* + slider.offsetWidth */,
   },
 });
 
 tl.to(slider, {
-  xPercent: -380,
+  xPercent: -389.5,
 });
 
 // ---------------------------------------------------------------------
