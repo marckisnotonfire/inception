@@ -177,8 +177,14 @@ section {
   position: fixed;
   display: flex;
   flex-direction: column;
-  top: 11.2vh;
+  margin-top: 10.5vh;
   width: 300px;
+}
+
+@media (max-height: 810px) {
+  .info {
+    display: none;
+  }
 }
 
 .infoTesto {
@@ -487,6 +493,6 @@ section {
   z-index: 999999999;
 }
 .personaggi img {
-  width: 15000px;
-  height: 80vh;
+  width: 14200px;
+  height: 75.3vh;
 }
