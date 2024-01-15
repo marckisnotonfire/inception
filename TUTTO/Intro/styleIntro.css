@@ -15,7 +15,7 @@ h4 {
 p {
   font-size: 14px;
   color: white;
-  font-weight: lighter;
+  font-weight: normal;
 }
 
 :root {
@@ -80,6 +80,7 @@ span {
   color: #fff;
 }
 .paragrafo h6 {
+  font-weight: normal;
   width: 60%;
   text-align: center;
   color: #fff;
@@ -171,7 +172,7 @@ span {
 
 .minutiScreen {
   display: flex;
-  padding: 0 40px;
+  padding: 0 50px;
   align-items: center;
   justify-content: space-between;
 }
@@ -179,19 +180,24 @@ span {
 .minutiScreen h4 {
   text-align: right;
 }
+
+.minutiScreen p {
+margin-left: 2vh;
+}
+
 .arrowUp {
   z-index: 9999999;
   position: absolute;
-  left: 562px;
-  top: 230px;
+  right: 85vh;
+  top: 25vh;
   height: 150px;
 }
 
 .arrowDown {
   z-index: 9999999;
   position: absolute;
-  left: 562px;
-  bottom: 65px;
+  right: 85vh;
+  bottom: 10vh;
   height: 150px;
   transform: scale(-1);
 }
@@ -199,8 +205,8 @@ span {
 .arrowUpText {
   z-index: 9999999;
   position: absolute;
-  right: 960px;
-  top: 30vh;
+  right: 90vh;
+  top: 27vh;
   text-align: right;
   opacity: 0.6;
 }
@@ -208,8 +214,8 @@ span {
 .arrowDownText {
   z-index: 9999999;
   position: absolute;
-  right: 960px;
-  bottom: 10vh;
+  right: 90vh;
+  bottom: 12vh;
   text-align: right;
   opacity: 0.6;
 }
