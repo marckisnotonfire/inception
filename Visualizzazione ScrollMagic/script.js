@@ -41,7 +41,7 @@ let tl = gsap.timeline({
     pin: true,
     scrub: 2,
     markers: true,
-    end: () => "+=" + slider.offsetWidth,
+    end: () => "+=4300" /* + slider.offsetWidth */,
   },
 });
 
@@ -311,31 +311,31 @@ document.getElementById("numbers_content").innerHTML = spacedRange.join("");
 
 document.addEventListener("DOMContentLoaded", function () {
   // Numero desiderato di linee nel primo gruppo
-  var numLinesGroup1 = 13;
+  var numLinesGroup1 = 1;
 
   // Numero desiderato di linee nel secondo gruppo
-  var numLinesGroup2 = 25;
+  var numLinesGroup2 = 1;
 
   // Numero desiderato di linee nel terzo gruppo
-  var numLinesGroup3 = 50;
+  var numLinesGroup3 = 1;
 
   // Numero desiderato di linee nel quarto gruppo
-  var numLinesGroup4 = 100;
+  var numLinesGroup4 = 1;
 
   // Numero desiderato di linee nel quinto gruppo
-  var numLinesGroup5 = 200;
+  var numLinesGroup5 = 2;
 
   // Numero desiderato di linee nel sesto gruppo
-  var numLinesGroup6 = 400;
+  var numLinesGroup6 = 4;
 
   // Numero desiderato di linee nel settimo gruppo
-  var numLinesGroup7 = 800;
+  var numLinesGroup7 = 8;
 
   // Numero desiderato di linee nel ottavo gruppo
-  var numLinesGroup8 = 1600;
+  var numLinesGroup8 = 16;
 
   // Numero desiderato di linee nel nono gruppo
-  var numLinesGroup9 = 2200;
+  var numLinesGroup9 = 22;
 
   // Riferimento al container delle linee
   var lineContainerGroup1 = document.getElementById("lineContainerGroup1");
@@ -418,31 +418,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   // Numero desiderato di linee nel primo gruppo
-  var numLinesGroup1 = 13;
+  var numLinesGroup1 = 2;
 
   // Numero desiderato di linee nel secondo gruppo
-  var numLinesGroup2 = 25;
+  var numLinesGroup2 = 2;
 
   // Numero desiderato di linee nel terzo gruppo
-  var numLinesGroup3 = 50;
+  var numLinesGroup3 = 2;
 
   // Numero desiderato di linee nel quarto gruppo
-  var numLinesGroup4 = 100;
+  var numLinesGroup4 = 5;
 
   // Numero desiderato di linee nel quinto gruppo
-  var numLinesGroup5 = 200;
+  var numLinesGroup5 = 10;
 
   // Numero desiderato di linee nel sesto gruppo
-  var numLinesGroup6 = 400;
+  var numLinesGroup6 = 20;
 
   // Numero desiderato di linee nel settimo gruppo
-  var numLinesGroup7 = 800;
+  var numLinesGroup7 = 40;
 
   // Numero desiderato di linee nel ottavo gruppo
-  var numLinesGroup8 = 1600;
+  var numLinesGroup8 = 60;
 
   // Numero desiderato di linee nel nono gruppo
-  var numLinesGroup9 = 2200;
+  var numLinesGroup9 = 120;
 
   // Riferimento al container delle linee
   var lineContainerGroup1 = document.getElementById("lineContainerGroup1-2");
@@ -524,31 +524,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   // Numero desiderato di linee nel primo gruppo
-  var numLinesGroup1 = 13;
+  var numLinesGroup1 = 1;
 
   // Numero desiderato di linee nel secondo gruppo
-  var numLinesGroup2 = 25;
+  var numLinesGroup2 = 1;
 
   // Numero desiderato di linee nel terzo gruppo
-  var numLinesGroup3 = 50;
+  var numLinesGroup3 = 1;
 
   // Numero desiderato di linee nel quarto gruppo
-  var numLinesGroup4 = 100;
+  var numLinesGroup4 = 2;
 
   // Numero desiderato di linee nel quinto gruppo
-  var numLinesGroup5 = 200;
+  var numLinesGroup5 = 4;
 
   // Numero desiderato di linee nel sesto gruppo
-  var numLinesGroup6 = 400;
+  var numLinesGroup6 = 8;
 
   // Numero desiderato di linee nel settimo gruppo
-  var numLinesGroup7 = 800;
+  var numLinesGroup7 = 16;
 
   // Numero desiderato di linee nel ottavo gruppo
-  var numLinesGroup8 = 1600;
+  var numLinesGroup8 = 32;
 
   // Numero desiderato di linee nel nono gruppo
-  var numLinesGroup9 = 2200;
+  var numLinesGroup9 = 1;
 
   // Riferimento al container delle linee
   var lineContainerGroup1 = document.getElementById("lineContainerGroup1-3");
@@ -630,31 +630,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   // Numero desiderato di linee nel primo gruppo
-  var numLinesGroup1 = 13;
+  var numLinesGroup1 = 1;
 
   // Numero desiderato di linee nel secondo gruppo
-  var numLinesGroup2 = 25;
+  var numLinesGroup2 = 2;
 
   // Numero desiderato di linee nel terzo gruppo
-  var numLinesGroup3 = 50;
+  var numLinesGroup3 = 5;
 
   // Numero desiderato di linee nel quarto gruppo
-  var numLinesGroup4 = 100;
+  var numLinesGroup4 = 10;
 
   // Numero desiderato di linee nel quinto gruppo
-  var numLinesGroup5 = 200;
+  var numLinesGroup5 = 20;
 
   // Numero desiderato di linee nel sesto gruppo
-  var numLinesGroup6 = 400;
+  var numLinesGroup6 = 40;
 
   // Numero desiderato di linee nel settimo gruppo
-  var numLinesGroup7 = 800;
+  var numLinesGroup7 = 80;
 
   // Numero desiderato di linee nel ottavo gruppo
-  var numLinesGroup8 = 1600;
+  var numLinesGroup8 = 160;
 
   // Numero desiderato di linee nel nono gruppo
-  var numLinesGroup9 = 2200;
+  var numLinesGroup9 = 220;
 
   // Riferimento al container delle linee
   var lineContainerGroup1 = document.getElementById("lineContainerGroup1-4");
@@ -736,31 +736,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   // Numero desiderato di linee nel primo gruppo
-  var numLinesGroup1 = 13;
+  var numLinesGroup1 = 1;
 
   // Numero desiderato di linee nel secondo gruppo
-  var numLinesGroup2 = 25;
+  var numLinesGroup2 = 1;
 
   // Numero desiderato di linee nel terzo gruppo
-  var numLinesGroup3 = 50;
+  var numLinesGroup3 = 2;
 
   // Numero desiderato di linee nel quarto gruppo
-  var numLinesGroup4 = 100;
+  var numLinesGroup4 = 5;
 
   // Numero desiderato di linee nel quinto gruppo
-  var numLinesGroup5 = 200;
+  var numLinesGroup5 = 10;
 
   // Numero desiderato di linee nel sesto gruppo
-  var numLinesGroup6 = 400;
+  var numLinesGroup6 = 20;
 
   // Numero desiderato di linee nel settimo gruppo
-  var numLinesGroup7 = 800;
+  var numLinesGroup7 = 40;
 
   // Numero desiderato di linee nel ottavo gruppo
-  var numLinesGroup8 = 1600;
+  var numLinesGroup8 = 60;
 
   // Numero desiderato di linee nel nono gruppo
-  var numLinesGroup9 = 2200;
+  var numLinesGroup9 = 120;
 
   // Riferimento al container delle linee
   var lineContainerGroup1 = document.getElementById("lineContainerGroup1-5");
@@ -842,31 +842,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   // Numero desiderato di linee nel primo gruppo
-  var numLinesGroup1 = 13;
+  var numLinesGroup1 = 1;
 
   // Numero desiderato di linee nel secondo gruppo
-  var numLinesGroup2 = 25;
+  var numLinesGroup2 = 2;
 
   // Numero desiderato di linee nel terzo gruppo
-  var numLinesGroup3 = 50;
+  var numLinesGroup3 = 5;
 
   // Numero desiderato di linee nel quarto gruppo
-  var numLinesGroup4 = 100;
+  var numLinesGroup4 = 10;
 
   // Numero desiderato di linee nel quinto gruppo
-  var numLinesGroup5 = 200;
+  var numLinesGroup5 = 30;
 
   // Numero desiderato di linee nel sesto gruppo
-  var numLinesGroup6 = 400;
+  var numLinesGroup6 = 60;
 
   // Numero desiderato di linee nel settimo gruppo
-  var numLinesGroup7 = 800;
+  var numLinesGroup7 = 90;
 
   // Numero desiderato di linee nel ottavo gruppo
-  var numLinesGroup8 = 1600;
+  var numLinesGroup8 = 260;
 
   // Numero desiderato di linee nel nono gruppo
-  var numLinesGroup9 = 2200;
+  var numLinesGroup9 = 340;
 
   // Riferimento al container delle linee
   var lineContainerGroup1 = document.getElementById("lineContainerGroup1-6");
@@ -948,31 +948,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   // Numero desiderato di linee nel primo gruppo
-  var numLinesGroup1 = 13;
+  var numLinesGroup1 = 1;
 
   // Numero desiderato di linee nel secondo gruppo
-  var numLinesGroup2 = 25;
+  var numLinesGroup2 = 1;
 
   // Numero desiderato di linee nel terzo gruppo
-  var numLinesGroup3 = 50;
+  var numLinesGroup3 = 2;
 
   // Numero desiderato di linee nel quarto gruppo
-  var numLinesGroup4 = 100;
+  var numLinesGroup4 = 5;
 
   // Numero desiderato di linee nel quinto gruppo
-  var numLinesGroup5 = 200;
+  var numLinesGroup5 = 10;
 
   // Numero desiderato di linee nel sesto gruppo
-  var numLinesGroup6 = 400;
+  var numLinesGroup6 = 20;
 
   // Numero desiderato di linee nel settimo gruppo
-  var numLinesGroup7 = 800;
+  var numLinesGroup7 = 40;
 
   // Numero desiderato di linee nel ottavo gruppo
-  var numLinesGroup8 = 1600;
+  var numLinesGroup8 = 60;
 
   // Numero desiderato di linee nel nono gruppo
-  var numLinesGroup9 = 2200;
+  var numLinesGroup9 = 120;
 
   // Riferimento al container delle linee
   var lineContainerGroup1 = document.getElementById("lineContainerGroup1-7");
@@ -1054,31 +1054,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   // Numero desiderato di linee nel primo gruppo
-  var numLinesGroup1 = 13;
+  var numLinesGroup1 = 1;
 
   // Numero desiderato di linee nel secondo gruppo
-  var numLinesGroup2 = 25;
+  var numLinesGroup2 = 1;
 
   // Numero desiderato di linee nel terzo gruppo
-  var numLinesGroup3 = 50;
+  var numLinesGroup3 = 2;
 
   // Numero desiderato di linee nel quarto gruppo
-  var numLinesGroup4 = 100;
+  var numLinesGroup4 = 5;
 
   // Numero desiderato di linee nel quinto gruppo
-  var numLinesGroup5 = 200;
+  var numLinesGroup5 = 10;
 
   // Numero desiderato di linee nel sesto gruppo
-  var numLinesGroup6 = 400;
+  var numLinesGroup6 = 20;
 
   // Numero desiderato di linee nel settimo gruppo
-  var numLinesGroup7 = 800;
+  var numLinesGroup7 = 40;
 
   // Numero desiderato di linee nel ottavo gruppo
-  var numLinesGroup8 = 1600;
+  var numLinesGroup8 = 60;
 
   // Numero desiderato di linee nel nono gruppo
-  var numLinesGroup9 = 2200;
+  var numLinesGroup9 = 120;
 
   // Riferimento al container delle linee
   var lineContainerGroup1 = document.getElementById("lineContainerGroup1-8");
@@ -1160,31 +1160,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   // Numero desiderato di linee nel primo gruppo
-  var numLinesGroup1 = 13;
+  var numLinesGroup1 = 2;
 
   // Numero desiderato di linee nel secondo gruppo
-  var numLinesGroup2 = 25;
+  var numLinesGroup2 = 5;
 
   // Numero desiderato di linee nel terzo gruppo
-  var numLinesGroup3 = 50;
+  var numLinesGroup3 = 10;
 
   // Numero desiderato di linee nel quarto gruppo
-  var numLinesGroup4 = 100;
+  var numLinesGroup4 = 20;
 
   // Numero desiderato di linee nel quinto gruppo
-  var numLinesGroup5 = 200;
+  var numLinesGroup5 = 40;
 
   // Numero desiderato di linee nel sesto gruppo
-  var numLinesGroup6 = 400;
+  var numLinesGroup6 = 80;
 
   // Numero desiderato di linee nel settimo gruppo
-  var numLinesGroup7 = 800;
+  var numLinesGroup7 = 160;
 
   // Numero desiderato di linee nel ottavo gruppo
-  var numLinesGroup8 = 1600;
+  var numLinesGroup8 = 320;
 
   // Numero desiderato di linee nel nono gruppo
-  var numLinesGroup9 = 2200;
+  var numLinesGroup9 = 640;
 
   // Riferimento al container delle linee
   var lineContainerGroup1 = document.getElementById("lineContainerGroup1-9");
@@ -1266,31 +1266,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   // Numero desiderato di linee nel primo gruppo
-  var numLinesGroup1 = 13;
+  var numLinesGroup1 = 1;
 
   // Numero desiderato di linee nel secondo gruppo
-  var numLinesGroup2 = 25;
+  var numLinesGroup2 = 2;
 
   // Numero desiderato di linee nel terzo gruppo
-  var numLinesGroup3 = 50;
+  var numLinesGroup3 = 5;
 
   // Numero desiderato di linee nel quarto gruppo
-  var numLinesGroup4 = 100;
+  var numLinesGroup4 = 10;
 
   // Numero desiderato di linee nel quinto gruppo
-  var numLinesGroup5 = 200;
+  var numLinesGroup5 = 20;
 
   // Numero desiderato di linee nel sesto gruppo
-  var numLinesGroup6 = 400;
+  var numLinesGroup6 = 40;
 
   // Numero desiderato di linee nel settimo gruppo
-  var numLinesGroup7 = 800;
+  var numLinesGroup7 = 80;
 
   // Numero desiderato di linee nel ottavo gruppo
-  var numLinesGroup8 = 1600;
+  var numLinesGroup8 = 160;
 
   // Numero desiderato di linee nel nono gruppo
-  var numLinesGroup9 = 2200;
+  var numLinesGroup9 = 220;
 
   // Riferimento al container delle linee
   var lineContainerGroup1 = document.getElementById("lineContainerGroup1-10");
@@ -1372,31 +1372,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   // Numero desiderato di linee nel primo gruppo
-  var numLinesGroup1 = 13;
+  var numLinesGroup1 = 1;
 
   // Numero desiderato di linee nel secondo gruppo
-  var numLinesGroup2 = 25;
+  var numLinesGroup2 = 2;
 
   // Numero desiderato di linee nel terzo gruppo
-  var numLinesGroup3 = 50;
+  var numLinesGroup3 = 5;
 
   // Numero desiderato di linee nel quarto gruppo
-  var numLinesGroup4 = 100;
+  var numLinesGroup4 = 10;
 
   // Numero desiderato di linee nel quinto gruppo
-  var numLinesGroup5 = 200;
+  var numLinesGroup5 = 20;
 
   // Numero desiderato di linee nel sesto gruppo
-  var numLinesGroup6 = 400;
+  var numLinesGroup6 = 40;
 
   // Numero desiderato di linee nel settimo gruppo
-  var numLinesGroup7 = 800;
+  var numLinesGroup7 = 80;
 
   // Numero desiderato di linee nel ottavo gruppo
-  var numLinesGroup8 = 1600;
+  var numLinesGroup8 = 160;
 
   // Numero desiderato di linee nel nono gruppo
-  var numLinesGroup9 = 2200;
+  var numLinesGroup9 = 220;
 
   // Riferimento al container delle linee
   var lineContainerGroup1 = document.getElementById("lineContainerGroup1-11");
@@ -1478,31 +1478,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   // Numero desiderato di linee nel primo gruppo
-  var numLinesGroup1 = 13;
+  var numLinesGroup1 = 1;
 
   // Numero desiderato di linee nel secondo gruppo
-  var numLinesGroup2 = 25;
+  var numLinesGroup2 = 2;
 
   // Numero desiderato di linee nel terzo gruppo
-  var numLinesGroup3 = 50;
+  var numLinesGroup3 = 5;
 
   // Numero desiderato di linee nel quarto gruppo
-  var numLinesGroup4 = 100;
+  var numLinesGroup4 = 10;
 
   // Numero desiderato di linee nel quinto gruppo
-  var numLinesGroup5 = 200;
+  var numLinesGroup5 = 20;
 
   // Numero desiderato di linee nel sesto gruppo
-  var numLinesGroup6 = 400;
+  var numLinesGroup6 = 40;
 
   // Numero desiderato di linee nel settimo gruppo
-  var numLinesGroup7 = 800;
+  var numLinesGroup7 = 80;
 
   // Numero desiderato di linee nel ottavo gruppo
-  var numLinesGroup8 = 1600;
+  var numLinesGroup8 = 160;
 
   // Numero desiderato di linee nel nono gruppo
-  var numLinesGroup9 = 2200;
+  var numLinesGroup9 = 220;
 
   // Riferimento al container delle linee
   var lineContainerGroup1 = document.getElementById("lineContainerGroup1-12");
@@ -1584,31 +1584,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   // Numero desiderato di linee nel primo gruppo
-  var numLinesGroup1 = 13;
+  var numLinesGroup1 = 1;
 
   // Numero desiderato di linee nel secondo gruppo
-  var numLinesGroup2 = 25;
+  var numLinesGroup2 = 1;
 
   // Numero desiderato di linee nel terzo gruppo
-  var numLinesGroup3 = 50;
+  var numLinesGroup3 = 2;
 
   // Numero desiderato di linee nel quarto gruppo
-  var numLinesGroup4 = 100;
+  var numLinesGroup4 = 5;
 
   // Numero desiderato di linee nel quinto gruppo
-  var numLinesGroup5 = 200;
+  var numLinesGroup5 = 10;
 
   // Numero desiderato di linee nel sesto gruppo
-  var numLinesGroup6 = 400;
+  var numLinesGroup6 = 20;
 
   // Numero desiderato di linee nel settimo gruppo
-  var numLinesGroup7 = 800;
+  var numLinesGroup7 = 40;
 
   // Numero desiderato di linee nel ottavo gruppo
-  var numLinesGroup8 = 1600;
+  var numLinesGroup8 = 80;
 
   // Numero desiderato di linee nel nono gruppo
-  var numLinesGroup9 = 2200;
+  var numLinesGroup9 = 160;
 
   // Riferimento al container delle linee
   var lineContainerGroup1 = document.getElementById("lineContainerGroup1-13");
@@ -1690,31 +1690,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   // Numero desiderato di linee nel primo gruppo
-  var numLinesGroup1 = 13;
+  var numLinesGroup1 = 1;
 
   // Numero desiderato di linee nel secondo gruppo
-  var numLinesGroup2 = 25;
+  var numLinesGroup2 = 1;
 
   // Numero desiderato di linee nel terzo gruppo
-  var numLinesGroup3 = 50;
+  var numLinesGroup3 = 1;
 
   // Numero desiderato di linee nel quarto gruppo
-  var numLinesGroup4 = 100;
+  var numLinesGroup4 = 1;
 
   // Numero desiderato di linee nel quinto gruppo
-  var numLinesGroup5 = 200;
+  var numLinesGroup5 = 2;
 
   // Numero desiderato di linee nel sesto gruppo
-  var numLinesGroup6 = 400;
+  var numLinesGroup6 = 4;
 
   // Numero desiderato di linee nel settimo gruppo
-  var numLinesGroup7 = 800;
+  var numLinesGroup7 = 8;
 
   // Numero desiderato di linee nel ottavo gruppo
-  var numLinesGroup8 = 1600;
+  var numLinesGroup8 = 16;
 
   // Numero desiderato di linee nel nono gruppo
-  var numLinesGroup9 = 2200;
+  var numLinesGroup9 = 22;
 
   // Riferimento al container delle linee
   var lineContainerGroup1 = document.getElementById("lineContainerGroup1-14");
@@ -1796,31 +1796,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   // Numero desiderato di linee nel primo gruppo
-  var numLinesGroup1 = 13;
+  var numLinesGroup1 = 1;
 
   // Numero desiderato di linee nel secondo gruppo
-  var numLinesGroup2 = 25;
+  var numLinesGroup2 = 1;
 
   // Numero desiderato di linee nel terzo gruppo
-  var numLinesGroup3 = 50;
+  var numLinesGroup3 = 2;
 
   // Numero desiderato di linee nel quarto gruppo
-  var numLinesGroup4 = 100;
+  var numLinesGroup4 = 5;
 
   // Numero desiderato di linee nel quinto gruppo
-  var numLinesGroup5 = 200;
+  var numLinesGroup5 = 10;
 
   // Numero desiderato di linee nel sesto gruppo
-  var numLinesGroup6 = 400;
+  var numLinesGroup6 = 20;
 
   // Numero desiderato di linee nel settimo gruppo
-  var numLinesGroup7 = 800;
+  var numLinesGroup7 = 40;
 
   // Numero desiderato di linee nel ottavo gruppo
-  var numLinesGroup8 = 1600;
+  var numLinesGroup8 = 80;
 
   // Numero desiderato di linee nel nono gruppo
-  var numLinesGroup9 = 2200;
+  var numLinesGroup9 = 160;
 
   // Riferimento al container delle linee
   var lineContainerGroup1 = document.getElementById("lineContainerGroup1-15");
@@ -1902,31 +1902,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   // Numero desiderato di linee nel primo gruppo
-  var numLinesGroup1 = 13;
+  var numLinesGroup1 = 1;
 
   // Numero desiderato di linee nel secondo gruppo
-  var numLinesGroup2 = 25;
+  var numLinesGroup2 = 2;
 
   // Numero desiderato di linee nel terzo gruppo
-  var numLinesGroup3 = 50;
+  var numLinesGroup3 = 5;
 
   // Numero desiderato di linee nel quarto gruppo
-  var numLinesGroup4 = 100;
+  var numLinesGroup4 = 10;
 
   // Numero desiderato di linee nel quinto gruppo
-  var numLinesGroup5 = 200;
+  var numLinesGroup5 = 20;
 
   // Numero desiderato di linee nel sesto gruppo
-  var numLinesGroup6 = 400;
+  var numLinesGroup6 = 40;
 
   // Numero desiderato di linee nel settimo gruppo
-  var numLinesGroup7 = 800;
+  var numLinesGroup7 = 80;
 
   // Numero desiderato di linee nel ottavo gruppo
-  var numLinesGroup8 = 1600;
+  var numLinesGroup8 = 160;
 
   // Numero desiderato di linee nel nono gruppo
-  var numLinesGroup9 = 2200;
+  var numLinesGroup9 = 320;
 
   // Riferimento al container delle linee
   var lineContainerGroup1 = document.getElementById("lineContainerGroup1-16");
