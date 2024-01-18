@@ -1,0 +1,594 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Gotham, Arial, Helvetica, sans-serif;
+  background-color: #162033;
+}
+h1 {
+  font-size: 80px;
+}
+h4 {
+  font-size: 20px;
+  color: white;
+}
+p {
+  font-size: 14px;
+  color: white;
+  font-weight: normal;
+}
+
+:root {
+  --menu-bg: #162033;
+  --menu-color: #fff;
+  --sfondo1: #415886;
+  --sfondo2: #3b4f77;
+  --sfondo3: #324469;
+  --sfondo4: #283858;
+  --sfondo5: #202f4e;
+  --legendwidth: 120px; /* aggiunta variabile per la larghezza della legenda 
+                        dato che è un valore fixed nell'ID leggenda*/
+}
+
+#scrollerIntro {
+  overflow-x: hidden;
+}
+
+.sfondoIntro {
+  display: flex;
+  width: 600vw; /* cambia la larghezza in base al numero di sezioni, 3 sezioni 300vw e così via */
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  /* background-color: var(--menu-bg); */
+}
+
+.inner {
+  position: relative;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: end;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+}
+
+.titolo {
+  font-size: 100px;
+  font-weight: bold;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+span {
+  content: "\2192";
+}
+
+.paragrafo {
+  height: 100%;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.paragrafo h6 {
+  font-weight: normal;
+  width: 60%;
+  text-align: center;
+  color: #fff;
+}
+
+/* livelli background con spazio */
+.livelli {
+  height: 80vh;
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.livello {
+  position: relative;
+  height: 16vh;
+}
+
+.color1 {
+  background-color: var(--sfondo1);
+  margin-left: 200px;
+}
+.color2 {
+  background-color: var(--sfondo2);
+  margin-left: 400px;
+}
+.color3 {
+  background-color: var(--sfondo3);
+  margin-left: 600px;
+}
+.color4 {
+  background-color: var(--sfondo4);
+  margin-left: 800px;
+}
+.color5 {
+  background-color: var(--sfondo5);
+  margin-left: 1000px;
+}
+
+/* livelli background no spazio */
+.livellinospace {
+  height: 80vh;
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.color1ns {
+  background-color: var(--sfondo1);
+}
+.color2ns {
+  background-color: var(--sfondo2);
+}
+.color3ns {
+  background-color: var(--sfondo3);
+}
+.color4ns {
+  background-color: var(--sfondo4);
+}
+.color5ns {
+  background-color: var(--sfondo5);
+}
+
+.livello h2 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-left: 50px;
+  color: #fff;
+}
+
+/* -------------- SEZIONE 5 ----------------- */
+/* -------------- SEZIONE 5 ----------------- */
+/* -------------- SEZIONE 5 ----------------- */
+
+.content5 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.livelli5-1 {
+  height: 80vh;
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.minutiScreen {
+  display: flex;
+  padding: 0 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.minutiScreen h4 {
+  text-align: right;
+}
+
+.minutiScreen p {
+margin-left: 2vh;
+}
+
+.arrowUp {
+  z-index: 9999999;
+  position: absolute;
+  right: 85vh;
+  top: 25vh;
+  height: 150px;
+}
+
+.arrowDown {
+  z-index: 9999999;
+  position: absolute;
+  right: 85vh;
+  bottom: 10vh;
+  height: 150px;
+  transform: scale(-1);
+}
+
+.arrowUpText {
+  z-index: 9999999;
+  position: absolute;
+  right: 90vh;
+  top: 27vh;
+  text-align: right;
+  opacity: 0.6;
+}
+
+.arrowDownText {
+  z-index: 9999999;
+  position: absolute;
+  right: 90vh;
+  bottom: 12vh;
+  text-align: right;
+  opacity: 0.6;
+}
+
+.livelli5-2 {
+  height: 80vh;
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.livelli5-3 {
+  height: 80vh;
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.livello {
+  overflow: hidden;
+  text-align: left;
+}
+
+.livello img {
+  position: fixed;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+}
+
+/* -------------- SEZIONE 6 ----------------- */
+/* -------------- SEZIONE 6 ----------------- */
+/* -------------- SEZIONE 6 ----------------- */
+
+.inizia {
+  z-index: 99999999;
+  position: fixed;
+  display: flex;
+  height: 16vh;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 70px;
+  margin-top: 44vh;
+  right: 0;
+  text-decoration: none;
+}
+
+.inizia h1 {
+  margin-right: 60px;
+  color: white;
+}
+
+.inizia img {
+  transition: transform 0.3s ease-in-out;
+  animation: ingrandisci 1s infinite alternate; /* Animazione automatica */
+}
+@keyframes ingrandisci {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2); /* Ingrossa l'immagine */
+  }
+}
+
+.numbers {
+  position: fixed;
+  height: 12vh;
+  background-color: var(--menu-bg);
+  width: 15562px;
+  padding-left: 180px;
+  z-index: 9;
+  top: 8vh;
+}
+#numbers_content {
+  padding-top: 6vh;
+  color: var(--menu-color);
+  font-size: 24px;
+  font-weight: lighter;
+  display: flex;
+}
+
+.number {
+  display: flex;
+  justify-content: center;
+  width: 44px;
+  margin-right: 55.8px;
+  /* margin: 0 40px 0 40px; */
+}
+
+.minutaggio h4 {
+  padding-left: 200px;
+}
+
+/* ---------------- HEADER ------------------ */
+/* ---------------- HEADER ------------------ */
+/* ---------------- HEADER ------------------ */
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0px 20px;
+  z-index: 99999;
+  width: 100%;
+  height: 8vh;
+  border-bottom: solid 2px;
+  border-image: linear-gradient(
+      to right,
+      white 40%,
+      transparent 120%,
+      transparent 100%
+    )
+    1;
+}
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  height: 8vh;
+  align-items: center;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.header__logo img {
+  height: 30px;
+  margin-right: 40px;
+}
+.header__logo li {
+  display: inline-block;
+  color: var(--menu-color);
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.header__menu {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.header__menu li {
+  display: flex;
+}
+.header__menu li a {
+  color: var(--menu-color);
+  display: block;
+  padding: 10px 40px 10px 10px;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+/* ---------- LEGGENDA ------------ */
+/* ---------- LEGGENDA ------------ */
+/* ---------- LEGGENDA ------------ */
+
+#leggenda {
+  width: var(
+    --legendwidth
+  ); /*Nel :root sopra è dichiarata questa variabile, in caso modificare lì*/
+  height: 100vh;
+  background-color: var(--menu-bg);
+  position: fixed;
+  z-index: 9999;
+  margin-top: 5vh;
+}
+
+/* ##### VARIABILI COLORI PERSONAGGI ###### */
+:root {
+  --luogo: #0289ec;
+  --cobb: #cc00ff;
+  --arthur: #f500bd;
+  --arianna: #e20087;
+  --mrsaito: #d0014b;
+  --fischer: #e63432;
+  --yusuf: #f0511e;
+  --eames: #ff7902;
+}
+/* ######################################## */
+
+/* Contenitore leggenda*/
+.leggenda_title {
+  padding: 72px 20px 0px;
+}
+.leggenda_title p {
+  color: var(--menu-color);
+  font-size: 12px;
+  text-align: center;
+}
+.leggenda_content {
+  color: var(--menu-color);
+  font-size: 12px;
+  text-align: center;
+  position: fixed;
+  top: 20vh;
+  width: var(--legendwidth);
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+.leggenda_content p {
+  hyphens: none;
+}
+
+.leggenda_levels {
+  height: 16vh;
+  width: var(--legendwidth);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Contenuto livelli */
+/* generale */
+
+.leggenda_luogo {
+  width: 70%;
+  margin: 0 15% 0 15%;
+  height: 13%;
+  background-color: var(--luogo);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.leggenda_luogo p {
+  text-align: left;
+  font-weight: bold;
+  margin: 0;
+  padding: 0 15% 0 15%;
+}
+.leggenda_spazio_luogo_personaggi {
+  height: 5%;
+}
+
+.leggenda_spazio_personaggi {
+  height: 1%;
+}
+
+.leggenda_personaggio {
+  width: 70%;
+  margin: 0 15% 0 15%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.leggenda_personaggio p {
+  text-align: left;
+  font-size: 11px;
+  margin: 0;
+  padding: 0 15% 0 15%;
+}
+
+/* .leggenda_spazio_finale {
+  height: 6%; 
+}
+*/
+
+/* LIVELLO 1 */
+#cobb1 {
+  background-color: var(--cobb);
+}
+#arthur1 {
+  background-color: var(--arthur);
+}
+#arianna1 {
+  background-color: var(--arianna);
+}
+#mrsaito1 {
+  background-color: var(--mrsaito);
+}
+#fischer1 {
+  background-color: var(--fischer);
+}
+#yusuf1 {
+  background-color: var(--yusuf);
+}
+#eames1 {
+  background-color: var(--eames);
+}
+
+/* LIVELLO 2 */
+#cobb2 {
+  background-color: var(--cobb);
+}
+#arthur2 {
+  background-color: var(--arthur);
+}
+#arianna2 {
+  background-color: var(--arianna);
+}
+#mrsaito2 {
+  background-color: var(--mrsaito);
+}
+#fischer2 {
+  background-color: var(--fischer);
+}
+#yusuf2 {
+  background-color: var(--yusuf);
+}
+#eames2 {
+  background-color: var(--eames);
+}
+
+/* LIVELLO 3 */
+#cobb3 {
+  background-color: var(--cobb);
+}
+#arthur3 {
+  background-color: var(--arthur);
+}
+#arianna3 {
+  background-color: var(--arianna);
+}
+#mrsaito3 {
+  background-color: var(--mrsaito);
+}
+#fischer3 {
+  background-color: var(--fischer);
+}
+#yusuf3 {
+  /* non c'è */
+}
+#eames3 {
+  background-color: var(--eames);
+}
+
+/* LIVELLO 4 */
+#cobb4 {
+  background-color: var(--cobb);
+}
+#arthur4 {
+  /* non c'è */
+}
+#arianna4 {
+  background-color: var(--arianna);
+}
+#mrsaito4 {
+  background-color: var(--mrsaito);
+}
+#fischer4 {
+  background-color: var(--fischer);
+}
+#yusuf4 {
+  /* non c'è */
+}
+#eames4 {
+  background-color: var(--eames);
+}
+
+/* LIVELLO 5 - LIMBO */
+#cobb5 {
+  background-color: var(--cobb);
+}
+#arthur5 {
+  /* non c'è */
+}
+#arianna5 {
+  background-color: var(--arianna);
+}
+#mrsaito5 {
+  background-color: var(--mrsaito);
+}
+#fischer5 {
+  background-color: var(--fischer);
+}
+#yusuf5 {
+  /* non c'è */
+}
+#eames5 {
+  /* non c'è */
+}
