@@ -105,6 +105,18 @@ body::-webkit-scrollbar {
   font-weight: bold;
 }
 
+/* LINEA SEGNAPOSTO */
+
+.keyLine {
+  z-index: 99999999999999;
+  position: fixed;
+  height: 80vh;
+  bottom: 0;
+  width: 4px;
+  left: calc(500px - 2px);
+  background-color: #fff;
+}
+
 /* VISUALIZZAZIONE */
 
 #scroller {
@@ -118,7 +130,7 @@ body::-webkit-scrollbar {
 
 .sfondo {
   display: flex;
-  width: 300vw;
+  width: 491.5vh;
 }
 section {
   position: fixed;
@@ -127,19 +139,23 @@ section {
   height: 92vh;
 }
 
+/* ----------- NUMERI ------------ */
+/* ----------- NUMERI ------------ */
+/* ----------- NUMERI ------------ */
+
 .numbers {
   position: fixed;
   height: 12vh;
   background-color: var(--menu-bg);
   width: 15562px;
-  padding-left: 479px;
+  padding-left: 475px;
   z-index: 9;
   top: 8vh;
 }
 #numbers_content {
-  padding-top: 6vh;
+  padding-top: 7vh;
   color: var(--menu-color);
-  font-size: 24px;
+  font-size: 18px;
   font-weight: lighter;
   display: flex;
 }
@@ -147,10 +163,60 @@ section {
 .number {
   display: flex;
   justify-content: center;
-  width: 44px;
-  margin-right: 55.8px;
+  width: 50px;
+  margin-right: 50px;
   /* margin: 0 40px 0 40px; */
 }
+
+/* -------------------- INFORMAZIONI AGGIUNTIVE SOPRA I NUMERI ------------------ */
+/* -------------------- INFORMAZIONI AGGIUNTIVE SOPRA I NUMERI ------------------ */
+/* -------------------- INFORMAZIONI AGGIUNTIVE SOPRA I NUMERI ------------------ */
+
+.info {
+  z-index: 99999999999999999;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10.5vh;
+  width: 300px;
+}
+
+@media (max-height: 810px) {
+  .info {
+    display: none;
+  }
+}
+
+.infoTesto {
+  margin-left: 22px;
+  padding-left: 12px;
+  border-left: 2px solid black;
+  border-image: linear-gradient(
+      to top,
+      white 40%,
+      transparent 120%,
+      transparent 100%
+    )
+    1;
+}
+
+.infoTesto p {
+  vertical-align: top;
+  margin: 0 0 10px 0;
+  color: #fff;
+  font-size: small;
+}
+
+.infoCerchio {
+  width: 40px; /* Imposta la larghezza della circonferenza */
+  height: 40px; /* Imposta l'altezza della circonferenza */
+  border-radius: 50%; /* Crea una circonferenza impostando il 50% di border-radius */
+  border: 2px solid white; /* Aggiunge un bordo di 2px di spessore */
+}
+
+/* -------------------- SLIDER ------------------ */
+/* -------------------- SLIDER ------------------ */
+/* -------------------- SLIDER ------------------ */
 
 #container {
   position: fixed;
@@ -416,4 +482,17 @@ section {
   background-color: white; /* Colore della linea del secondo gruppo */
   margin-right: 5.25px; /* Distanza tra le linee del secondo gruppo */
   opacity: 0.4;
+}
+
+.personaggi {
+  position: fixed;
+  top: 20vh;
+  height: 80vh;
+  width: 100%;
+  margin-left: 500px;
+  z-index: 999999999;
+}
+.personaggi img {
+  width: 14200px;
+  height: 75.3vh;
 }
