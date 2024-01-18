@@ -7,12 +7,11 @@ body {
   width: 100%;
 }
 .bold {
-  font-weight: bold ;
+  font-weight: bold;
 }
 .light {
   font-weight: lighter;
 }
-
 
 /* Hide scrollbar for Webkit browsers (Chrome, Safari) */
 #scroller::-webkit-scrollbar {
@@ -69,7 +68,8 @@ body::-webkit-scrollbar {
 }
 .header__logo img {
   height: 30px;
-  margin-right: 40px;
+  margin-right: 20px;
+  fill: #0289ec;
 }
 .header__logo li {
   display: inline-block;
@@ -77,6 +77,11 @@ body::-webkit-scrollbar {
   display: block;
   font-size: 20px;
   font-weight: bold;
+  padding-top: 6px;
+}
+
+.header__logo:hover {
+  color: #e63432;
 }
 
 .header__menu {
@@ -101,7 +106,9 @@ body::-webkit-scrollbar {
 /* #######LEGGENDA########## */
 /* #######LEGGENDA########## */
 #leggenda {
-  width: var(--legendwidth); /*Nel :root sopra è dichiarata questa variabile, in caso modificare lì*/
+  width: var(
+    --legendwidth
+  ); /*Nel :root sopra è dichiarata questa variabile, in caso modificare lì*/
   height: 100vh;
   background-color: var(--menu-bg);
   position: fixed;
@@ -109,17 +116,16 @@ body::-webkit-scrollbar {
   margin-top: 5vh;
 }
 
-
 /* ##### VARIABILI COLORI PERSONAGGI ###### */
 :root {
-  --luogo: #0289EC;
-  --cobb: #CC00FF;
-  --arthur: #F500BD;
-  --arianna: #E20087;
-  --mrsaito: #D0014B;
-  --fischer: #E63432;
-  --yusuf: #F0511E;
-  --eames: #FF7902;
+  --luogo: #0289ec;
+  --cobb: #cc00ff;
+  --arthur: #f500bd;
+  --arianna: #e20087;
+  --mrsaito: #d0014b;
+  --fischer: #e63432;
+  --yusuf: #f0511e;
+  --eames: #ff7902;
 }
 /* ######################################## */
 
@@ -147,7 +153,7 @@ body::-webkit-scrollbar {
   hyphens: none;
 }
 
-.leggenda_levels{
+.leggenda_levels {
   height: 16vh;
   width: var(--legendwidth);
   display: flex;
@@ -168,7 +174,7 @@ body::-webkit-scrollbar {
 }
 
 .leggenda_luogo p {
-  text-align:left;
+  text-align: left;
   font-weight: bold;
   margin: 0;
   padding: 0 15% 0 15%;
@@ -275,7 +281,7 @@ body::-webkit-scrollbar {
   background-color: var(--cobb);
 }
 #arthur4 {
- /* non c'è */
+  /* non c'è */
 }
 #arianna4 {
   background-color: var(--arianna);
@@ -298,7 +304,7 @@ body::-webkit-scrollbar {
   background-color: var(--cobb);
 }
 #arthur5 {
- /* non c'è */
+  /* non c'è */
 }
 #arianna5 {
   background-color: var(--arianna);
