@@ -329,12 +329,15 @@ body::-webkit-scrollbar {
   position: fixed;
   height: 80vh;
   bottom: 0;
-  width: 4px;
-  left: calc(500px - 2px);
-  background-color: #fff;
+  width: calc(25vw - 4px);
+  right: 0;
+  border-left: white solid 4px;
+  background-image: linear-gradient(to right, #16203331, #162033);
 }
 
-/* VISUALIZZAZIONE */
+/* ---------------- VISUALIZZAZIONE ------------------ */
+/* ---------------- VISUALIZZAZIONE ------------------ */
+/* ---------------- VISUALIZZAZIONE ------------------ */
 
 #scroller {
   overflow-x: hidden;
@@ -365,16 +368,18 @@ section {
   height: 12vh;
   background-color: var(--menu-bg);
   width: 15562px;
-  padding-left: 475px;
+  padding-left: calc(75vw - 25px);
   z-index: 9;
   top: 8vh;
 }
 #numbers_content {
-  padding-top: 7vh;
+  height: 69px;
+  margin-top: 5vh;
   color: var(--menu-color);
   font-size: 18px;
   font-weight: lighter;
   display: flex;
+  align-items: center;
 }
 
 .number {
@@ -389,13 +394,19 @@ section {
 /* -------------------- INFORMAZIONI AGGIUNTIVE SOPRA I NUMERI ------------------ */
 /* -------------------- INFORMAZIONI AGGIUNTIVE SOPRA I NUMERI ------------------ */
 
-.info {
+.infoContainer {
   z-index: 99999999999999999;
+  margin-left: 75vw;
+  position: fixed;
+  top: 11.5vh;
+}
+
+.info {
   position: fixed;
   display: flex;
   flex-direction: column;
-  margin-top: 10.5vh;
   width: 300px;
+  margin-left: 75vw;
 }
 
 @media (max-height: 810px) {
@@ -453,7 +464,7 @@ section {
 }
 
 .zero {
-  width: 500px;
+  width: 75vw;
   background-color: var(--menu-bg);
 }
 
@@ -579,7 +590,7 @@ section {
 
 .sixteen,
 .blocco16 {
-  width: 500px;
+  width: 874px;
   /*   background-color: burlywood;
  */
   z-index: 16;
@@ -706,7 +717,7 @@ section {
   top: 20vh;
   height: 80vh;
   width: 100%;
-  margin-left: 500px;
+  margin-left: 75vw;
   z-index: 999999999;
 }
 .personaggi img {

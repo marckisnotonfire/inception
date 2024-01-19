@@ -40,7 +40,7 @@ const arrayRange = (start, stop, step) =>
     (value, index) => start + index * step
   );
 
-let range = arrayRange(0, 15, 1);
+let range = arrayRange(0, 30, 1);
 
 // Aggiungi uno spazio tra i numeri utilizzando il tag span con stile CSS
 let spacedRange = range.map(number => `<span class="number">${number}</span>`);

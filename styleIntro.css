@@ -18,6 +18,14 @@ p {
   font-weight: normal;
 }
 
+/* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+#scroller::-webkit-scrollbar {
+  display: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
 :root {
   --menu-bg: #162033;
   --menu-color: #fff;
@@ -78,6 +86,7 @@ span {
   justify-content: center;
   align-items: center;
   color: #fff;
+  width: 75%;
 }
 .paragrafo h6 {
   font-weight: normal;
@@ -172,9 +181,9 @@ span {
 
 .minutiScreen {
   display: flex;
-  padding: 0 50px;
+  padding: 0 20px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .minutiScreen h4 {
@@ -182,7 +191,7 @@ span {
 }
 
 .minutiScreen p {
-margin-left: 2vh;
+  margin-left: 10px;
 }
 
 .arrowUp {
@@ -252,7 +261,7 @@ margin-left: 2vh;
 /* -------------- SEZIONE 6 ----------------- */
 
 .inizia {
-  z-index: 99999999;
+  z-index: 99;
   position: fixed;
   display: flex;
   height: 16vh;
@@ -287,7 +296,7 @@ margin-left: 2vh;
   height: 12vh;
   background-color: var(--menu-bg);
   width: 15562px;
-  padding-left: 180px;
+  padding-left: 780px;
   z-index: 9;
   top: 8vh;
 }
@@ -308,7 +317,26 @@ margin-left: 2vh;
 }
 
 .minutaggio h4 {
-  padding-left: 200px;
+  padding-left: 820px;
+}
+
+.segnaposto h4 {
+  padding: 60px 50vh 0 0;
+  text-align: left;
+  text-align: end;
+}
+
+/* LINEA SEGNAPOSTO */
+
+.keyLine {
+  z-index: 9;
+  position: fixed;
+  height: 80vh;
+  bottom: 0;
+  width: calc(25vw - 4px);
+  right: 0;
+  border-left: white solid 4px;
+  background-image: linear-gradient(to right, #16203331, #162033);
 }
 
 /* ---------------- HEADER ------------------ */
