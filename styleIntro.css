@@ -267,27 +267,28 @@ span {
   height: 16vh;
   align-items: center;
   justify-content: flex-end;
-  padding-right: 70px;
+  padding-right: 5vh;
   margin-top: 44vh;
   right: 0;
   text-decoration: none;
 }
 
 .inizia h1 {
-  margin-right: 60px;
+  margin-right: 40px;
   color: white;
+  font-size: 60px;
 }
 
 .inizia img {
-  transition: transform 0.3s ease-in-out;
-  animation: ingrandisci 1s infinite alternate; /* Animazione automatica */
+  transition: transform 1s ease-in-out;
+  animation: ingrandisci 2s infinite alternate; /* Animazione automatica */
 }
 @keyframes ingrandisci {
   from {
     transform: scale(1);
   }
   to {
-    transform: scale(1.2); /* Ingrossa l'immagine */
+    transform: scale(1.1); /* Ingrossa l'immagine */
   }
 }
 
@@ -321,7 +322,7 @@ span {
 }
 
 .segnaposto h4 {
-  padding: 60px 50vh 0 0;
+  padding: 60px 45vh 0 0;
   text-align: left;
   text-align: end;
 }
@@ -347,13 +348,13 @@ span {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 0px 20px;
+  padding: 0 35px;
   z-index: 99999;
   width: 100%;
   height: 8vh;
   border-bottom: solid 2px;
   border-image: linear-gradient(
-      to right,
+      to left,
       white 40%,
       transparent 120%,
       transparent 100%
@@ -361,6 +362,7 @@ span {
     1;
 }
 .header__content {
+  width: 92%;
   display: flex;
   justify-content: space-between;
   height: 8vh;

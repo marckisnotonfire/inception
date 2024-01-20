@@ -64,7 +64,7 @@ gsap.to(".blocco1", {
   scrollTrigger: {
     trigger: ".blocco1",
     containerAnimation: tl,
-    start: "left 20%",
+    start: "left 72%",
     toggleActions: "restart none none reverse",
     id: "1",
     markers: true,
@@ -77,7 +77,7 @@ gsap.to(".blocco2", {
   scrollTrigger: {
     trigger: ".blocco2",
     containerAnimation: tl,
-    start: "left center",
+    start: "left 80%",
     toggleActions: "restart none none reverse",
     id: "2",
     markers: true,
@@ -90,7 +90,7 @@ gsap.to(".blocco3", {
   scrollTrigger: {
     trigger: ".blocco3",
     containerAnimation: tl,
-    start: "left center",
+    start: "left 80%",
     toggleActions: "restart none none reverse",
     id: "3",
     markers: true,
@@ -103,7 +103,7 @@ gsap.to(".blocco4", {
   scrollTrigger: {
     trigger: ".blocco4",
     containerAnimation: tl,
-    start: "left center",
+    start: "left 80%",
     toggleActions: "restart none none reverse",
     id: "4",
     markers: true,
@@ -116,7 +116,7 @@ gsap.to(".blocco5", {
   scrollTrigger: {
     trigger: ".blocco5",
     containerAnimation: tl,
-    start: "left center",
+    start: "left 80%",
     toggleActions: "restart none none reverse",
     id: "5",
     markers: true,
@@ -129,7 +129,7 @@ gsap.to(".blocco6", {
   scrollTrigger: {
     trigger: ".blocco6",
     containerAnimation: tl,
-    start: "left center",
+    start: "left 80%",
     toggleActions: "restart none none reverse",
     id: "6",
     markers: true,
@@ -142,7 +142,7 @@ gsap.to(".blocco7", {
   scrollTrigger: {
     trigger: ".blocco7",
     containerAnimation: tl,
-    start: "left center",
+    start: "left 80%",
     toggleActions: "restart none none reverse",
     markers: true,
     fastscrollend: true,
@@ -154,7 +154,7 @@ gsap.to(".blocco8", {
   scrollTrigger: {
     trigger: ".blocco8",
     containerAnimation: tl,
-    start: "left center",
+    start: "left 80%",
     toggleActions: "restart none none reverse",
     id: "8",
     markers: true,
@@ -167,7 +167,7 @@ gsap.to(".blocco9", {
   scrollTrigger: {
     trigger: ".blocco9",
     containerAnimation: tl,
-    start: "left center",
+    start: "left 80%",
     toggleActions: "restart none none reverse",
     id: "9",
     markers: true,
@@ -180,7 +180,7 @@ gsap.to(".blocco10", {
   scrollTrigger: {
     trigger: ".blocco10",
     containerAnimation: tl,
-    start: "left center",
+    start: "left 80%",
     toggleActions: "restart none none reverse",
     id: "10",
     markers: true,
@@ -193,7 +193,7 @@ gsap.to(".blocco11", {
   scrollTrigger: {
     trigger: ".blocco11",
     containerAnimation: tl,
-    start: "left center",
+    start: "left 80%",
     toggleActions: "restart none none reverse",
     id: "11",
     markers: true,
@@ -206,7 +206,7 @@ gsap.to(".blocco12", {
   scrollTrigger: {
     trigger: ".blocco12",
     containerAnimation: tl,
-    start: "left center",
+    start: "left 80%",
     toggleActions: "restart none none reverse",
     markers: true,
     fastscrollend: true,
@@ -218,7 +218,7 @@ gsap.to(".blocco13", {
   scrollTrigger: {
     trigger: ".blocco13",
     containerAnimation: tl,
-    start: "left center",
+    start: "left 80%",
     toggleActions: "restart none none reverse",
     id: "13",
     markers: true,
@@ -231,7 +231,7 @@ gsap.to(".blocco14", {
   scrollTrigger: {
     trigger: ".blocco14",
     containerAnimation: tl,
-    start: "left center",
+    start: "left 80%",
     toggleActions: "restart none none reverse",
     id: "14",
     markers: true,
@@ -244,7 +244,7 @@ gsap.to(".blocco15", {
   scrollTrigger: {
     trigger: ".blocco15",
     containerAnimation: tl,
-    start: "left center",
+    start: "left 80%",
     toggleActions: "restart none none reverse",
     id: "15",
     markers: true,
@@ -257,7 +257,7 @@ gsap.to(".blocco16", {
   scrollTrigger: {
     trigger: ".blocco16",
     containerAnimation: tl,
-    start: "left center",
+    start: "left 80%",
     toggleActions: "restart none none reverse",
     id: "16",
     markers: true,
