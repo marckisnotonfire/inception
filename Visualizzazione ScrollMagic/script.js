@@ -2516,8 +2516,451 @@ gsap.to("#cobb1, #arthur1, #arianna1", {
 });
 
 //######### BLOCCO 7 ###########
+gsap.to("#cobb1, #arthur1, #arianna1, #mrsaito1, #eames1", {
+  visibility: "hidden",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: ".blocco7",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none none reset",
+    //id: "LEGENDA INIZIO",
+   // markers: true,
+  },
+});
+
+gsap.to("#cobb2, #arianna2", {
+  visibility: "visible",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: ".blocco7",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none none none",
+    //id: "LEGENDA INIZIO",
+   // markers: true,
+  },
+});
+gsap.to("#cobb2, #arianna2", {
+  visibility: "hidden",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: ".blocco7",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "none none none restart",
+    //id: "LEGENDA INIZIO",
+   // markers: true,
+  },
+});
 
 
+//######### BLOCCO 8 ###########
+gsap.to("#cobb2, #arianna2", {
+  visibility: "hidden",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: ".blocco8",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none none reset",
+    //id: "LEGENDA INIZIO",
+   // markers: true,
+  },
+});
+
+gsap.to("#cobb1, #arthur1, #arianna1, #yusuf1, #eames1", {
+  visibility: "visible",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: ".blocco8",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none none none",
+    //id: "LEGENDA INIZIO",
+   // markers: true,
+  },
+});
+gsap.to("#cobb1, #arthur1, #arianna1, #yusuf1, #eames1", {
+  visibility: "hidden",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: ".blocco8",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "none none none restart",
+    //id: "LEGENDA INIZIO",
+   // markers: true,
+  },
+});
+
+//--Minute 61--
+gsap.to("#mrsaito1, #fischer1", {
+  visibility: "visible",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: "#line_cont8_61",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none none none",
+    //id: "LEGENDA INIZIO",
+   // markers: true,
+  },
+});
+gsap.to("#mrsaito1, #fischer1", {
+  visibility: "hidden",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: "#line_cont8_61",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "none none none restart",
+    //id: "LEGENDA INIZIO",
+   // markers: true,
+  },
+});
+
+//######### BLOCCO 9 ###########
+gsap.to("#cobb1, #arthur1, #arianna1, #mrsaito1, #fischer1, #yusuf1, #eames1", {
+  visibility: "hidden",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: ".blocco9",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none none reset",
+    //id: "LEGENDA INIZIO",
+   // markers: true,
+  },
+});
+
+gsap.to("#cobb2, #arthur2, #arianna2, #mrsaito2, #fischer2, #yusuf2, #eames2", {
+  visibility: "visible",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: ".blocco9",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none none none",
+    //id: "LEGENDA INIZIO",
+   // markers: true,
+  },
+});
+gsap.to("#cobb2, #arthur2, #arianna2, #mrsaito2, #fischer2, #yusuf2, #eames2", {
+  visibility: "hidden",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: ".blocco9",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "none none none restart",
+    //id: "LEGENDA INIZIO",
+   // markers: true,
+  },
+});
+
+
+//######### BLOCCO 10 ###########
+gsap.to("#cobb2, #arthur2, #arianna2, #mrsaito2, #fischer2, #eames2", {
+  visibility: "hidden",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: ".blocco10",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none none reset",
+    //id: "LEGENDA INIZIO",
+   // markers: true,
+  },
+});
+
+gsap.to("#cobb3, #arthur3, #arianna3, #mrsaito3, #fischer3, #eames3", {
+  visibility: "visible",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: ".blocco10",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none none none",
+    //id: "LEGENDA INIZIO",
+   // markers: true,
+  },
+});
+gsap.to("#cobb3, #arthur3, #arianna3, #mrsaito3, #fischer3, #eames3", {
+  visibility: "hidden",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: ".blocco10",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "none none none restart",
+    //id: "LEGENDA INIZIO",
+   // markers: true,
+  },
+});
+
+//######### BLOCCO 11 ###########
+gsap.to("#cobb3, #arianna3, #mrsaito3, #fischer3, #eames3", {
+  visibility: "hidden",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: ".blocco11",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none none reset",
+    //id: "LEGENDA INIZIO",
+   // markers: true,
+  },
+});
+
+gsap.to("#cobb4, #arthur4, #arianna4, #mrsaito4, #fischer4, #eames4", {
+  visibility: "visible",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: ".blocco11",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none none none",
+    //id: "LEGENDA INIZIO",
+   // markers: true,
+  },
+});
+gsap.to("#cobb4, #arthur4, #arianna4, #mrsaito4, #fischer4, #eames4", {
+  visibility: "hidden",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: ".blocco11",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "none none none restart",
+    //id: "LEGENDA INIZIO",
+   // markers: true,
+  },
+});
+
+//######### BLOCCO 12 ###########
+gsap.to("#cobb4, #arianna4, #mrsaito4, #fischer4", {
+  visibility: "hidden",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: ".blocco12",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none none reset",
+    //id: "LEGENDA INIZIO",
+   // markers: true,
+  },
+});
+
+gsap.to("#cobb5, #arianna5, #mrsaito5, #fischer5", {
+  visibility: "visible",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: ".blocco12",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none none none",
+    //id: "LEGENDA INIZIO",
+   // markers: true,
+  },
+});
+gsap.to("#cobb5, #arianna5, #mrsaito5, #fischer5", {
+  visibility: "hidden",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: ".blocco12",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "none none none restart",
+    //id: "LEGENDA INIZIO",
+   // markers: true,
+  },
+});
+
+//######### BLOCCO 13 ###########
+gsap.to("#fischer5", {
+  visibility: "hidden",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: ".blocco13",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none none reset",
+    //id: "LEGENDA INIZIO",
+   // markers: true,
+  },
+});
+
+gsap.to("#fischer4", {
+  visibility: "visible",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: ".blocco13",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none none none",
+    //id: "LEGENDA INIZIO",
+   // markers: true,
+  },
+});
+gsap.to("#fischer4", {
+  visibility: "hidden",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: ".blocco13",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "none none none restart",
+    //id: "LEGENDA INIZIO",
+   // markers: true,
+  },
+});
+
+//######### BLOCCO 14 ###########
+gsap.to("#arianna5, #fischer4, #eames4", {
+  visibility: "hidden",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: ".blocco14",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none none reset",
+    //id: "LEGENDA INIZIO",
+   // markers: true,
+  },
+});
+
+
+gsap.to("#arianna3, #fischer3, #eames3", {
+  visibility: "visible",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: ".blocco14",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none none none",
+    //id: "LEGENDA INIZIO",
+   // markers: true,
+  },
+});
+gsap.to("#arianna3, #fischer3, #eames3", {
+  visibility: "hidden",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: ".blocco14",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "none none none restart",
+    //id: "LEGENDA INIZIO",
+   // markers: true,
+  },
+});
+
+//######### BLOCCO 15 ###########
+gsap.to("#arthur3, #arianna3, #fischer3, #eames3", {
+  visibility: "hidden",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: ".blocco15",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none none reset",
+    //id: "LEGENDA INIZIO",
+   // markers: true,
+  },
+});
+
+gsap.to("#arthur2, #arianna2, #fischer2, #eames2", {
+  visibility: "visible",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: ".blocco15",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none none none",
+    //id: "LEGENDA INIZIO",
+   // markers: true,
+  },
+});
+gsap.to("#arthur2, #arianna2, #fischer2, #eames2", {
+  visibility: "hidden",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: ".blocco15",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "none none none restart",
+    //id: "LEGENDA INIZIO",
+   // markers: true,
+  },
+});
+
+//######### BLOCCO 16 ###########
+gsap.to("#arthur2, #arianna2, #fischer2, #yusuf2, #eames2, #cobb5, #mrsaito5", {
+  visibility: "hidden",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: ".blocco16",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none none reset",
+    //id: "LEGENDA INIZIO",
+   // markers: true,
+  },
+});
+
+gsap.to("#arthur1, #arianna1, #fischer1, #yusuf1, #eames1, #cobb1, #mrsaito1", {
+  visibility: "visible",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: ".blocco16",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none none none",
+    //id: "LEGENDA INIZIO",
+   // markers: true,
+  },
+});
+gsap.to("#arthur1, #arianna1, #fischer1, #yusuf1, #eames1, #cobb1, #mrsaito1", {
+  visibility: "hidden",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: ".blocco16",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "none none none restart",
+    //id: "LEGENDA INIZIO",
+   // markers: true,
+  },
+});
+
+//--Minute 140--
+gsap.to("#arthur1, #arianna1, #mrsaito1, #fischer1, #yusuf1, #eames1", {
+  visibility: "hidden",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: "#line_cont16_140",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none none reset",
+    //id: "LEGENDA INIZIO",
+   // markers: true,
+  },
+});
+
+//--Minute 142--
+gsap.to("#cobb1", {
+  visibility: "hidden",
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: "#line_cont16_142",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none none reset",
+    //id: "LEGENDA INIZIO",
+   // markers: true,
+  },
+});
 
 
 //chiusura DOMContentLoaded. Type above this line.
