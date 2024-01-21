@@ -6,7 +6,7 @@ body {
   background-color: #162033;
 }
 h1 {
-  font-size: 80px;
+  font-size: 140px;
 }
 h4 {
   font-size: 20px;
@@ -66,34 +66,76 @@ section {
   width: 100%;
 }
 
-.titolo {
-  font-size: 100px;
-  font-weight: bold;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-}
-span {
-  content: "\2192";
-}
-
 .paragrafo {
   height: 100%;
   font-size: 30px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   color: #fff;
-  width: 75%;
+  width: 100%;
 }
-.paragrafo h6 {
-  font-weight: normal;
-  width: 60%;
+.paragrafo h4 {
+  font-weight: lighter;
+  font-size: 30px;
   text-align: center;
   color: #fff;
+  margin: 30vh 30vh 0 30vh;
+  height: 168px;
+  display: flex;
+  align-items: center;
 }
+
+/* Proprietà per animazione */
+.section2 h4,
+.section3 h4 {
+  padding-top: 1300px;
+  opacity: 0;
+}
+
+/* -------------- SEZIONE 1 ----------------- */
+/* -------------- SEZIONE 1 ----------------- */
+/* -------------- SEZIONE 1 ----------------- */
+
+.titolo {
+  font-weight: bold;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.titolo h1 {
+  margin: 30vh 0 0 0;
+}
+
+.titolo img {
+  height: 15vh;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out 1s forwards;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1; /* Porta l'opacità a 1 durante l'animazione */
+  }
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer p {
+  font-size: 10px;
+  margin-top: 20vh;
+}
+
+/* -------------- SEZIONE 4 ----------------- */
+/* -------------- SEZIONE 4 ----------------- */
+/* -------------- SEZIONE 4 ----------------- */
 
 /* livelli background con spazio */
 .livelli {
@@ -110,46 +152,17 @@ span {
 
 .color1 {
   background-color: var(--sfondo1);
-  margin-left: 200px;
 }
 .color2 {
   background-color: var(--sfondo2);
-  margin-left: 400px;
 }
 .color3 {
   background-color: var(--sfondo3);
-  margin-left: 600px;
 }
 .color4 {
   background-color: var(--sfondo4);
-  margin-left: 800px;
 }
 .color5 {
-  background-color: var(--sfondo5);
-  margin-left: 1000px;
-}
-
-/* livelli background no spazio */
-.livellinospace {
-  height: 80vh;
-  margin-top: 20vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.color1ns {
-  background-color: var(--sfondo1);
-}
-.color2ns {
-  background-color: var(--sfondo2);
-}
-.color3ns {
-  background-color: var(--sfondo3);
-}
-.color4ns {
-  background-color: var(--sfondo4);
-}
-.color5ns {
   background-color: var(--sfondo5);
 }
 
@@ -158,6 +171,14 @@ span {
   font-weight: 500;
   margin-left: 50px;
   color: #fff;
+}
+
+.section4-1,
+.section4-2,
+.section4-3,
+.section4-4,
+.section4-5 {
+  opacity: 0;
 }
 
 /* -------------- SEZIONE 5 ----------------- */
@@ -197,7 +218,7 @@ span {
 .arrowUp {
   z-index: 9999999;
   position: absolute;
-  right: 85vh;
+  right: 80vh;
   top: 25vh;
   height: 150px;
 }
@@ -205,7 +226,7 @@ span {
 .arrowDown {
   z-index: 9999999;
   position: absolute;
-  right: 85vh;
+  right: 80vh;
   bottom: 10vh;
   height: 150px;
   transform: scale(-1);
@@ -214,7 +235,7 @@ span {
 .arrowUpText {
   z-index: 9999999;
   position: absolute;
-  right: 90vh;
+  right: 85vh;
   top: 27vh;
   text-align: right;
   opacity: 0.6;
@@ -223,7 +244,7 @@ span {
 .arrowDownText {
   z-index: 9999999;
   position: absolute;
-  right: 90vh;
+  right: 85vh;
   bottom: 12vh;
   text-align: right;
   opacity: 0.6;

@@ -46,17 +46,19 @@ tl.to(".sfondo", {
 // --------------- ANIMAZIONI --------------- ANIMAZIONI ---------------
 // ---------------------------------------------------------------------
 
-/* gsap.to(".blocco4", {
-  y: "16vh",
-  duration: 2,
+gsap.to(".arrowScroll img,.arrowScroll h4", {
+  opacity: 0,
+  duration: 0.5,
   scrollTrigger: {
-    trigger: ".blocco6",
-    start: "bottom bottom",
-    toggleActions: "play none none reset",
-    id: "1",
+    trigger: ".zero",
+    containerAnimation: tl,
+    start: "20% left",
+    toggleActions: "restart none none reverse",
+    id: "0",
     markers: true,
+    fastscrollend: true,
   },
-}); */
+});
 
 gsap.to(".blocco1", {
   y: "32vh",

@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger);
+
 // --------------------------------------------------------------------------
 // ------------------------------- NEW SCROLL -------------------------------
 // --------------------------------------------------------------------------
@@ -19,7 +21,7 @@ let tl = gsap.timeline({
     pin: true,
     scrub: 2,
     markers: true,
-    end: () => "+=" + slider.offsetWidth,
+    end: () => "+=5000" /* + slider.offsetWidth */,
   },
 });
 
@@ -46,3 +48,125 @@ let range = arrayRange(0, 30, 1);
 let spacedRange = range.map(number => `<span class="number">${number}</span>`);
 
 document.getElementById("numbers_content").innerHTML = spacedRange.join("");
+
+/* ----------------------------------------------------------------- */
+/* ------------- ANIMAZIONI -------------- ANIMAZIONI -------------- */
+/* ----------------------------------------------------------------- */
+/* ------------- ANIMAZIONI -------------- ANIMAZIONI -------------- */
+/* ----------------------------------------------------------------- */
+/* ------------- ANIMAZIONI -------------- ANIMAZIONI -------------- */
+/* ----------------------------------------------------------------- */
+
+gsap.to(".section2 h4", {
+  y: -1300,
+  opacity: 1,
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".section2 h4",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none none reverse",
+    id: "2",
+    markers: true,
+    fastscrollend: true,
+  },
+});
+
+gsap.to(".section3 h4", {
+  y: -1300,
+  opacity: 1,
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".section3 h4",
+    containerAnimation: tl,
+    start: "left center",
+    toggleActions: "restart none none reverse",
+    id: "3",
+    markers: true,
+    fastscrollend: true,
+  },
+});
+
+gsap.to(".section4-1", {
+  x: 200,
+  opacity: 1,
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".section4-1",
+    containerAnimation: tl,
+    start: "left center",
+    end: "left 100px",
+    /* toggleActions: "play none pause none", */
+    id: "4",
+    scrub: true,
+    markers: true,
+    fastscrollend: true,
+  },
+});
+
+gsap.to(".section4-2", {
+  x: 400,
+  opacity: 1,
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".section4-1",
+    containerAnimation: tl,
+    start: "left center",
+    end: "left 100px",
+    /* toggleActions: "play none pause none", */
+    id: "4",
+    scrub: true,
+    markers: true,
+    fastscrollend: true,
+  },
+});
+
+gsap.to(".section4-3", {
+  x: 600,
+  opacity: 1,
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".section4-1",
+    containerAnimation: tl,
+    start: "left center",
+    end: "left 100px",
+    /* toggleActions: "play none pause none", */
+    id: "4",
+    scrub: true,
+    markers: true,
+    fastscrollend: true,
+  },
+});
+
+gsap.to(".section4-4", {
+  x: 800,
+  opacity: 1,
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".section4-1",
+    containerAnimation: tl,
+    start: "left center",
+    end: "left 100px",
+    /* toggleActions: "play none pause none", */
+    id: "4",
+    scrub: true,
+    markers: true,
+    fastscrollend: true,
+  },
+});
+
+gsap.to(".section4-5", {
+  x: 1000,
+  opacity: 1,
+  scrollTrigger: {
+    trigger: ".section4-1",
+    containerAnimation: tl,
+    start: "left center",
+    end: "left 100px",
+    /* toggleActions: "play none pause none", */
+    id: "4",
+    scrub: true,
+    markers: true,
+    fastscrollend: true,
+  },
+});
