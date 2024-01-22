@@ -108,7 +108,7 @@ gsap.to(".section4-2", {
   opacity: 1,
   duration: 1,
   scrollTrigger: {
-    trigger: ".section4-1",
+    trigger: ".section4-2",
     containerAnimation: tl,
     start: "left center",
     end: "left 100px",
@@ -125,7 +125,7 @@ gsap.to(".section4-3", {
   opacity: 1,
   duration: 1,
   scrollTrigger: {
-    trigger: ".section4-1",
+    trigger: ".section4-3",
     containerAnimation: tl,
     start: "left center",
     end: "left 100px",
@@ -142,7 +142,7 @@ gsap.to(".section4-4", {
   opacity: 1,
   duration: 1,
   scrollTrigger: {
-    trigger: ".section4-1",
+    trigger: ".section4-4",
     containerAnimation: tl,
     start: "left center",
     end: "left 100px",
@@ -158,7 +158,7 @@ gsap.to(".section4-5", {
   x: 1000,
   opacity: 1,
   scrollTrigger: {
-    trigger: ".section4-1",
+    trigger: ".section4-5",
     containerAnimation: tl,
     start: "left center",
     end: "left 100px",
@@ -197,20 +197,20 @@ gsap.from(".arrowDownGroup", {
   },
 });
 
-/* gsap.from(".leggendaAnimazione", {
-  xPercent: -100,
+gsap.from(".leggendaAnimazione", {
+  x: -100,
   opacity: 0,
   duration: 0.5,
   scrollTrigger: {
-    trigger: ".header",
+    trigger: ".leggendaAnimazione",
     containerAnimation: tl,
     start: "left center",
     end: "left left",
     scrub: true,
     id: "5",
-    markers: true,
   },
-}); */
+});
+
 gsap.from(".numbers", {
   xPercent: 100,
   opacity: 0,
