@@ -387,7 +387,7 @@ section {
 
 .numbers {
   position: fixed;
-  height: 12vh;
+  top: 12vh;
   background-color: var(--menu-bg);
   width: 15562px;
   padding-left: calc(75vw - 25px);
@@ -395,13 +395,14 @@ section {
   top: 8vh;
 }
 #numbers_content {
-  height: 69px;
-  margin-top: 5vh;
+  height: 6vh;
+  margin-top: 4vh;
+  margin-bottom: 2vh;
   color: var(--menu-color);
   font-size: 18px;
-  font-weight: lighter;
+  font-weight: 400;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .number {
@@ -420,7 +421,7 @@ section {
   z-index: 99999999999999999;
   margin-left: 75vw;
   position: fixed;
-  top: 11.5vh;
+  top: 8vh;
 }
 
 .info {
@@ -429,12 +430,8 @@ section {
   flex-direction: column;
   width: 300px;
   margin-left: 75vw;
-}
-
-@media (max-height: 810px) {
-  .info {
-    display: none;
-  }
+  height: 12vh;
+  justify-content: flex-end;
 }
 
 .infoTesto {
@@ -452,9 +449,10 @@ section {
 
 .infoTesto p {
   vertical-align: top;
-  margin: 0 0 10px 0;
+  margin: 0 0 1vh 0;
   color: #fff;
   font-size: small;
+  font-weight: lighter;
 }
 
 .infoCerchio {
@@ -462,6 +460,13 @@ section {
   height: 40px; /* Imposta l'altezza della circonferenza */
   border-radius: 50%; /* Crea una circonferenza impostando il 50% di border-radius */
   border: 2px solid white; /* Aggiunge un bordo di 2px di spessore */
+  margin-bottom: 0.8vh;
+}
+
+@media (max-height: 650px) {
+  .info {
+    display: none;
+  }
 }
 
 /* -------------------- SLIDER ------------------ */
