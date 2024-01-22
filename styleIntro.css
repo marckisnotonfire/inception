@@ -6,7 +6,7 @@ body {
   background-color: #162033;
 }
 h1 {
-  font-size: 80px;
+  font-size: 140px;
 }
 h4 {
   font-size: 20px;
@@ -16,6 +16,14 @@ p {
   font-size: 14px;
   color: white;
   font-weight: normal;
+}
+
+/* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+#scroller::-webkit-scrollbar {
+  display: none;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 
 :root {
@@ -58,33 +66,76 @@ section {
   width: 100%;
 }
 
-.titolo {
-  font-size: 100px;
-  font-weight: bold;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-}
-span {
-  content: "\2192";
-}
-
 .paragrafo {
   height: 100%;
   font-size: 30px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   color: #fff;
+  width: 100%;
 }
-.paragrafo h6 {
-  font-weight: normal;
-  width: 60%;
+.paragrafo h4 {
+  font-weight: lighter;
+  font-size: 30px;
   text-align: center;
   color: #fff;
+  margin: 30vh 30vh 0 30vh;
+  height: 168px;
+  display: flex;
+  align-items: center;
 }
+
+/* Proprietà per animazione */
+.section2 h4,
+.section3 h4 {
+  padding-top: 1300px;
+  opacity: 0;
+}
+
+/* -------------- SEZIONE 1 ----------------- */
+/* -------------- SEZIONE 1 ----------------- */
+/* -------------- SEZIONE 1 ----------------- */
+
+.titolo {
+  font-weight: bold;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.titolo h1 {
+  margin: 30vh 0 0 0;
+}
+
+.titolo img {
+  height: 15vh;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out 1s forwards;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1; /* Porta l'opacità a 1 durante l'animazione */
+  }
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer p {
+  font-size: 10px;
+  margin-top: 20vh;
+}
+
+/* -------------- SEZIONE 4 ----------------- */
+/* -------------- SEZIONE 4 ----------------- */
+/* -------------- SEZIONE 4 ----------------- */
 
 /* livelli background con spazio */
 .livelli {
@@ -101,46 +152,17 @@ span {
 
 .color1 {
   background-color: var(--sfondo1);
-  margin-left: 200px;
 }
 .color2 {
   background-color: var(--sfondo2);
-  margin-left: 400px;
 }
 .color3 {
   background-color: var(--sfondo3);
-  margin-left: 600px;
 }
 .color4 {
   background-color: var(--sfondo4);
-  margin-left: 800px;
 }
 .color5 {
-  background-color: var(--sfondo5);
-  margin-left: 1000px;
-}
-
-/* livelli background no spazio */
-.livellinospace {
-  height: 80vh;
-  margin-top: 20vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.color1ns {
-  background-color: var(--sfondo1);
-}
-.color2ns {
-  background-color: var(--sfondo2);
-}
-.color3ns {
-  background-color: var(--sfondo3);
-}
-.color4ns {
-  background-color: var(--sfondo4);
-}
-.color5ns {
   background-color: var(--sfondo5);
 }
 
@@ -149,6 +171,14 @@ span {
   font-weight: 500;
   margin-left: 50px;
   color: #fff;
+}
+
+.section4-1,
+.section4-2,
+.section4-3,
+.section4-4,
+.section4-5 {
+  opacity: 0;
 }
 
 /* -------------- SEZIONE 5 ----------------- */
@@ -172,9 +202,9 @@ span {
 
 .minutiScreen {
   display: flex;
-  padding: 0 50px;
+  padding: 0 20px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .minutiScreen h4 {
@@ -182,13 +212,13 @@ span {
 }
 
 .minutiScreen p {
-margin-left: 2vh;
+  margin-left: 10px;
 }
 
 .arrowUp {
   z-index: 9999999;
   position: absolute;
-  right: 85vh;
+  right: 80vh;
   top: 25vh;
   height: 150px;
 }
@@ -196,7 +226,7 @@ margin-left: 2vh;
 .arrowDown {
   z-index: 9999999;
   position: absolute;
-  right: 85vh;
+  right: 80vh;
   bottom: 10vh;
   height: 150px;
   transform: scale(-1);
@@ -205,7 +235,7 @@ margin-left: 2vh;
 .arrowUpText {
   z-index: 9999999;
   position: absolute;
-  right: 90vh;
+  right: 85vh;
   top: 27vh;
   text-align: right;
   opacity: 0.6;
@@ -214,7 +244,7 @@ margin-left: 2vh;
 .arrowDownText {
   z-index: 9999999;
   position: absolute;
-  right: 90vh;
+  right: 85vh;
   bottom: 12vh;
   text-align: right;
   opacity: 0.6;
@@ -252,33 +282,34 @@ margin-left: 2vh;
 /* -------------- SEZIONE 6 ----------------- */
 
 .inizia {
-  z-index: 99999999;
+  z-index: 99;
   position: fixed;
   display: flex;
   height: 16vh;
   align-items: center;
   justify-content: flex-end;
-  padding-right: 70px;
+  padding-right: 5vh;
   margin-top: 44vh;
   right: 0;
   text-decoration: none;
 }
 
 .inizia h1 {
-  margin-right: 60px;
+  margin-right: 40px;
   color: white;
+  font-size: 60px;
 }
 
 .inizia img {
-  transition: transform 0.3s ease-in-out;
-  animation: ingrandisci 1s infinite alternate; /* Animazione automatica */
+  transition: transform 1s ease-in-out;
+  animation: ingrandisci 2s infinite alternate; /* Animazione automatica */
 }
 @keyframes ingrandisci {
   from {
     transform: scale(1);
   }
   to {
-    transform: scale(1.2); /* Ingrossa l'immagine */
+    transform: scale(1.1); /* Ingrossa l'immagine */
   }
 }
 
@@ -287,7 +318,7 @@ margin-left: 2vh;
   height: 12vh;
   background-color: var(--menu-bg);
   width: 15562px;
-  padding-left: 180px;
+  padding-left: 780px;
   z-index: 9;
   top: 8vh;
 }
@@ -308,7 +339,26 @@ margin-left: 2vh;
 }
 
 .minutaggio h4 {
-  padding-left: 200px;
+  padding-left: 820px;
+}
+
+.segnaposto h4 {
+  padding: 60px 45vh 0 0;
+  text-align: left;
+  text-align: end;
+}
+
+/* LINEA SEGNAPOSTO */
+
+.keyLine {
+  z-index: 9;
+  position: fixed;
+  height: 80vh;
+  bottom: 0;
+  width: calc(25vw - 4px);
+  right: 0;
+  border-left: white solid 4px;
+  background-image: linear-gradient(to right, #16203331, #162033);
 }
 
 /* ---------------- HEADER ------------------ */
@@ -319,13 +369,13 @@ margin-left: 2vh;
   position: absolute;
   top: 0;
   left: 0;
-  padding: 0px 20px;
+  padding: 0 35px;
   z-index: 99999;
   width: 100%;
   height: 8vh;
   border-bottom: solid 2px;
   border-image: linear-gradient(
-      to right,
+      to left,
       white 40%,
       transparent 120%,
       transparent 100%
@@ -333,6 +383,7 @@ margin-left: 2vh;
     1;
 }
 .header__content {
+  width: 92%;
   display: flex;
   justify-content: space-between;
   height: 8vh;

@@ -3,7 +3,7 @@ body {
   padding: 0;
   margin: 0;
   height: 100%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Gotham;
   width: 100%;
 }
 .bold {
@@ -66,10 +66,10 @@ body::-webkit-scrollbar {
   align-items: center;
   text-decoration: none;
 }
-.header__logo img {
+.header__logo svg {
   height: 30px;
   margin-right: 20px;
-  fill: #0289ec;
+  transition: 0.2s ease-in;
 }
 .header__logo li {
   display: inline-block;
@@ -80,8 +80,9 @@ body::-webkit-scrollbar {
   padding-top: 6px;
 }
 
-.header__logo:hover {
-  color: #e63432;
+.header__logo svg:hover {
+  height: 40px;
+  /* transition: scale(1.2) ease-in; */
 }
 
 .header__menu {
@@ -131,12 +132,13 @@ body::-webkit-scrollbar {
 
 /* Contenitore leggenda*/
 .leggenda_title {
-  padding: 72px 20px 0px;
+  padding: 11vh 20px 0px;
 }
 .leggenda_title p {
   color: var(--menu-color);
   font-size: 12px;
   text-align: center;
+  margin: 0;
 }
 .leggenda_content {
   color: var(--menu-color);
@@ -329,12 +331,35 @@ body::-webkit-scrollbar {
   position: fixed;
   height: 80vh;
   bottom: 0;
-  width: 4px;
-  left: calc(500px - 2px);
-  background-color: #fff;
+  width: calc(25vw - 4px);
+  right: 0;
+  border-left: white solid 4px;
+  background-image: linear-gradient(to right, #16203300, #162033a6, #162033);
 }
 
-/* VISUALIZZAZIONE */
+/* ---------------- VISUALIZZAZIONE ------------------ */
+/* ---------------- VISUALIZZAZIONE ------------------ */
+/* ---------------- VISUALIZZAZIONE ------------------ */
+
+/* ---------------- INFO SCROLL ---------------------- */
+
+.arrowScroll {
+  display: flex;
+  align-items: center;
+}
+
+.arrowScroll img {
+  position: fixed;
+  left: 500px;
+  height: 28vh;
+}
+
+.arrowScroll h4 {
+  position: fixed;
+  left: 570px;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.605);
+}
 
 #scroller {
   overflow-x: hidden;
@@ -347,7 +372,7 @@ body::-webkit-scrollbar {
 
 .sfondo {
   display: flex;
-  width: 491.5vh;
+  width: 500vh;
 }
 section {
   position: fixed;
@@ -365,16 +390,18 @@ section {
   height: 12vh;
   background-color: var(--menu-bg);
   width: 15562px;
-  padding-left: 475px;
+  padding-left: calc(75vw - 25px);
   z-index: 9;
   top: 8vh;
 }
 #numbers_content {
-  padding-top: 7vh;
+  height: 69px;
+  margin-top: 5vh;
   color: var(--menu-color);
   font-size: 18px;
   font-weight: lighter;
   display: flex;
+  align-items: center;
 }
 
 .number {
@@ -389,13 +416,19 @@ section {
 /* -------------------- INFORMAZIONI AGGIUNTIVE SOPRA I NUMERI ------------------ */
 /* -------------------- INFORMAZIONI AGGIUNTIVE SOPRA I NUMERI ------------------ */
 
-.info {
+.infoContainer {
   z-index: 99999999999999999;
+  margin-left: 75vw;
+  position: fixed;
+  top: 11.5vh;
+}
+
+.info {
   position: fixed;
   display: flex;
   flex-direction: column;
-  margin-top: 10.5vh;
   width: 300px;
+  margin-left: 75vw;
 }
 
 @media (max-height: 810px) {
@@ -453,7 +486,7 @@ section {
 }
 
 .zero {
-  width: 500px;
+  width: 75vw;
   background-color: var(--menu-bg);
 }
 
@@ -579,7 +612,7 @@ section {
 
 .sixteen,
 .blocco16 {
-  width: 500px;
+  width: 874px;
   /*   background-color: burlywood;
  */
   z-index: 16;
@@ -701,15 +734,85 @@ section {
   opacity: 0.4;
 }
 
-.personaggi {
+.personaggiEluoghi {
   position: fixed;
   top: 20vh;
   height: 80vh;
   width: 100%;
-  margin-left: 500px;
+  margin-left: 75vw;
   z-index: 999999999;
 }
-.personaggi img {
-  width: 14200px;
-  height: 75.3vh;
+.personaggiEluoghi img {
+  width: 14196px;
+  height: 80vh;
+}
+
+/* ----------- POSIZIONAMENTO LUOGHI -------------- */
+/* ----------- POSIZIONAMENTO LUOGHI -------------- */
+/* ----------- POSIZIONAMENTO LUOGHI -------------- */
+
+.luoghi {
+  z-index: 99999999999999999;
+  position: fixed;
+  top: 20vh;
+}
+
+.luoghi1 {
+  position: fixed;
+  margin-left: 75vw;
+  height: 2.2vh;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.luoghi2 {
+  position: fixed;
+  margin-left: 75vw;
+  margin-top: 16vh;
+  height: 2.2vh;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.luoghi3 {
+  position: fixed;
+  margin-left: 75vw;
+  margin-top: calc(16vh * 2);
+  height: 2.2vh;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.luoghi4 {
+  position: fixed;
+  margin-left: 75vw;
+  margin-top: calc(16vh * 3);
+  height: 2.2vh;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.luoghi5 {
+  position: fixed;
+  margin-left: 75vw;
+  margin-top: calc(16vh * 4);
+  height: 2.2vh;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.luoghi1 p,
+.luoghi2 p,
+.luoghi3 p,
+.luoghi4 p,
+.luoghi5 p {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0;
+  color: #ffffff;
 }
