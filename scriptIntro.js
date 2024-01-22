@@ -197,20 +197,20 @@ gsap.from(".arrowDownGroup", {
   },
 });
 
-gsap.from("#leggenda", {
+/* gsap.from(".leggendaAnimazione", {
   xPercent: -100,
   opacity: 0,
   duration: 0.5,
   scrollTrigger: {
-    trigger: ".leggenda_content",
+    trigger: ".header",
     containerAnimation: tl,
-    start: "left 30%",
+    start: "left center",
     end: "left left",
     scrub: true,
     id: "5",
-    /* markers: true, */
+    markers: true,
   },
-});
+}); */
 gsap.from(".numbers", {
   xPercent: 100,
   opacity: 0,

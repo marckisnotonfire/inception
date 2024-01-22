@@ -29,8 +29,15 @@ let tl = gsap.timeline({
     start: "top top",
     pin: true,
     scrub: 2,
-    /* markers: true, */
-    end: () => "+=4300 bottom-=1px" /* + slider.offsetWidth */,
+    markers: true,
+    markers: {
+      startColor: "white",
+      endColor: "white",
+      fontSize: "0px",
+      fontWeight: "bold",
+      indent: 20,
+    },
+    end: () => "+=10000 bottom-=1px",
   },
 });
 

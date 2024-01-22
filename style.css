@@ -372,7 +372,7 @@ body::-webkit-scrollbar {
 
 .sfondo {
   display: flex;
-  width: 500vh;
+  width: 600vh;
 }
 section {
   position: fixed;
