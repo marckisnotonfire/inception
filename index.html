@@ -32,7 +32,7 @@
                 <h1>INCEPTION</h1>
                 <footer class="footer">
                   <img src="svg elements/scrollUp.svg" alt="">
-                  <p>Questa visualizzazione è stata creata per il Laboratorio di Computer Grafica. Realizzato da Federico Morsia / Marco Delbue / Amelia Sampaolo / Andrea Torriani / Giulio Dalle Carbonare / Tommaso Patrini / Alessandro Levi</p>
+                  <p>Progetto realizzato per il Laboratorio di Computer Grafica da Federico Morsia / Marco Delbue / Amelia Sampaolo / Andrea Torriani / Giulio Dalle Carbonare / Tommaso Patrini / Alessandro Levi</p>
                 </footer>
               </div>
             </div>
@@ -111,10 +111,17 @@
         <section id="section">
           <div class="inner">
             <div class="content5">
-              <img src="altriElementi/Arrow.png" class="arrowUp">
-              <img src="altriElementi/Arrow.png" class="arrowDown">
-                <h4 class="arrowUpText">Minuti <br> dilatati</h4>
+              <div class="arrowContainer">
+                <div class="arrowUpGroup">
+                  <img src="altriElementi/Arrow.png" class="arrowUp" style="height: 25vh;">
+                  <h4 class="arrowUpText">Minuti <br> dilatati</h4>
+                </div>
+                <div class="arrowDownGroup">
+                  <img src="altriElementi/Arrow.png" class="arrowDown" style="transform: scale(-1); height: 25vh;">
                 <h4 class="arrowDownText">Minuti <br> contratti</h4>
+                </div>
+              </div>
+  
               <!-- questa sezione è stata divisa in 3 colonne, 
                 la prima colonna senza livelli, la seconda con il 
                 livello normale in mezzo e la terza con il livello 
@@ -482,6 +489,9 @@
               <!-- LINEA SEGNAPOSTO + SFONDO SFUMATO-->
 
               <div class="keyLine"></div>
+              <div class="segnaposto">
+                <h4>Linea <br> segnaposto</h4>
+              </div>
 
 
 
@@ -496,9 +506,8 @@
                               <div class="livello color3">
                                 <img src="livelli/Normal.png" alt="">
                               </div>
-                              <div class="livello color4 segnaposto">
+                              <div class="livello color4">
                                 <img src="livelli/1sotto.png" alt="">
-                                <h4>Linea <br> segnaposto</h4>
                               </div>
                               <div class="livello color5">
                                 <img src="livelli/2sotto.png" alt="">

@@ -87,11 +87,11 @@ section {
 }
 
 /* Proprietà per animazione */
-.section2 h4,
+/* .section2 h4,
 .section3 h4 {
   padding-top: 1300px;
   opacity: 0;
-}
+} */
 
 /* -------------- SEZIONE 1 ----------------- */
 /* -------------- SEZIONE 1 ----------------- */
@@ -113,12 +113,21 @@ section {
 
 .titolo img {
   height: 15vh;
-  opacity: 0;
-  animation: fadeIn 1s ease-in-out 1s forwards;
+  opacity: 1;
+  /*  animation: fadeIn 1s ease-in 1s forwards; */
+  animation: moveUpDown 1s ease-in-out infinite;
 }
-@keyframes fadeIn {
+/* @keyframes fadeIn {
   to {
-    opacity: 1; /* Porta l'opacità a 1 durante l'animazione */
+    opacity: 1; Porta l'opacità a 1 durante l'animazione 
+  }
+} */
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-30px);
   }
 }
 
@@ -131,6 +140,7 @@ section {
 .footer p {
   font-size: 10px;
   margin-top: 20vh;
+  opacity: 0.6;
 }
 
 /* -------------- SEZIONE 4 ----------------- */
@@ -215,39 +225,32 @@ section {
   margin-left: 10px;
 }
 
-.arrowUp {
-  z-index: 9999999;
-  position: absolute;
-  right: 80vh;
-  top: 25vh;
-  height: 150px;
+.arrowContainer {
+  z-index: 9;
+  position: fixed;
+  height: 80vh;
+  width: auto;
+  bottom: 0;
+  right: 147vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.arrowDown {
-  z-index: 9999999;
-  position: absolute;
-  right: 80vh;
-  bottom: 10vh;
-  height: 150px;
-  transform: scale(-1);
-}
-
-.arrowUpText {
-  z-index: 9999999;
-  position: absolute;
-  right: 85vh;
-  top: 27vh;
+.arrowUpGroup,
+.arrowDownGroup {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
   text-align: right;
-  opacity: 0.6;
 }
 
-.arrowDownText {
-  z-index: 9999999;
-  position: absolute;
-  right: 85vh;
-  bottom: 12vh;
-  text-align: right;
-  opacity: 0.6;
+.arrowUpGroup {
+  margin-top: 3.5vh;
+}
+
+.arrowDownGroup {
+  margin-bottom: 3.5vh;
 }
 
 .livelli5-2 {
@@ -342,10 +345,20 @@ section {
   padding-left: 820px;
 }
 
+.segnaposto {
+  z-index: 9;
+  position: fixed;
+  height: 80vh;
+  bottom: 0;
+  right: calc(25vw - 4px);
+  padding-right: 4vh;
+}
+
 .segnaposto h4 {
-  padding: 60px 45vh 0 0;
+  padding: 55vh 0 0 0;
   text-align: left;
   text-align: end;
+  margin: 0;
 }
 
 /* LINEA SEGNAPOSTO */

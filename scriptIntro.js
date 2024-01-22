@@ -20,7 +20,7 @@ let tl = gsap.timeline({
     start: "top top",
     pin: true,
     scrub: 2,
-    markers: true,
+    /* markers: true, */
     end: () => "+=5000" /* + slider.offsetWidth */,
   },
 });
@@ -57,32 +57,31 @@ document.getElementById("numbers_content").innerHTML = spacedRange.join("");
 /* ------------- ANIMAZIONI -------------- ANIMAZIONI -------------- */
 /* ----------------------------------------------------------------- */
 
-gsap.to(".section2 h4", {
-  y: -1300,
-  opacity: 1,
-  duration: 0.6,
+gsap.from(".section2 h4", {
+  yPercent: 100,
+  opacity: 0,
+  duration: 0.5,
   scrollTrigger: {
     trigger: ".section2 h4",
     containerAnimation: tl,
     start: "left 70%",
     toggleActions: "restart none none reverse",
     id: "2",
-    markers: true,
-    fastscrollend: true,
+    /* markers: true, */
   },
 });
 
-gsap.to(".section3 h4", {
-  y: -1300,
-  opacity: 1,
-  duration: 0.6,
+gsap.from(".section3 h4", {
+  yPercent: 100,
+  opacity: 0,
+  duration: 0.5,
   scrollTrigger: {
     trigger: ".section3 h4",
     containerAnimation: tl,
     start: "left 70%",
     toggleActions: "restart none none reverse",
     id: "3",
-    markers: true,
+    /* markers: true, */
     fastscrollend: true,
   },
 });
@@ -99,7 +98,7 @@ gsap.to(".section4-1", {
     /* toggleActions: "play none pause none", */
     id: "4",
     scrub: true,
-    markers: true,
+    /* markers: true, */
     fastscrollend: true,
   },
 });
@@ -116,7 +115,7 @@ gsap.to(".section4-2", {
     /* toggleActions: "play none pause none", */
     id: "4",
     scrub: true,
-    markers: true,
+    /* markers: true, */
     fastscrollend: true,
   },
 });
@@ -133,7 +132,7 @@ gsap.to(".section4-3", {
     /* toggleActions: "play none pause none", */
     id: "4",
     scrub: true,
-    markers: true,
+    /* markers: true, */
     fastscrollend: true,
   },
 });
@@ -150,7 +149,7 @@ gsap.to(".section4-4", {
     /* toggleActions: "play none pause none", */
     id: "4",
     scrub: true,
-    markers: true,
+    /* markers: true, */
     fastscrollend: true,
   },
 });
@@ -166,7 +165,89 @@ gsap.to(".section4-5", {
     /* toggleActions: "play none pause none", */
     id: "4",
     scrub: true,
-    markers: true,
+    /* markers: true, */
     fastscrollend: true,
+  },
+});
+
+gsap.from(".arrowUpGroup", {
+  yPercent: 100,
+  opacity: 0,
+  duration: 0.5,
+  scrollTrigger: {
+    trigger: ".arrowUpGroup",
+    containerAnimation: tl,
+    start: "left 70%",
+    toggleActions: "restart none none reverse",
+    id: "5",
+    /* markers: true, */
+  },
+});
+gsap.from(".arrowDownGroup", {
+  yPercent: -100,
+  opacity: 0,
+  duration: 0.5,
+  scrollTrigger: {
+    trigger: ".arrowDownGroup",
+    containerAnimation: tl,
+    start: "left 70%",
+    toggleActions: "restart none none reverse",
+    id: "5",
+    /* markers: true, */
+  },
+});
+
+gsap.from("#leggenda", {
+  xPercent: -100,
+  opacity: 0,
+  duration: 0.5,
+  scrollTrigger: {
+    trigger: ".leggenda_content",
+    containerAnimation: tl,
+    start: "left 30%",
+    end: "left left",
+    scrub: true,
+    id: "5",
+    /* markers: true, */
+  },
+});
+gsap.from(".numbers", {
+  xPercent: 100,
+  opacity: 0,
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".header",
+    containerAnimation: tl,
+    start: "10% 30%",
+    end: "left left",
+    scrub: true,
+    id: "6",
+    /* markers: true, */
+  },
+});
+gsap.from(".minutaggio h4", {
+  yPercent: -100,
+  opacity: 0,
+  duration: 0.5,
+  scrollTrigger: {
+    trigger: ".minutaggio h4",
+    containerAnimation: tl,
+    start: "left 20%",
+    toggleActions: "restart none none reverse",
+    id: "5",
+    /* markers: true, */
+  },
+});
+gsap.from(".segnaposto h4", {
+  yPercent: 50,
+  opacity: 0,
+  duration: 0.5,
+  scrollTrigger: {
+    trigger: ".minutaggio h4",
+    containerAnimation: tl,
+    start: "left 20%",
+    toggleActions: "restart none none reverse",
+    id: "5",
+    /* markers: true, */
   },
 });

@@ -29,7 +29,7 @@ let tl = gsap.timeline({
     start: "top top",
     pin: true,
     scrub: 2,
-    markers: true,
+    /* markers: true, */
     end: () => "+=4300 bottom-=1px" /* + slider.offsetWidth */,
   },
 });
@@ -55,7 +55,7 @@ gsap.to(".arrowScroll img,.arrowScroll h4", {
     start: "20% left",
     toggleActions: "restart none none reverse",
     id: "0",
-    markers: true,
+    /* markers: true, */
     fastscrollend: true,
   },
 });
@@ -69,7 +69,7 @@ gsap.to(".blocco1", {
     start: "left 75%",
     toggleActions: "restart none none reverse",
     id: "1",
-    markers: true,
+    /* markers: true, */
     fastscrollend: true,
   },
 });
@@ -82,7 +82,7 @@ gsap.to(".blocco2", {
     start: "left 75%",
     toggleActions: "restart none none reverse",
     id: "2",
-    markers: true,
+    /* markers: true, */
     fastscrollend: true,
   },
 });
@@ -95,7 +95,7 @@ gsap.to(".blocco3", {
     start: "left 75%",
     toggleActions: "restart none none reverse",
     id: "3",
-    markers: true,
+    /* markers: true, */
     fastscrollend: true,
   },
 });
@@ -108,7 +108,7 @@ gsap.to(".blocco4", {
     start: "left 75%",
     toggleActions: "restart none none reverse",
     id: "4",
-    markers: true,
+    /* markers: true, */
     fastscrollend: true,
   },
 });
@@ -121,7 +121,7 @@ gsap.to(".blocco5", {
     start: "left 75%",
     toggleActions: "restart none none reverse",
     id: "5",
-    markers: true,
+    /* markers: true, */
     fastscrollend: true,
   },
 });
@@ -134,7 +134,7 @@ gsap.to(".blocco6", {
     start: "left 75%",
     toggleActions: "restart none none reverse",
     id: "6",
-    markers: true,
+    /* markers: true, */
     fastscrollend: true,
   },
 });
@@ -146,7 +146,7 @@ gsap.to(".blocco7", {
     containerAnimation: tl,
     start: "left 75%",
     toggleActions: "restart none none reverse",
-    markers: true,
+    /* markers: true, */
     fastscrollend: true,
   },
 });
@@ -159,7 +159,7 @@ gsap.to(".blocco8", {
     start: "left 75%",
     toggleActions: "restart none none reverse",
     id: "8",
-    markers: true,
+    /* markers: true, */
     fastscrollend: true,
   },
 });
@@ -172,7 +172,7 @@ gsap.to(".blocco9", {
     start: "left 75%",
     toggleActions: "restart none none reverse",
     id: "9",
-    markers: true,
+    /* markers: true, */
     fastscrollend: true,
   },
 });
@@ -185,7 +185,7 @@ gsap.to(".blocco10", {
     start: "left 75%",
     toggleActions: "restart none none reverse",
     id: "10",
-    markers: true,
+    /* markers: true, */
     fastscrollend: true,
   },
 });
@@ -198,7 +198,7 @@ gsap.to(".blocco11", {
     start: "left 75%",
     toggleActions: "restart none none reverse",
     id: "11",
-    markers: true,
+    /* markers: true, */
     fastscrollend: true,
   },
 });
@@ -210,7 +210,7 @@ gsap.to(".blocco12", {
     containerAnimation: tl,
     start: "left 75%",
     toggleActions: "restart none none reverse",
-    markers: true,
+    /* markers: true, */
     fastscrollend: true,
   },
 });
@@ -223,7 +223,7 @@ gsap.to(".blocco13", {
     start: "left 75%",
     toggleActions: "restart none none reverse",
     id: "13",
-    markers: true,
+    /* markers: true, */
     fastscrollend: true,
   },
 });
@@ -236,7 +236,7 @@ gsap.to(".blocco14", {
     start: "left 75%",
     toggleActions: "restart none none reverse",
     id: "14",
-    markers: true,
+    /* markers: true, */
     fastscrollend: true,
   },
 });
@@ -249,7 +249,7 @@ gsap.to(".blocco15", {
     start: "left 75%",
     toggleActions: "restart none none reverse",
     id: "15",
-    markers: true,
+    /* markers: true, */
     fastscrollend: true,
   },
 });
@@ -262,7 +262,7 @@ gsap.to(".blocco16", {
     start: "left 75%",
     toggleActions: "restart none none reverse",
     id: "16",
-    markers: true,
+    /* markers: true, */
     fastscrollend: true,
   },
 });
@@ -1995,961 +1995,968 @@ document.addEventListener("DOMContentLoaded", function () {
 //######### ---- ANIMAZIONI LEGGENDA ---- #########
 //#################################################
 
-document.addEventListener('DOMContentLoaded', function () {
-  
-// ######## BLOCCO 1 ###########
-gsap.to(".leggenda_personaggio:not(#cobb5, #mrsaito5)", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco1",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none reset",
-    id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+document.addEventListener("DOMContentLoaded", function () {
+  // ######## BLOCCO 1 ###########
+  gsap.to(".leggenda_personaggio:not(#cobb5, #mrsaito5)", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: ".blocco1",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none reset",
+      id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
+  //######### BLOCCO 2 ###########
+  //Animazione hidden
+  gsap.to("#cobb5, #mrsaito5", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: ".blocco2",
+      containerAnimation: tl,
+      start: "left 75%", //da cambiare quando inizia dal centro
+      toggleActions: "restart none none reset",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
-//######### BLOCCO 2 ###########
-//Animazione hidden
-gsap.to("#cobb5, #mrsaito5", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco2",
-    containerAnimation: tl,
-    start: "left 75%", //da cambiare quando inizia dal centro
-    toggleActions: "restart none none reset",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  //animazione apparizione sono 2 blocchi per far sì che inverso funzioni
+  gsap.to("#cobb3, #arthur3, #mrsaito3", {
+    visibility: "visible",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: ".blocco2",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none none", //a differenza delle altre non si mette il reset alla fine se no non funziona
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
-//animazione apparizione sono 2 blocchi per far sì che inverso funzioni
-gsap.to("#cobb3, #arthur3, #mrsaito3", {
-  visibility: "visible",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco2",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none none", //a differenza delle altre non si mette il reset alla fine se no non funziona
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  //Animazione solo per quando si va a ritroso sulla timeline
+  gsap.to("#cobb3, #arthur3, #mrsaito3", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: ".blocco2",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "none none none restart", //funziona solo se si va indietro
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
-//Animazione solo per quando si va a ritroso sulla timeline
-gsap.to("#cobb3, #arthur3, #mrsaito3", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco2",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "none none none restart", //funziona solo se si va indietro
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  //######### BLOCCO 3 ###########
+  gsap.to("#cobb3, #arthur3, #mrsaito3", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: ".blocco3",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none reset",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
-//######### BLOCCO 3 ###########
-gsap.to("#cobb3, #arthur3, #mrsaito3", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco3",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none reset",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  gsap.to("#cobb2, #arthur2, #mrsaito2", {
+    visibility: "visible",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: ".blocco3",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none none",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
-gsap.to("#cobb2, #arthur2, #mrsaito2", {
-  visibility: "visible",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco3",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none none",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  gsap.to("#cobb2, #arthur2, #mrsaito2", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: ".blocco3",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "none none none restart",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
-gsap.to("#cobb2, #arthur2, #mrsaito2", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco3",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "none none none restart",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  //######### BLOCCO 4 ###########
+  gsap.to("#cobb2, #arthur2, #mrsaito2", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: ".blocco4",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none reset",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
+  gsap.to("#cobb1, #arthur1, #mrsaito1", {
+    visibility: "visible",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: ".blocco4",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none none",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
+  gsap.to("#cobb1, #arthur1, #mrsaito1", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: ".blocco4",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "none none none restart",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
-//######### BLOCCO 4 ###########
-gsap.to("#cobb2, #arthur2, #mrsaito2", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco4",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none reset",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  //--Minute 23--
+  gsap.to("#mrsaito1", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: "#line_cont4_23",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none reset",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
-gsap.to("#cobb1, #arthur1, #mrsaito1", {
-  visibility: "visible",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco4",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none none",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
-gsap.to("#cobb1, #arthur1, #mrsaito1", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco4",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "none none none restart",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  gsap.to("#arianna1", {
+    visibility: "visible",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: "#line_cont4_23",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none none",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
+  gsap.to("#arianna1", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: "#line_cont4_23",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "none none none restart",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
-//--Minute 23--
-gsap.to("#mrsaito1", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: "#line_cont4_23",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none reset",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  //######### BLOCCO 5 ###########
+  gsap.to("#cobb1, #arianna1", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: ".blocco5",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none reset",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
-gsap.to("#arianna1", {
-  visibility: "visible",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: "#line_cont4_23",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none none",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
-gsap.to("#arianna1", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: "#line_cont4_23",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "none none none restart",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  gsap.to("#cobb2, #arianna2", {
+    visibility: "visible",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: ".blocco5",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none none",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
+  gsap.to("#cobb2, #arianna2", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: ".blocco5",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "none none none restart",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
+  //--Minute 29--
+  gsap.to("#cobb2, #arianna2", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: "#line_cont5_29",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none reset",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
-//######### BLOCCO 5 ###########
-gsap.to("#cobb1, #arianna1", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco5",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none reset",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  gsap.to("#cobb1, #arianna1", {
+    visibility: "visible",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: "#line_cont5_29",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none none",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
+  gsap.to("#cobb1, #arianna1", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: "#line_cont5_29",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "none none none restart",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
-gsap.to("#cobb2, #arianna2", {
-  visibility: "visible",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco5",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none none",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
-gsap.to("#cobb2, #arianna2", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco5",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "none none none restart",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  //--Minute 30--
+  gsap.to("#cobb1, #arianna1", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: "#line_cont5_30",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none reset",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
-//--Minute 29--
-gsap.to("#cobb2, #arianna2", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: "#line_cont5_29",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none reset",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  gsap.to("#cobb2, #arianna2", {
+    visibility: "visible",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: "#line_cont5_30",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none none",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
+  gsap.to("#cobb2, #arianna2", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: "#line_cont5_30",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "none none none restart",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
-gsap.to("#cobb1, #arianna1", {
-  visibility: "visible",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: "#line_cont5_29",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none none",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
-gsap.to("#cobb1, #arianna1", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: "#line_cont5_29",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "none none none restart",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  //######### BLOCCO 6 ###########
+  gsap.to("#cobb2, #arianna2", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: ".blocco6",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none reset",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
-//--Minute 30--
-gsap.to("#cobb1, #arianna1", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: "#line_cont5_30",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none reset",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  gsap.to("#cobb1, #arianna1", {
+    visibility: "visible",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: ".blocco6",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none none",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
+  gsap.to("#cobb1, #arianna1", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: ".blocco6",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "none none none restart",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
-gsap.to("#cobb2, #arianna2", {
-  visibility: "visible",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: "#line_cont5_30",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none none",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
-gsap.to("#cobb2, #arianna2", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: "#line_cont5_30",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "none none none restart",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  //--Minute 35--
+  gsap.to("#arthur1, #arianna1", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: "#line_cont6_35",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none reset",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
+  gsap.to("#eames1", {
+    visibility: "visible",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: "#line_cont6_35",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none none",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
+  gsap.to("#eames1", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: "#line_cont6_35",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "none none none restart",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
-//######### BLOCCO 6 ###########
-gsap.to("#cobb2, #arianna2", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco6",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none reset",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  //--Minute 39--
+  gsap.to("#mrsaito1", {
+    visibility: "visible",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: "#line_cont6_39",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none none",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
+  gsap.to("#mrsaito1", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: "#line_cont6_39",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "none none none restart",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
-gsap.to("#cobb1, #arianna1", {
-  visibility: "visible",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco6",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none none",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
-gsap.to("#cobb1, #arianna1", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco6",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "none none none restart",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  //--Minute 41--
+  gsap.to("#yusuf1", {
+    visibility: "visible",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: "#line_cont6_41",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none none",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
+  gsap.to("#yusuf1", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: "#line_cont6_41",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "none none none restart",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
-//--Minute 35--
-gsap.to("#arthur1, #arianna1", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: "#line_cont6_35",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none reset",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  //--Minute 43--
+  gsap.to("#cobb1", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: "#line_cont6_43",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none reset",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
-gsap.to("#eames1", {
-  visibility: "visible",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: "#line_cont6_35",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none none",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
-gsap.to("#eames1", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: "#line_cont6_35",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "none none none restart",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  gsap.to("#cobb2", {
+    visibility: "visible",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: "#line_cont6_43",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none none",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
+  gsap.to("#cobb2", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: "#line_cont6_43",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "none none none restart",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
-//--Minute 39--
-gsap.to("#mrsaito1", {
-  visibility: "visible",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: "#line_cont6_39",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none none",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
-gsap.to("#mrsaito1", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: "#line_cont6_39",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "none none none restart",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  //--Minute 44--
+  gsap.to("#cobb2, #yusuf1", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: "#line_cont6_44",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none reset",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
-//--Minute 41--
-gsap.to("#yusuf1", {
-  visibility: "visible",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: "#line_cont6_41",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none none",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
-gsap.to("#yusuf1", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: "#line_cont6_41",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "none none none restart",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  gsap.to("#cobb1, #arthur1, #arianna1", {
+    visibility: "visible",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: "#line_cont6_44",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none none",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
+  gsap.to("#cobb1, #arthur1, #arianna1", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: "#line_cont6_44",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "none none none restart",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
-//--Minute 43--
-gsap.to("#cobb1", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: "#line_cont6_43",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none reset",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  //######### BLOCCO 7 ###########
+  gsap.to("#cobb1, #arthur1, #arianna1, #mrsaito1, #eames1", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: ".blocco7",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none reset",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
-gsap.to("#cobb2", {
-  visibility: "visible",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: "#line_cont6_43",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none none",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
-gsap.to("#cobb2", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: "#line_cont6_43",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "none none none restart",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  gsap.to("#cobb2, #arianna2", {
+    visibility: "visible",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: ".blocco7",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none none",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
+  gsap.to("#cobb2, #arianna2", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: ".blocco7",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "none none none restart",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
-//--Minute 44--
-gsap.to("#cobb2, #yusuf1", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: "#line_cont6_44",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none reset",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  //######### BLOCCO 8 ###########
+  gsap.to("#cobb2, #arianna2", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: ".blocco8",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none reset",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
-gsap.to("#cobb1, #arthur1, #arianna1", {
-  visibility: "visible",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: "#line_cont6_44",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none none",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
-gsap.to("#cobb1, #arthur1, #arianna1", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: "#line_cont6_44",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "none none none restart",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  gsap.to("#cobb1, #arthur1, #arianna1, #yusuf1, #eames1", {
+    visibility: "visible",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: ".blocco8",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none none",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
+  gsap.to("#cobb1, #arthur1, #arianna1, #yusuf1, #eames1", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: ".blocco8",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "none none none restart",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
-//######### BLOCCO 7 ###########
-gsap.to("#cobb1, #arthur1, #arianna1, #mrsaito1, #eames1", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco7",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none reset",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  //--Minute 61--
+  gsap.to("#mrsaito1, #fischer1", {
+    visibility: "visible",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: "#line_cont8_61",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none none",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
+  gsap.to("#mrsaito1, #fischer1", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: "#line_cont8_61",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "none none none restart",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
-gsap.to("#cobb2, #arianna2", {
-  visibility: "visible",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco7",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none none",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
-gsap.to("#cobb2, #arianna2", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco7",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "none none none restart",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  //######### BLOCCO 9 ###########
+  gsap.to(
+    "#cobb1, #arthur1, #arianna1, #mrsaito1, #fischer1, #yusuf1, #eames1",
+    {
+      visibility: "hidden",
+      duration: 0.1,
+      scrollTrigger: {
+        trigger: ".blocco9",
+        containerAnimation: tl,
+        start: "left 75%",
+        toggleActions: "restart none none reset",
+        //id: "LEGENDA INIZIO",
+        // markers: true,
+      },
+    }
+  );
 
+  gsap.to(
+    "#cobb2, #arthur2, #arianna2, #mrsaito2, #fischer2, #yusuf2, #eames2",
+    {
+      visibility: "visible",
+      duration: 0.1,
+      scrollTrigger: {
+        trigger: ".blocco9",
+        containerAnimation: tl,
+        start: "left 75%",
+        toggleActions: "restart none none none",
+        //id: "LEGENDA INIZIO",
+        // markers: true,
+      },
+    }
+  );
+  gsap.to(
+    "#cobb2, #arthur2, #arianna2, #mrsaito2, #fischer2, #yusuf2, #eames2",
+    {
+      visibility: "hidden",
+      duration: 0.1,
+      scrollTrigger: {
+        trigger: ".blocco9",
+        containerAnimation: tl,
+        start: "left 75%",
+        toggleActions: "none none none restart",
+        //id: "LEGENDA INIZIO",
+        // markers: true,
+      },
+    }
+  );
 
-//######### BLOCCO 8 ###########
-gsap.to("#cobb2, #arianna2", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco8",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none reset",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  //######### BLOCCO 10 ###########
+  gsap.to("#cobb2, #arthur2, #arianna2, #mrsaito2, #fischer2, #eames2", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: ".blocco10",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none reset",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
-gsap.to("#cobb1, #arthur1, #arianna1, #yusuf1, #eames1", {
-  visibility: "visible",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco8",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none none",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
-gsap.to("#cobb1, #arthur1, #arianna1, #yusuf1, #eames1", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco8",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "none none none restart",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  gsap.to("#cobb3, #arthur3, #arianna3, #mrsaito3, #fischer3, #eames3", {
+    visibility: "visible",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: ".blocco10",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none none",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
+  gsap.to("#cobb3, #arthur3, #arianna3, #mrsaito3, #fischer3, #eames3", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: ".blocco10",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "none none none restart",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
-//--Minute 61--
-gsap.to("#mrsaito1, #fischer1", {
-  visibility: "visible",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: "#line_cont8_61",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none none",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
-gsap.to("#mrsaito1, #fischer1", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: "#line_cont8_61",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "none none none restart",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  //######### BLOCCO 11 ###########
+  gsap.to("#cobb3, #arianna3, #mrsaito3, #fischer3, #eames3", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: ".blocco11",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none reset",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
-//######### BLOCCO 9 ###########
-gsap.to("#cobb1, #arthur1, #arianna1, #mrsaito1, #fischer1, #yusuf1, #eames1", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco9",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none reset",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  gsap.to("#cobb4, #arthur4, #arianna4, #mrsaito4, #fischer4, #eames4", {
+    visibility: "visible",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: ".blocco11",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none none",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
+  gsap.to("#cobb4, #arthur4, #arianna4, #mrsaito4, #fischer4, #eames4", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: ".blocco11",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "none none none restart",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
-gsap.to("#cobb2, #arthur2, #arianna2, #mrsaito2, #fischer2, #yusuf2, #eames2", {
-  visibility: "visible",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco9",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none none",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
-gsap.to("#cobb2, #arthur2, #arianna2, #mrsaito2, #fischer2, #yusuf2, #eames2", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco9",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "none none none restart",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  //######### BLOCCO 12 ###########
+  gsap.to("#cobb4, #arianna4, #mrsaito4, #fischer4", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: ".blocco12",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none reset",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
+  gsap.to("#cobb5, #arianna5, #mrsaito5, #fischer5", {
+    visibility: "visible",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: ".blocco12",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none none",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
+  gsap.to("#cobb5, #arianna5, #mrsaito5, #fischer5", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: ".blocco12",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "none none none restart",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
-//######### BLOCCO 10 ###########
-gsap.to("#cobb2, #arthur2, #arianna2, #mrsaito2, #fischer2, #eames2", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco10",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none reset",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  //######### BLOCCO 13 ###########
+  gsap.to("#fischer5", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: ".blocco13",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none reset",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
-gsap.to("#cobb3, #arthur3, #arianna3, #mrsaito3, #fischer3, #eames3", {
-  visibility: "visible",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco10",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none none",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
-gsap.to("#cobb3, #arthur3, #arianna3, #mrsaito3, #fischer3, #eames3", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco10",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "none none none restart",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  gsap.to("#fischer4", {
+    visibility: "visible",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: ".blocco13",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none none",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
+  gsap.to("#fischer4", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: ".blocco13",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "none none none restart",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
-//######### BLOCCO 11 ###########
-gsap.to("#cobb3, #arianna3, #mrsaito3, #fischer3, #eames3", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco11",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none reset",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  //######### BLOCCO 14 ###########
+  gsap.to("#arianna5, #fischer4, #eames4", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: ".blocco14",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none reset",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
-gsap.to("#cobb4, #arthur4, #arianna4, #mrsaito4, #fischer4, #eames4", {
-  visibility: "visible",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco11",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none none",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
-gsap.to("#cobb4, #arthur4, #arianna4, #mrsaito4, #fischer4, #eames4", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco11",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "none none none restart",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  gsap.to("#arianna3, #fischer3, #eames3", {
+    visibility: "visible",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: ".blocco14",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none none",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
+  gsap.to("#arianna3, #fischer3, #eames3", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: ".blocco14",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "none none none restart",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
-//######### BLOCCO 12 ###########
-gsap.to("#cobb4, #arianna4, #mrsaito4, #fischer4", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco12",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none reset",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  //######### BLOCCO 15 ###########
+  gsap.to("#arthur3, #arianna3, #fischer3, #eames3", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: ".blocco15",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none reset",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
-gsap.to("#cobb5, #arianna5, #mrsaito5, #fischer5", {
-  visibility: "visible",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco12",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none none",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
-gsap.to("#cobb5, #arianna5, #mrsaito5, #fischer5", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco12",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "none none none restart",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  gsap.to("#arthur2, #arianna2, #fischer2, #eames2", {
+    visibility: "visible",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: ".blocco15",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none none",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
+  gsap.to("#arthur2, #arianna2, #fischer2, #eames2", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: ".blocco15",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "none none none restart",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
-//######### BLOCCO 13 ###########
-gsap.to("#fischer5", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco13",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none reset",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  //######### BLOCCO 16 ###########
+  gsap.to(
+    "#arthur2, #arianna2, #fischer2, #yusuf2, #eames2, #cobb5, #mrsaito5",
+    {
+      visibility: "hidden",
+      duration: 0.1,
+      scrollTrigger: {
+        trigger: ".blocco16",
+        containerAnimation: tl,
+        start: "left 75%",
+        toggleActions: "restart none none reset",
+        //id: "LEGENDA INIZIO",
+        // markers: true,
+      },
+    }
+  );
 
-gsap.to("#fischer4", {
-  visibility: "visible",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco13",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none none",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
-gsap.to("#fischer4", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco13",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "none none none restart",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  gsap.to(
+    "#arthur1, #arianna1, #fischer1, #yusuf1, #eames1, #cobb1, #mrsaito1",
+    {
+      visibility: "visible",
+      duration: 0.1,
+      scrollTrigger: {
+        trigger: ".blocco16",
+        containerAnimation: tl,
+        start: "left 75%",
+        toggleActions: "restart none none none",
+        //id: "LEGENDA INIZIO",
+        // markers: true,
+      },
+    }
+  );
+  gsap.to(
+    "#arthur1, #arianna1, #fischer1, #yusuf1, #eames1, #cobb1, #mrsaito1",
+    {
+      visibility: "hidden",
+      duration: 0.1,
+      scrollTrigger: {
+        trigger: ".blocco16",
+        containerAnimation: tl,
+        start: "left 75%",
+        toggleActions: "none none none restart",
+        //id: "LEGENDA INIZIO",
+        // markers: true,
+      },
+    }
+  );
 
-//######### BLOCCO 14 ###########
-gsap.to("#arianna5, #fischer4, #eames4", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco14",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none reset",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
+  //--Minute 140--
+  gsap.to("#arthur1, #arianna1, #mrsaito1, #fischer1, #yusuf1, #eames1", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: "#line_cont16_140",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none reset",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
+  //--Minute 142--
+  gsap.to("#cobb1", {
+    visibility: "hidden",
+    duration: 0.1,
+    scrollTrigger: {
+      trigger: "#line_cont16_142",
+      containerAnimation: tl,
+      start: "left 75%",
+      toggleActions: "restart none none reset",
+      //id: "LEGENDA INIZIO",
+      // markers: true,
+    },
+  });
 
-gsap.to("#arianna3, #fischer3, #eames3", {
-  visibility: "visible",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco14",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none none",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
+  //chiusura DOMContentLoaded. Type above this line.
 });
-gsap.to("#arianna3, #fischer3, #eames3", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco14",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "none none none restart",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
-
-//######### BLOCCO 15 ###########
-gsap.to("#arthur3, #arianna3, #fischer3, #eames3", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco15",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none reset",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
-
-gsap.to("#arthur2, #arianna2, #fischer2, #eames2", {
-  visibility: "visible",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco15",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none none",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
-gsap.to("#arthur2, #arianna2, #fischer2, #eames2", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco15",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "none none none restart",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
-
-//######### BLOCCO 16 ###########
-gsap.to("#arthur2, #arianna2, #fischer2, #yusuf2, #eames2, #cobb5, #mrsaito5", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco16",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none reset",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
-
-gsap.to("#arthur1, #arianna1, #fischer1, #yusuf1, #eames1, #cobb1, #mrsaito1", {
-  visibility: "visible",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco16",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none none",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
-gsap.to("#arthur1, #arianna1, #fischer1, #yusuf1, #eames1, #cobb1, #mrsaito1", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: ".blocco16",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "none none none restart",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
-
-//--Minute 140--
-gsap.to("#arthur1, #arianna1, #mrsaito1, #fischer1, #yusuf1, #eames1", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: "#line_cont16_140",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none reset",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
-
-//--Minute 142--
-gsap.to("#cobb1", {
-  visibility: "hidden",
-  duration: 0.1,
-  scrollTrigger: {
-    trigger: "#line_cont16_142",
-    containerAnimation: tl,
-    start: "left 75%",
-    toggleActions: "restart none none reset",
-    //id: "LEGENDA INIZIO",
-   // markers: true,
-  },
-});
-
-
-
-//chiusura DOMContentLoaded. Type above this line.
-});
-
