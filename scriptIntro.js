@@ -60,11 +60,11 @@ document.getElementById("numbers_content").innerHTML = spacedRange.join("");
 gsap.to(".section2 h4", {
   y: -1300,
   opacity: 1,
-  duration: 1,
+  duration: 0.6,
   scrollTrigger: {
     trigger: ".section2 h4",
     containerAnimation: tl,
-    start: "left center",
+    start: "left 70%",
     toggleActions: "restart none none reverse",
     id: "2",
     markers: true,
@@ -75,11 +75,11 @@ gsap.to(".section2 h4", {
 gsap.to(".section3 h4", {
   y: -1300,
   opacity: 1,
-  duration: 1,
+  duration: 0.6,
   scrollTrigger: {
     trigger: ".section3 h4",
     containerAnimation: tl,
-    start: "left center",
+    start: "left 70%",
     toggleActions: "restart none none reverse",
     id: "3",
     markers: true,
